@@ -1,6 +1,6 @@
 {
     name: "有效配置",
     type: "sub-service",
-    url:"http://clash-speedtest:8080/speedtest_config_filter",
+    url:"http://clashsub-tools-clashspeedtest:8080/speedtest_config_filter",
     token: "epYeobK02c6ee9ELuCkPAplZYyqAjOJN",
 }
