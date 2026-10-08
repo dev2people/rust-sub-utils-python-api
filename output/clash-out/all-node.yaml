@@ -249,122 +249,99 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 美国+CloudFlare节点
-  network: ws
-  port: 2083
-  server: 172.66.0.230
-  servername: helloapps.cc.cd
-  sni: helloapps.cc.cd
+  flow: xtls-rprx-vision
+  name: 美国+FDC芝加哥机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 8ENbaQRCWZk-wewSrdHq1_rVjJY4CrxqXUo_5vZNdi4
+    short-id: b2b44805
+    spider-x: /AhmadV2ray
+  server: 50.7.211.242
+  servername: xn--80afqehspga.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai
+  sni: xn--80afqehspga.xn----9sbekcigdcaa6cd7cafr7e.xn--p1ai
   tls: true
   type: vless
   udp: true
-  uuid: a21b9103-1693-49c1-8dc9-e8e8098ee969
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 美国纽约州水牛城+ColoCrossing数据中心
+  network: tcp
+  port: 10829
+  server: 198.12.124.74
+  servername: u695098u5e20ed1cs709.gogocs.xyz
+  sni: u695098u5e20ed1cs709.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 美国+CloudFlare节点
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  port: 2053
+  server: www.speedtest.org
+  sni: nimm.mpd.cc.cd.
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 法国+ovh
+  network: tcp
+  port: 443
+  server: tyxyrytyro-51255165170-direct.araghchy.com
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  sni: tyxyrytyro-51255165170-direct.araghchy.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: tyxyrytyro
 - name: 美国+CloudFlare节点-(重名1)
   network: ws
-  port: 8080
-  server: 172.67.203.138
-  servername: 172.67.203.138
-  sni: 172.67.203.138
-  tls: false
-  type: vless
-  udp: true
-  uuid: 015fada5-2c95-4251-9c58-39fa3abf1e24
-- client-fingerprint: chrome
-  name: 香港+ThinkDream数据中心
-  network: ws
-  port: 2083
-  server: 27.50.48.142
-  servername: and-75r.pages.dev
-  sni: and-75r.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 573c6482-37db-454a-8c31-5b45a338a580
-- name: 立陶宛+V2CROSS.COM
-  network: ws
-  port: 8880
-  server: 185.148.106.30
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-- name: 江苏省南京市+腾讯云
-  network: ws
-  port: 8443
-  server: 129.211.188.184
-  servername: jp3.yohototo.top
-  sni: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: 美国+CloudFlare节点-(重名2)
-  network: ws
-  port: 8080
-  server: 172.67.171.191
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0b2ea024-3ffd-46a7-87ce-86cbb79d7a48
-- alpn:
-  - http/1.1
-  name: 美国+CloudFlare节点-(重名3)
-  password: humanity
   port: 443
-  server: 104.27.21.22
-  sni: www.volumeroot.com
-  type: trojan
-- name: 美国+CloudFlare节点-(重名4)
-  network: ws
-  port: 8880
-  server: 172.67.161.104
-  tls: false
-  type: vless
-  udp: true
-  uuid: 11046a7c-fa1b-4653-ab87-400feb465540
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 芬兰+V2CROSS.COM
-  network: tcp
-  port: 10829
-  server: 193.142.59.97
-  servername: u695098ueb8953b4s861.gogocs.xyz
-  sni: u695098ueb8953b4s861.gogocs.xyz
+  server: tg.juntham.cn
   tls: true
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  network: tcp
-  port: 10829
-  server: s482.wagahaha.xyz
-  servername: u695098u764943ccs478.gogocs.xyz
-  sni: u695098u764943ccs478.gogocs.xyz
+  uuid: da8aa4cc-4f76-4248-a289-41f25713b6e2
+- client-fingerprint: chrome
+  name: 美国+CloudFlare节点-(重名2)
+  network: ws
+  port: 2053
+  server: freesocks.work
+  servername: uwu.blueknightnet.qzz.io
+  sni: uwu.blueknightnet.qzz.io
   tls: true
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- name: 澳大利亚+V2CROSS.COM
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+- name: 丹麦+V2CROSS.COM
   network: ws
   port: 8880
-  server: 185.207.196.30
+  server: 195.85.59.30
   tls: false
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-- client-fingerprint: android
-  name: 亚太地区+V2CROSS.COM
+- name: 美国+CloudFlare节点-(重名3)
+  password: '123456'
+  port: 2096
+  server: 104.18.35.86
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
+- client-fingerprint: chrome
+  name: 美国+CloudFlare节点-(重名4)
   network: ws
-  port: 2087
-  server: 103.116.7.100
-  servername: proxy-1cu.pages.dev
-  sni: proxy-1cu.pages.dev
+  port: 443
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  sni: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 阿富汗+V2CROSS.COM
@@ -373,31 +350,118 @@ proxies:
   reality-opts:
     public-key: f4EJP55daJRlJkcZbbGsY-gFGGFGiXPPdfVxtNWQPCE
     short-id: c8621ebb1e56abb3
-  server: 103.244.145.138
+  server: pa6r26.eu-cdn539.com
   servername: zsde.eu-cdn294.com
   sni: zsde.eu-cdn294.com
   tls: true
   type: vless
   udp: true
   uuid: e75ad2eb-6c1f-45ce-8023-f5f10875df66
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 芬兰+V2CROSS.COM
+  network: tcp
+  port: 10829
+  server: s1243.sspcccdn.xyz
+  servername: u695098ueb8953b4s861.gogocs.xyz
+  sni: u695098ueb8953b4s861.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
 - name: 美国+CloudFlare节点-(重名5)
   network: ws
   port: 8880
-  server: www.baipiao.eu.org
+  server: cf3.466688.xyz
   tls: false
   type: vless
   udp: true
-  uuid: 2a8cafda-479d-4e30-82d1-0bd4c6da6db9
+  uuid: 00ff7e5f-9b6f-4401-aab9-4d044660411f
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 德国+V2CROSS.COM
+  network: tcp
+  port: 443
+  server: s251.wagahaha.xyz
+  servername: u695098u47d2e9bes71.gogocs.xyz
+  sni: u695098u47d2e9bes71.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 德国+V2CROSS.COM-(重名1)
+  network: tcp
+  port: 443
+  server: s249.freessr.bid
+  servername: u695098u47d2e9bes71.gogocs.xyz
+  sni: u695098u47d2e9bes71.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
 - name: 美国+CloudFlare节点-(重名6)
   network: ws
   port: 8880
-  server: 104.16.72.41
-  servername: summer-butterfly-cbc8.26-971.workers.dev
-  sni: summer-butterfly-cbc8.26-971.workers.dev
+  server: 172.66.170.53
   tls: false
   type: vless
   udp: true
-  uuid: 28201cd6-c2a9-4703-a31b-eaf31ecb18fd
+  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+- name: 美国+CloudFlare节点-(重名7)
+  network: ws
+  port: 8880
+  server: 172.64.151.134
+  tls: false
+  type: vless
+  udp: true
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 巴西+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: de2.srv.vbuste.ru
+  servername: de2.srv.vbuste.ru
+  sni: de2.srv.vbuste.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 新加坡+Amazon数据中心
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PhOIlEfiYVUhkWKIfX_IOwJ6zz_Zk0QEj4sfcZyuShY
+    short-id: abcddb0c38896b8b
+  server: 13.229.58.5
+  servername: blog.metawork.network
+  sni: blog.metawork.network
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  server: 31.76.8.154
+  servername: fi2.yservice.help
+  sni: fi2.yservice.help
+  tls: true
+  type: vless
+  udp: true
+  uuid: fd260c22-c5a9-47fc-bb68-5b3e890ee7c4
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 美国+俄勒冈州波特兰Amazon数据中心
@@ -414,33 +478,6 @@ proxies:
   type: vless
   udp: true
   uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-- client-fingerprint: chrome
-  name: 美国+CloudFlare节点-(重名7)
-  network: ws
-  port: 8443
-  server: yg9.ygkkk.dpdns.org
-  servername: ygwp.sbbz.tech
-  sni: ygwp.sbbz.tech
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86c50e3a-5b87-40dd-bd20-03c7f2735e40
-- name: 美国+CloudFlare节点-(重名8)
-  network: ws
-  port: 8880
-  server: cf10.466688.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
-- name: 美国+CloudFlare节点-(重名9)
-  network: ws
-  port: 8880
-  server: 104.16.100.66
-  tls: false
-  type: vless
-  udp: true
-  uuid: 3e7bb66e-d7c6-4711-aa05-e4ab0ec58c6d
 - cipher: 2022-blake3-chacha20-poly1305
   name: 未知 SS-01 | free-nodes
   password: +n5JF83I0RydYOC0f8bFw2GEKIAkYDaSSTq0epm0JDM=
@@ -4842,7 +4879,7 @@ proxies:
   type: vless
   udp: true
   uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-- client-fingerprint: ios
+- client-fingerprint: qq
   name: 🇫🇮 Finland [*CIDR]-(重名2)
   network: grpc
   port: 25481
@@ -4856,21 +4893,7 @@ proxies:
   type: vless
   udp: true
   uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-- client-fingerprint: qq
-  name: 🇫🇮 Finland [*CIDR]-(重名3)
-  network: grpc
-  port: 25481
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  server: 45.133.151.166
-  servername: www.bing.com
-  sni: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-- client-fingerprint: random
+- client-fingerprint: safari
   name: 🇫🇮 Finland | [*CIDR]
   network: grpc
   port: 25481
@@ -4885,20 +4908,6 @@ proxies:
   udp: true
   uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
 - client-fingerprint: safari
-  name: 🇫🇮 Finland | [*CIDR]-(重名1)
-  network: grpc
-  port: 25481
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  server: 45.133.151.166
-  servername: www.bing.com
-  sni: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-- client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 🇫🇷 France [*CIDR]
   network: tcp
@@ -4910,7 +4919,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
-- client-fingerprint: safari
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇫🇷 France [*CIDR]-(重名1)
   network: tcp
@@ -4922,7 +4931,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
-- client-fingerprint: firefox
+- client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 🇫🇷 France [*CIDR]-(重名2)
   network: tcp
@@ -4937,18 +4946,6 @@ proxies:
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: 🇫🇷 France [*CIDR]-(重名3)
-  network: tcp
-  port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  sni: quatro.lmstream.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇫🇷 France [*CIDR]-(重名4)
   network: tcp
   port: 443
   server: 31.131.251.17
@@ -4982,7 +4979,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
-- client-fingerprint: chrome
+- client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 🇫🇷 France | [*CIDR]-(重名2)
   network: tcp
@@ -5006,29 +5003,55 @@ proxies:
   type: vless
   udp: true
   uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
-- client-fingerprint: qq
-  name: 🇩🇪 Germany | [*CIDR]
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇫🇷 France | [*CIDR]-(重名4)
+  network: tcp
   port: 443
-  server: 84.38.183.237
-  servername: ws.nightproducts.ru
-  sni: ws.nightproducts.ru
+  server: 31.131.251.17
+  servername: quatro.lmstream.org
+  sni: quatro.lmstream.org
   tls: true
   type: vless
   udp: true
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
-- client-fingerprint: random
-  name: 🇩🇪 Germany | [*CIDR]-(重名1)
-  network: ws
+  uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇫🇷 France | [*CIDR]-(重名5)
+  network: tcp
   port: 443
-  server: 84.38.183.237
-  servername: ws.nightproducts.ru
-  sni: ws.nightproducts.ru
+  server: 31.131.251.17
+  servername: quatro.lmstream.org
+  sni: quatro.lmstream.org
   tls: true
   type: vless
   udp: true
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: 9ea8b000-58ce-005a-b108-989dd4f248f1
 - client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 🇩🇪 Germany | [*CIDR]
+  network: raw
+  port: 443
+  server: 31.131.251.17
+  servername: quatro.lmstream.org
+  sni: quatro.lmstream.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9ea8b000-58ce-001e-b108-989dd4f248f1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 Germany | [*CIDR]-(重名1)
+  network: raw
+  port: 443
+  server: 31.131.251.17
+  servername: quatro.lmstream.org
+  sni: quatro.lmstream.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9ea8b000-58ce-001e-b108-989dd4f248f1
+- client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 🇩🇪 Germany | [*CIDR]-(重名2)
   network: raw
@@ -5041,72 +5064,6 @@ proxies:
   udp: true
   uuid: 9ea8b000-58ce-001e-b108-989dd4f248f1
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪 Germany | [*CIDR]-(重名3)
-  network: raw
-  port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  sni: quatro.lmstream.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-001e-b108-989dd4f248f1
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇩🇪 Germany | [*CIDR]-(重名4)
-  network: raw
-  port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  sni: quatro.lmstream.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-001e-b108-989dd4f248f1
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇩🇪 Germany | [*CIDR]-(重名5)
-  network: raw
-  port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  sni: quatro.lmstream.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-001e-b108-989dd4f248f1
-- client-fingerprint: android
-  flow: xtls-rprx-vision
-  name: 🇩🇪 Germany | [*CIDR] VK
-  network: tcp
-  port: 9445
-  reality-opts:
-    public-key: i3F_hP7yc9VpcUC2Vn1oAqLyW3hZayGdTybl-VnWdz0
-    short-id: 02827ef87f4a23c0
-  server: 185.241.195.152
-  servername: yandex.ru
-  sni: yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: d91dc97c-a09b-40fa-9da0-a3d1729f7427
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇩🇪 Germany [*CIDR] VK
-  network: tcp
-  port: 9445
-  reality-opts:
-    public-key: i3F_hP7yc9VpcUC2Vn1oAqLyW3hZayGdTybl-VnWdz0
-    short-id: 02827ef87f4a23c0
-  server: 185.241.195.152
-  servername: yandex.ru
-  sni: yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: d91dc97c-a09b-40fa-9da0-a3d1729f7427
-- client-fingerprint: chrome
   name: 🇮🇹 Italy [*CIDR]
   network: grpc
   port: 9881
@@ -5120,7 +5077,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: qq
+- client-fingerprint: ios
   name: 🇮🇹 Italy [*CIDR]-(重名1)
   network: grpc
   port: 9881
@@ -5134,8 +5091,36 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: random
+- client-fingerprint: qq
   name: 🇮🇹 Italy [*CIDR]-(重名2)
+  network: grpc
+  port: 9881
+  reality-opts:
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+    short-id: aa
+  server: 45.132.176.225
+  servername: dl.google.com
+  sni: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: safari
+  name: 🇮🇹 Italy [*CIDR]-(重名3)
+  network: grpc
+  port: 9881
+  reality-opts:
+    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
+    short-id: aa
+  server: 45.132.176.225
+  servername: dl.google.com
+  sni: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: random
+  name: 🇮🇹 Italy [*CIDR]-(重名4)
   network: grpc
   port: 9881
   reality-opts:
@@ -5148,7 +5133,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: edge
+- client-fingerprint: chrome
   name: 🇮🇹 Italy | [*CIDR]
   network: grpc
   port: 9881
@@ -5162,7 +5147,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: firefox
+- client-fingerprint: random
   name: 🇮🇹 Italy | [*CIDR]-(重名1)
   network: grpc
   port: 9881
@@ -5176,13 +5161,13 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: ios
+- client-fingerprint: chrome
   name: 🇮🇹 Italy | [*CIDR]-(重名2)
   network: grpc
   port: 9881
   reality-opts:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-    short-id: aa
+    short-id: aabb
   server: 45.132.176.225
   servername: dl.google.com
   sni: dl.google.com
@@ -5190,13 +5175,13 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: random
+- client-fingerprint: edge
   name: 🇮🇹 Italy | [*CIDR]-(重名3)
   network: grpc
   port: 9881
   reality-opts:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-    short-id: aa
+    short-id: aabb
   server: 45.132.176.225
   servername: dl.google.com
   sni: dl.google.com
@@ -5204,13 +5189,13 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: safari
+- client-fingerprint: firefox
   name: 🇮🇹 Italy | [*CIDR]-(重名4)
   network: grpc
   port: 9881
   reality-opts:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-    short-id: aa
+    short-id: aabb
   server: 45.132.176.225
   servername: dl.google.com
   sni: dl.google.com
@@ -5218,7 +5203,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: chrome
+- client-fingerprint: ios
   name: 🇮🇹 Italy | [*CIDR]-(重名5)
   network: grpc
   port: 9881
@@ -5232,36 +5217,8 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: ios
-  name: 🇮🇹 Italy | [*CIDR]-(重名6)
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-    short-id: aabb
-  server: 45.132.176.225
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: qq
-  name: 🇮🇹 Italy | [*CIDR]-(重名7)
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
-    short-id: aabb
-  server: 45.132.176.225
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
 - client-fingerprint: safari
-  name: 🇮🇹 Italy | [*CIDR]-(重名8)
+  name: 🇮🇹 Italy | [*CIDR]-(重名6)
   network: grpc
   port: 9881
   reality-opts:
@@ -5288,7 +5245,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: edge
+- client-fingerprint: random
   name: 🇳🇴 Norway | [*CIDR]-(重名1)
   network: grpc
   port: 9881
@@ -5302,7 +5259,7 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: firefox
+- client-fingerprint: safari
   name: 🇳🇴 Norway | [*CIDR]-(重名2)
   network: grpc
   port: 9881
@@ -5316,131 +5273,65 @@ proxies:
   type: vless
   udp: true
   uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: ios
-  name: 🇳🇴 Norway | [*CIDR]-(重名3)
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  server: 176.108.252.139
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: random
-  name: 🇳🇴 Norway | [*CIDR]-(重名4)
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  server: 176.108.252.139
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: safari
-  name: 🇳🇴 Norway | [*CIDR]-(重名5)
-  network: grpc
-  port: 9881
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-    short-id: aabb
-  server: 176.108.252.139
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
 - client-fingerprint: firefox
-  name: 🇵🇱 Poland [*CIDR]
-  network: grpc
-  port: 9892
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  server: 45.132.176.190
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: ios
-  name: 🇵🇱 Poland [*CIDR]-(重名1)
-  network: grpc
-  port: 9892
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  server: 45.132.176.190
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: qq
-  name: 🇵🇱 Poland [*CIDR]-(重名2)
-  network: grpc
-  port: 9892
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  server: 45.132.176.190
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: random
-  name: 🇵🇱 Poland [*CIDR]-(重名3)
-  network: grpc
-  port: 9892
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  server: 45.132.176.190
-  servername: dl.google.com
-  sni: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland [*CIDR]-(重名4)
-  network: raw
-  port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  sni: quatro.lmstream.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland [*CIDR]-(重名5)
-  network: raw
-  port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  sni: quatro.lmstream.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 🇵🇱 Poland | [*CIDR]
+  network: grpc
+  port: 9892
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  server: 45.132.176.190
+  servername: dl.google.com
+  sni: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: ios
+  name: 🇵🇱 Poland | [*CIDR]-(重名1)
+  network: grpc
+  port: 9892
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  server: 45.132.176.190
+  servername: dl.google.com
+  sni: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: qq
+  name: 🇵🇱 Poland | [*CIDR]-(重名2)
+  network: grpc
+  port: 9892
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  server: 45.132.176.190
+  servername: dl.google.com
+  sni: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: random
+  name: 🇵🇱 Poland | [*CIDR]-(重名3)
+  network: grpc
+  port: 9892
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  server: 45.132.176.190
+  servername: dl.google.com
+  sni: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇵🇱 Poland | [*CIDR]-(重名4)
   network: raw
   port: 443
   server: 31.131.251.17
@@ -5452,7 +5343,19 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR]-(重名1)
+  name: 🇵🇱 Poland | [*CIDR]-(重名5)
+  network: raw
+  port: 443
+  server: 31.131.251.17
+  servername: quatro.lmstream.org
+  sni: quatro.lmstream.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇵🇱 Poland | [*CIDR]-(重名6)
   network: raw
   port: 443
   server: 31.131.251.17
@@ -5464,7 +5367,7 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR]-(重名2)
+  name: 🇵🇱 Poland | [*CIDR]-(重名7)
   network: raw
   port: 443
   server: 31.131.251.17
@@ -5476,8 +5379,8 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: chrome
   flow: xtls-rprx-vision-udp443
-  name: 🇵🇱 Poland | [*CIDR]-(重名3)
-  network: tcp
+  name: 🇵🇱 Poland | [*CIDR]-(重名8)
+  network: raw
   port: 443
   server: 31.131.251.17
   servername: quatro.lmstream.org
@@ -5488,8 +5391,8 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision-udp443
-  name: 🇵🇱 Poland | [*CIDR]-(重名4)
-  network: tcp
+  name: 🇵🇱 Poland | [*CIDR]-(重名9)
+  network: raw
   port: 443
   server: 31.131.251.17
   servername: quatro.lmstream.org
@@ -5500,8 +5403,8 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: ios
   flow: xtls-rprx-vision-udp443
-  name: 🇵🇱 Poland | [*CIDR]-(重名5)
-  network: tcp
+  name: 🇵🇱 Poland | [*CIDR]-(重名10)
+  network: raw
   port: 443
   server: 31.131.251.17
   servername: quatro.lmstream.org
@@ -5512,8 +5415,8 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: qq
   flow: xtls-rprx-vision-udp443
-  name: 🇵🇱 Poland | [*CIDR]-(重名6)
-  network: tcp
+  name: 🇵🇱 Poland | [*CIDR]-(重名11)
+  network: raw
   port: 443
   server: 31.131.251.17
   servername: quatro.lmstream.org
@@ -5524,8 +5427,8 @@ proxies:
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
 - client-fingerprint: safari
   flow: xtls-rprx-vision-udp443
-  name: 🇵🇱 Poland | [*CIDR]-(重名7)
-  network: tcp
+  name: 🇵🇱 Poland | [*CIDR]-(重名12)
+  network: raw
   port: 443
   server: 31.131.251.17
   servername: quatro.lmstream.org
@@ -5534,7 +5437,7 @@ proxies:
   type: vless
   udp: true
   uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
-- client-fingerprint: chrome
+- client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland | [*CIDR] VK
   network: tcp
@@ -5549,7 +5452,7 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: edge
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland | [*CIDR] VK-(重名1)
   network: tcp
@@ -5564,7 +5467,7 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: firefox
+- client-fingerprint: ios
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland | [*CIDR] VK-(重名2)
   network: tcp
@@ -5579,69 +5482,9 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: ios
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland | [*CIDR] VK-(重名3)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名4)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名5)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名6)
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名7)
   network: raw
   port: 443
   reality-opts:
@@ -5655,96 +5498,6 @@ proxies:
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
 - client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名8)
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名9)
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名10)
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名11)
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名12)
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇵🇱 Poland | [*CIDR] VK-(重名13)
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 90.156.218.163
-  servername: eh.vk.ru
-  sni: eh.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: safari
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland [*CIDR] VK
   network: tcp
@@ -5759,7 +5512,7 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: edge
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland [*CIDR] VK-(重名1)
   network: tcp
@@ -5774,7 +5527,7 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: firefox
+- client-fingerprint: edge
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland [*CIDR] VK-(重名2)
   network: tcp
@@ -5789,10 +5542,10 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-- client-fingerprint: ios
+- client-fingerprint: random
   flow: xtls-rprx-vision
   name: 🇵🇱 Poland [*CIDR] VK-(重名3)
-  network: tcp
+  network: raw
   port: 443
   reality-opts:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
@@ -5804,6 +5557,36 @@ proxies:
   type: vless
   udp: true
   uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇵🇱 Poland [*CIDR] VK-(重名4)
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  server: 90.156.218.163
+  servername: eh.vk.ru
+  sni: eh.vk.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+- client-fingerprint: safari
+  name: 🇪🇸 Spain [*CIDR]
+  network: tcp
+  port: 25535
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+    spider-x: /
+  server: es2.h1cloud.net
+  servername: www.microsoft.com
+  sni: www.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
 - client-fingerprint: firefox
   name: 🇪🇸 Spain | [*CIDR]
   network: tcp
@@ -5819,7 +5602,7 @@ proxies:
   type: vless
   udp: true
   uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-- client-fingerprint: safari
+- client-fingerprint: ios
   name: 🇪🇸 Spain | [*CIDR]-(重名1)
   network: tcp
   port: 25535
@@ -5834,37 +5617,7 @@ proxies:
   type: vless
   udp: true
   uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇸🇪 Sweden | 🌐 | [*CIDR]
-  network: tcp
-  port: 4444
-  reality-opts:
-    public-key: i3F_hP7yc9VpcUC2Vn1oAqLyW3hZayGdTybl-VnWdz0
-    short-id: 02827ef87f4a23c0
-  server: 188.225.36.154
-  servername: s3.yandexcloud.net
-  sni: s3.yandexcloud.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: d91dc97c-a09b-40fa-9da0-a3d1729f7427
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇸🇪 Sweden | 🌐 | [*CIDR]-(重名1)
-  network: tcp
-  port: 4444
-  reality-opts:
-    public-key: i3F_hP7yc9VpcUC2Vn1oAqLyW3hZayGdTybl-VnWdz0
-    short-id: 02827ef87f4a23c0
-  server: 188.225.36.154
-  servername: s3.yandexcloud.net
-  sni: s3.yandexcloud.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: d91dc97c-a09b-40fa-9da0-a3d1729f7427
-- client-fingerprint: edge
+- client-fingerprint: chrome
   name: 🇳🇱 The Netherlands | [*CIDR] VK
   network: ws
   port: 443
@@ -5875,7 +5628,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: ios
+- client-fingerprint: edge
   name: 🇳🇱 The Netherlands | [*CIDR] VK-(重名1)
   network: ws
   port: 443
@@ -5886,7 +5639,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: qq
+- client-fingerprint: firefox
   name: 🇳🇱 The Netherlands | [*CIDR] VK-(重名2)
   network: ws
   port: 443
@@ -5897,7 +5650,40 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: chrome
+- client-fingerprint: ios
+  name: 🇳🇱 The Netherlands | [*CIDR] VK-(重名3)
+  network: ws
+  port: 443
+  server: 37.139.42.221
+  servername: apis.stroymatdv.cc
+  sni: apis.stroymatdv.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+- client-fingerprint: edge
+  name: 🇳🇱 The Netherlands | [*CIDR] VK-(重名4)
+  network: ws
+  port: 443
+  server: apis.stroymatdv.cc
+  servername: apis.stroymatdv.cc
+  sni: apis.stroymatdv.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+- client-fingerprint: firefox
+  name: 🇳🇱 The Netherlands | [*CIDR] VK-(重名5)
+  network: ws
+  port: 443
+  server: apis.stroymatdv.cc
+  servername: apis.stroymatdv.cc
+  sni: apis.stroymatdv.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
+- client-fingerprint: qq
   name: 🇳🇱 The Netherlands [*CIDR] VK
   network: ws
   port: 443
@@ -5908,7 +5694,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: firefox
+- client-fingerprint: random
   name: 🇳🇱 The Netherlands [*CIDR] VK-(重名1)
   network: ws
   port: 443
@@ -5919,7 +5705,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: random
+- client-fingerprint: safari
   name: 🇳🇱 The Netherlands [*CIDR] VK-(重名2)
   network: ws
   port: 443
@@ -5930,18 +5716,18 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: safari
+- client-fingerprint: android
   name: 🇳🇱 The Netherlands [*CIDR] VK-(重名3)
   network: ws
   port: 443
-  server: 37.139.42.221
+  server: apis.stroymatdv.cc
   servername: apis.stroymatdv.cc
   sni: apis.stroymatdv.cc
   tls: true
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: android
+- client-fingerprint: ios
   name: 🇳🇱 The Netherlands [*CIDR] VK-(重名4)
   network: ws
   port: 443
@@ -5952,7 +5738,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: edge
+- client-fingerprint: qq
   name: 🇳🇱 The Netherlands [*CIDR] VK-(重名5)
   network: ws
   port: 443
@@ -5963,7 +5749,7 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: firefox
+- client-fingerprint: safari
   name: 🇳🇱 The Netherlands [*CIDR] VK-(重名6)
   network: ws
   port: 443
@@ -5974,80 +5760,19 @@ proxies:
   type: vless
   udp: true
   uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: qq
-  name: 🇳🇱 The Netherlands [*CIDR] VK-(重名7)
+- client-fingerprint: chrome
+  name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]
   network: ws
-  port: 443
-  server: apis.stroymatdv.cc
-  servername: apis.stroymatdv.cc
-  sni: apis.stroymatdv.cc
+  port: 8443
+  server: 194.58.109.206
+  servername: cf3.schzyc.cc.cd
+  sni: cf3.schzyc.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: safari
-  name: 🇳🇱 The Netherlands [*CIDR] VK-(重名8)
-  network: ws
-  port: 443
-  server: apis.stroymatdv.cc
-  servername: apis.stroymatdv.cc
-  sni: apis.stroymatdv.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3a8b464f-3701-40ed-b6b6-b612019e34c1
-- client-fingerprint: qq
-  name: 🇬🇧 United Kingdom [*CIDR]
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w
-    short-id: 6bc02f1c474260c3
-  server: 84.38.181.249
-  servername: open.spotify.com
-  sni: open.spotify.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
 - client-fingerprint: firefox
-  name: 🇬🇧 United Kingdom | [*CIDR]
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: pyZ0M0nE3aGx2UtCXNhajcneyCF4E8J3zpxhIKkQw0w
-    short-id: 6bc02f1c474260c3
-  server: 84.38.181.249
-  servername: open.spotify.com
-  sni: open.spotify.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
-- client-fingerprint: edge
-  name: 🇺🇸 United States | 🌐 | [*CIDR]
-  network: grpc
-  port: 443
-  server: 176.53.162.90
-  servername: trust-shell-qe1.cdn.cachefleet.com
-  sni: trust-shell-qe1.cdn.cachefleet.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5117ad77-cd9a-46e9-995b-b601b0b5e435
-- client-fingerprint: firefox
-  name: 🇺🇸 United States | 🌐 | [*CIDR]-(重名1)
-  network: grpc
-  port: 443
-  server: 176.53.162.90
-  servername: trust-shell-qe1.cdn.cachefleet.com
-  sni: trust-shell-qe1.cdn.cachefleet.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5117ad77-cd9a-46e9-995b-b601b0b5e435
-- client-fingerprint: qq
-  name: 🌐 Anycast-IP | 🇨🇦 🇷🇺 | [*CIDR]
+  name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名1)
   network: ws
   port: 8443
   server: 194.58.109.206
@@ -6058,6 +5783,28 @@ proxies:
   udp: true
   uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
 - client-fingerprint: android
+  name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名2)
+  network: ws
+  port: 8443
+  server: 194.58.109.206
+  servername: cf3.schzyc.cc.cd
+  sni: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+- client-fingerprint: safari
+  name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名3)
+  network: ws
+  port: 8443
+  server: 194.58.109.206
+  servername: cf3.schzyc.cc.cd
+  sni: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+- client-fingerprint: qq
   name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]
   network: ws
   port: 8443
@@ -6070,17 +5817,6 @@ proxies:
   uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
 - client-fingerprint: edge
   name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]-(重名1)
-  network: ws
-  port: 8443
-  server: 194.58.109.206
-  servername: cf3.schzyc.cc.cd
-  sni: cf3.schzyc.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-- client-fingerprint: chrome
-  name: 🌐 Anycast-IP | 🇨🇦 🇷🇺 [*CIDR]
   network: ws
   port: 8443
   server: 194.58.109.206
@@ -6107,18 +5843,6 @@ proxies:
 - name: 🇳🇱 The Netherlands | 🌐 [*CIDR]-(重名1)
   port: 23443
   server: QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN@e7q.internet-booster.online
-  skip-cert-verify: false
-  sni: null
-  type: hysteria2
-- name: 🇷🇺 Russia [*CIDR]
-  port: 443
-  server: f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org
-  skip-cert-verify: false
-  sni: null
-  type: hysteria2
-- name: 🇷🇺 Russia | 🌐 [*CIDR]
-  port: 443
-  server: f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org
   skip-cert-verify: false
   sni: null
   type: hysteria2
@@ -21084,25 +20808,26 @@ proxy-groups:
   - us|1cb5|puddincat07@Telegram
   - ro|aac9|puddincat07@Telegram
   - ro|5265|puddincat07@Telegram
+  - 美国+FDC芝加哥机房
+  - 美国纽约州水牛城+ColoCrossing数据中心
   - 美国+CloudFlare节点
+  - 法国+ovh
   - 美国+CloudFlare节点-(重名1)
-  - 香港+ThinkDream数据中心
-  - 立陶宛+V2CROSS.COM
-  - 江苏省南京市+腾讯云
   - 美国+CloudFlare节点-(重名2)
+  - 丹麦+V2CROSS.COM
   - 美国+CloudFlare节点-(重名3)
   - 美国+CloudFlare节点-(重名4)
-  - 芬兰+V2CROSS.COM
-  - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  - 澳大利亚+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
   - 阿富汗+V2CROSS.COM
+  - 芬兰+V2CROSS.COM
   - 美国+CloudFlare节点-(重名5)
+  - 德国+V2CROSS.COM
+  - 德国+V2CROSS.COM-(重名1)
   - 美国+CloudFlare节点-(重名6)
-  - 美国+俄勒冈州波特兰Amazon数据中心
   - 美国+CloudFlare节点-(重名7)
-  - 美国+CloudFlare节点-(重名8)
-  - 美国+CloudFlare节点-(重名9)
+  - 巴西+V2CROSS.COM
+  - 新加坡+Amazon数据中心
+  - 英国+V2CROSS.COM
+  - 美国+俄勒冈州波特兰Amazon数据中心
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -21569,29 +21294,25 @@ proxy-groups:
   - 🇫🇮 Finland [*CIDR]
   - 🇫🇮 Finland [*CIDR]-(重名1)
   - 🇫🇮 Finland [*CIDR]-(重名2)
-  - 🇫🇮 Finland [*CIDR]-(重名3)
   - 🇫🇮 Finland | [*CIDR]
-  - 🇫🇮 Finland | [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]
   - 🇫🇷 France [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]-(重名2)
   - 🇫🇷 France [*CIDR]-(重名3)
-  - 🇫🇷 France [*CIDR]-(重名4)
   - 🇫🇷 France | [*CIDR]
   - 🇫🇷 France | [*CIDR]-(重名1)
   - 🇫🇷 France | [*CIDR]-(重名2)
   - 🇫🇷 France | [*CIDR]-(重名3)
+  - 🇫🇷 France | [*CIDR]-(重名4)
+  - 🇫🇷 France | [*CIDR]-(重名5)
   - 🇩🇪 Germany | [*CIDR]
   - 🇩🇪 Germany | [*CIDR]-(重名1)
   - 🇩🇪 Germany | [*CIDR]-(重名2)
-  - 🇩🇪 Germany | [*CIDR]-(重名3)
-  - 🇩🇪 Germany | [*CIDR]-(重名4)
-  - 🇩🇪 Germany | [*CIDR]-(重名5)
-  - 🇩🇪 Germany | [*CIDR] VK
-  - 🇩🇪 Germany [*CIDR] VK
   - 🇮🇹 Italy [*CIDR]
   - 🇮🇹 Italy [*CIDR]-(重名1)
   - 🇮🇹 Italy [*CIDR]-(重名2)
+  - 🇮🇹 Italy [*CIDR]-(重名3)
+  - 🇮🇹 Italy [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]
   - 🇮🇹 Italy | [*CIDR]-(重名1)
   - 🇮🇹 Italy | [*CIDR]-(重名2)
@@ -21599,20 +21320,9 @@ proxy-groups:
   - 🇮🇹 Italy | [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]-(重名5)
   - 🇮🇹 Italy | [*CIDR]-(重名6)
-  - 🇮🇹 Italy | [*CIDR]-(重名7)
-  - 🇮🇹 Italy | [*CIDR]-(重名8)
   - 🇳🇴 Norway | [*CIDR]
   - 🇳🇴 Norway | [*CIDR]-(重名1)
   - 🇳🇴 Norway | [*CIDR]-(重名2)
-  - 🇳🇴 Norway | [*CIDR]-(重名3)
-  - 🇳🇴 Norway | [*CIDR]-(重名4)
-  - 🇳🇴 Norway | [*CIDR]-(重名5)
-  - 🇵🇱 Poland [*CIDR]
-  - 🇵🇱 Poland [*CIDR]-(重名1)
-  - 🇵🇱 Poland [*CIDR]-(重名2)
-  - 🇵🇱 Poland [*CIDR]-(重名3)
-  - 🇵🇱 Poland [*CIDR]-(重名4)
-  - 🇵🇱 Poland [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]
   - 🇵🇱 Poland | [*CIDR]-(重名1)
   - 🇵🇱 Poland | [*CIDR]-(重名2)
@@ -21621,31 +21331,29 @@ proxy-groups:
   - 🇵🇱 Poland | [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]-(重名6)
   - 🇵🇱 Poland | [*CIDR]-(重名7)
+  - 🇵🇱 Poland | [*CIDR]-(重名8)
+  - 🇵🇱 Poland | [*CIDR]-(重名9)
+  - 🇵🇱 Poland | [*CIDR]-(重名10)
+  - 🇵🇱 Poland | [*CIDR]-(重名11)
+  - 🇵🇱 Poland | [*CIDR]-(重名12)
   - 🇵🇱 Poland | [*CIDR] VK
   - 🇵🇱 Poland | [*CIDR] VK-(重名1)
   - 🇵🇱 Poland | [*CIDR] VK-(重名2)
   - 🇵🇱 Poland | [*CIDR] VK-(重名3)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名4)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名5)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名6)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名7)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名8)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名9)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名10)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名11)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名12)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名13)
   - 🇵🇱 Poland [*CIDR] VK
   - 🇵🇱 Poland [*CIDR] VK-(重名1)
   - 🇵🇱 Poland [*CIDR] VK-(重名2)
   - 🇵🇱 Poland [*CIDR] VK-(重名3)
+  - 🇵🇱 Poland [*CIDR] VK-(重名4)
+  - 🇪🇸 Spain [*CIDR]
   - 🇪🇸 Spain | [*CIDR]
   - 🇪🇸 Spain | [*CIDR]-(重名1)
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名2)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名3)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名4)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名2)
@@ -21653,21 +21361,15 @@ proxy-groups:
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名4)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名6)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名7)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名8)
-  - 🇬🇧 United Kingdom [*CIDR]
-  - 🇬🇧 United Kingdom | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名1)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名2)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名3)
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]-(重名1)
-  - 🇷🇺 Russia [*CIDR]
-  - 🇷🇺 Russia | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | [*CIDR]
   - 🇪🇪
   - 🇫🇮
@@ -23227,25 +22929,26 @@ proxy-groups:
   - us|1cb5|puddincat07@Telegram
   - ro|aac9|puddincat07@Telegram
   - ro|5265|puddincat07@Telegram
+  - 美国+FDC芝加哥机房
+  - 美国纽约州水牛城+ColoCrossing数据中心
   - 美国+CloudFlare节点
+  - 法国+ovh
   - 美国+CloudFlare节点-(重名1)
-  - 香港+ThinkDream数据中心
-  - 立陶宛+V2CROSS.COM
-  - 江苏省南京市+腾讯云
   - 美国+CloudFlare节点-(重名2)
+  - 丹麦+V2CROSS.COM
   - 美国+CloudFlare节点-(重名3)
   - 美国+CloudFlare节点-(重名4)
-  - 芬兰+V2CROSS.COM
-  - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  - 澳大利亚+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
   - 阿富汗+V2CROSS.COM
+  - 芬兰+V2CROSS.COM
   - 美国+CloudFlare节点-(重名5)
+  - 德国+V2CROSS.COM
+  - 德国+V2CROSS.COM-(重名1)
   - 美国+CloudFlare节点-(重名6)
-  - 美国+俄勒冈州波特兰Amazon数据中心
   - 美国+CloudFlare节点-(重名7)
-  - 美国+CloudFlare节点-(重名8)
-  - 美国+CloudFlare节点-(重名9)
+  - 巴西+V2CROSS.COM
+  - 新加坡+Amazon数据中心
+  - 英国+V2CROSS.COM
+  - 美国+俄勒冈州波特兰Amazon数据中心
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -23712,29 +23415,25 @@ proxy-groups:
   - 🇫🇮 Finland [*CIDR]
   - 🇫🇮 Finland [*CIDR]-(重名1)
   - 🇫🇮 Finland [*CIDR]-(重名2)
-  - 🇫🇮 Finland [*CIDR]-(重名3)
   - 🇫🇮 Finland | [*CIDR]
-  - 🇫🇮 Finland | [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]
   - 🇫🇷 France [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]-(重名2)
   - 🇫🇷 France [*CIDR]-(重名3)
-  - 🇫🇷 France [*CIDR]-(重名4)
   - 🇫🇷 France | [*CIDR]
   - 🇫🇷 France | [*CIDR]-(重名1)
   - 🇫🇷 France | [*CIDR]-(重名2)
   - 🇫🇷 France | [*CIDR]-(重名3)
+  - 🇫🇷 France | [*CIDR]-(重名4)
+  - 🇫🇷 France | [*CIDR]-(重名5)
   - 🇩🇪 Germany | [*CIDR]
   - 🇩🇪 Germany | [*CIDR]-(重名1)
   - 🇩🇪 Germany | [*CIDR]-(重名2)
-  - 🇩🇪 Germany | [*CIDR]-(重名3)
-  - 🇩🇪 Germany | [*CIDR]-(重名4)
-  - 🇩🇪 Germany | [*CIDR]-(重名5)
-  - 🇩🇪 Germany | [*CIDR] VK
-  - 🇩🇪 Germany [*CIDR] VK
   - 🇮🇹 Italy [*CIDR]
   - 🇮🇹 Italy [*CIDR]-(重名1)
   - 🇮🇹 Italy [*CIDR]-(重名2)
+  - 🇮🇹 Italy [*CIDR]-(重名3)
+  - 🇮🇹 Italy [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]
   - 🇮🇹 Italy | [*CIDR]-(重名1)
   - 🇮🇹 Italy | [*CIDR]-(重名2)
@@ -23742,20 +23441,9 @@ proxy-groups:
   - 🇮🇹 Italy | [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]-(重名5)
   - 🇮🇹 Italy | [*CIDR]-(重名6)
-  - 🇮🇹 Italy | [*CIDR]-(重名7)
-  - 🇮🇹 Italy | [*CIDR]-(重名8)
   - 🇳🇴 Norway | [*CIDR]
   - 🇳🇴 Norway | [*CIDR]-(重名1)
   - 🇳🇴 Norway | [*CIDR]-(重名2)
-  - 🇳🇴 Norway | [*CIDR]-(重名3)
-  - 🇳🇴 Norway | [*CIDR]-(重名4)
-  - 🇳🇴 Norway | [*CIDR]-(重名5)
-  - 🇵🇱 Poland [*CIDR]
-  - 🇵🇱 Poland [*CIDR]-(重名1)
-  - 🇵🇱 Poland [*CIDR]-(重名2)
-  - 🇵🇱 Poland [*CIDR]-(重名3)
-  - 🇵🇱 Poland [*CIDR]-(重名4)
-  - 🇵🇱 Poland [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]
   - 🇵🇱 Poland | [*CIDR]-(重名1)
   - 🇵🇱 Poland | [*CIDR]-(重名2)
@@ -23764,31 +23452,29 @@ proxy-groups:
   - 🇵🇱 Poland | [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]-(重名6)
   - 🇵🇱 Poland | [*CIDR]-(重名7)
+  - 🇵🇱 Poland | [*CIDR]-(重名8)
+  - 🇵🇱 Poland | [*CIDR]-(重名9)
+  - 🇵🇱 Poland | [*CIDR]-(重名10)
+  - 🇵🇱 Poland | [*CIDR]-(重名11)
+  - 🇵🇱 Poland | [*CIDR]-(重名12)
   - 🇵🇱 Poland | [*CIDR] VK
   - 🇵🇱 Poland | [*CIDR] VK-(重名1)
   - 🇵🇱 Poland | [*CIDR] VK-(重名2)
   - 🇵🇱 Poland | [*CIDR] VK-(重名3)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名4)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名5)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名6)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名7)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名8)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名9)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名10)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名11)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名12)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名13)
   - 🇵🇱 Poland [*CIDR] VK
   - 🇵🇱 Poland [*CIDR] VK-(重名1)
   - 🇵🇱 Poland [*CIDR] VK-(重名2)
   - 🇵🇱 Poland [*CIDR] VK-(重名3)
+  - 🇵🇱 Poland [*CIDR] VK-(重名4)
+  - 🇪🇸 Spain [*CIDR]
   - 🇪🇸 Spain | [*CIDR]
   - 🇪🇸 Spain | [*CIDR]-(重名1)
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名2)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名3)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名4)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名2)
@@ -23796,21 +23482,15 @@ proxy-groups:
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名4)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名6)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名7)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名8)
-  - 🇬🇧 United Kingdom [*CIDR]
-  - 🇬🇧 United Kingdom | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名1)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名2)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名3)
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]-(重名1)
-  - 🇷🇺 Russia [*CIDR]
-  - 🇷🇺 Russia | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | [*CIDR]
   - 🇪🇪
   - 🇫🇮
@@ -25371,25 +25051,26 @@ proxy-groups:
   - us|1cb5|puddincat07@Telegram
   - ro|aac9|puddincat07@Telegram
   - ro|5265|puddincat07@Telegram
+  - 美国+FDC芝加哥机房
+  - 美国纽约州水牛城+ColoCrossing数据中心
   - 美国+CloudFlare节点
+  - 法国+ovh
   - 美国+CloudFlare节点-(重名1)
-  - 香港+ThinkDream数据中心
-  - 立陶宛+V2CROSS.COM
-  - 江苏省南京市+腾讯云
   - 美国+CloudFlare节点-(重名2)
+  - 丹麦+V2CROSS.COM
   - 美国+CloudFlare节点-(重名3)
   - 美国+CloudFlare节点-(重名4)
-  - 芬兰+V2CROSS.COM
-  - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  - 澳大利亚+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
   - 阿富汗+V2CROSS.COM
+  - 芬兰+V2CROSS.COM
   - 美国+CloudFlare节点-(重名5)
+  - 德国+V2CROSS.COM
+  - 德国+V2CROSS.COM-(重名1)
   - 美国+CloudFlare节点-(重名6)
-  - 美国+俄勒冈州波特兰Amazon数据中心
   - 美国+CloudFlare节点-(重名7)
-  - 美国+CloudFlare节点-(重名8)
-  - 美国+CloudFlare节点-(重名9)
+  - 巴西+V2CROSS.COM
+  - 新加坡+Amazon数据中心
+  - 英国+V2CROSS.COM
+  - 美国+俄勒冈州波特兰Amazon数据中心
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -25856,29 +25537,25 @@ proxy-groups:
   - 🇫🇮 Finland [*CIDR]
   - 🇫🇮 Finland [*CIDR]-(重名1)
   - 🇫🇮 Finland [*CIDR]-(重名2)
-  - 🇫🇮 Finland [*CIDR]-(重名3)
   - 🇫🇮 Finland | [*CIDR]
-  - 🇫🇮 Finland | [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]
   - 🇫🇷 France [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]-(重名2)
   - 🇫🇷 France [*CIDR]-(重名3)
-  - 🇫🇷 France [*CIDR]-(重名4)
   - 🇫🇷 France | [*CIDR]
   - 🇫🇷 France | [*CIDR]-(重名1)
   - 🇫🇷 France | [*CIDR]-(重名2)
   - 🇫🇷 France | [*CIDR]-(重名3)
+  - 🇫🇷 France | [*CIDR]-(重名4)
+  - 🇫🇷 France | [*CIDR]-(重名5)
   - 🇩🇪 Germany | [*CIDR]
   - 🇩🇪 Germany | [*CIDR]-(重名1)
   - 🇩🇪 Germany | [*CIDR]-(重名2)
-  - 🇩🇪 Germany | [*CIDR]-(重名3)
-  - 🇩🇪 Germany | [*CIDR]-(重名4)
-  - 🇩🇪 Germany | [*CIDR]-(重名5)
-  - 🇩🇪 Germany | [*CIDR] VK
-  - 🇩🇪 Germany [*CIDR] VK
   - 🇮🇹 Italy [*CIDR]
   - 🇮🇹 Italy [*CIDR]-(重名1)
   - 🇮🇹 Italy [*CIDR]-(重名2)
+  - 🇮🇹 Italy [*CIDR]-(重名3)
+  - 🇮🇹 Italy [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]
   - 🇮🇹 Italy | [*CIDR]-(重名1)
   - 🇮🇹 Italy | [*CIDR]-(重名2)
@@ -25886,20 +25563,9 @@ proxy-groups:
   - 🇮🇹 Italy | [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]-(重名5)
   - 🇮🇹 Italy | [*CIDR]-(重名6)
-  - 🇮🇹 Italy | [*CIDR]-(重名7)
-  - 🇮🇹 Italy | [*CIDR]-(重名8)
   - 🇳🇴 Norway | [*CIDR]
   - 🇳🇴 Norway | [*CIDR]-(重名1)
   - 🇳🇴 Norway | [*CIDR]-(重名2)
-  - 🇳🇴 Norway | [*CIDR]-(重名3)
-  - 🇳🇴 Norway | [*CIDR]-(重名4)
-  - 🇳🇴 Norway | [*CIDR]-(重名5)
-  - 🇵🇱 Poland [*CIDR]
-  - 🇵🇱 Poland [*CIDR]-(重名1)
-  - 🇵🇱 Poland [*CIDR]-(重名2)
-  - 🇵🇱 Poland [*CIDR]-(重名3)
-  - 🇵🇱 Poland [*CIDR]-(重名4)
-  - 🇵🇱 Poland [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]
   - 🇵🇱 Poland | [*CIDR]-(重名1)
   - 🇵🇱 Poland | [*CIDR]-(重名2)
@@ -25908,31 +25574,29 @@ proxy-groups:
   - 🇵🇱 Poland | [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]-(重名6)
   - 🇵🇱 Poland | [*CIDR]-(重名7)
+  - 🇵🇱 Poland | [*CIDR]-(重名8)
+  - 🇵🇱 Poland | [*CIDR]-(重名9)
+  - 🇵🇱 Poland | [*CIDR]-(重名10)
+  - 🇵🇱 Poland | [*CIDR]-(重名11)
+  - 🇵🇱 Poland | [*CIDR]-(重名12)
   - 🇵🇱 Poland | [*CIDR] VK
   - 🇵🇱 Poland | [*CIDR] VK-(重名1)
   - 🇵🇱 Poland | [*CIDR] VK-(重名2)
   - 🇵🇱 Poland | [*CIDR] VK-(重名3)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名4)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名5)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名6)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名7)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名8)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名9)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名10)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名11)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名12)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名13)
   - 🇵🇱 Poland [*CIDR] VK
   - 🇵🇱 Poland [*CIDR] VK-(重名1)
   - 🇵🇱 Poland [*CIDR] VK-(重名2)
   - 🇵🇱 Poland [*CIDR] VK-(重名3)
+  - 🇵🇱 Poland [*CIDR] VK-(重名4)
+  - 🇪🇸 Spain [*CIDR]
   - 🇪🇸 Spain | [*CIDR]
   - 🇪🇸 Spain | [*CIDR]-(重名1)
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名2)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名3)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名4)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名2)
@@ -25940,21 +25604,15 @@ proxy-groups:
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名4)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名6)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名7)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名8)
-  - 🇬🇧 United Kingdom [*CIDR]
-  - 🇬🇧 United Kingdom | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名1)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名2)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名3)
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]-(重名1)
-  - 🇷🇺 Russia [*CIDR]
-  - 🇷🇺 Russia | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | [*CIDR]
   - 🇪🇪
   - 🇫🇮
@@ -27515,25 +27173,26 @@ proxy-groups:
   - us|1cb5|puddincat07@Telegram
   - ro|aac9|puddincat07@Telegram
   - ro|5265|puddincat07@Telegram
+  - 美国+FDC芝加哥机房
+  - 美国纽约州水牛城+ColoCrossing数据中心
   - 美国+CloudFlare节点
+  - 法国+ovh
   - 美国+CloudFlare节点-(重名1)
-  - 香港+ThinkDream数据中心
-  - 立陶宛+V2CROSS.COM
-  - 江苏省南京市+腾讯云
   - 美国+CloudFlare节点-(重名2)
+  - 丹麦+V2CROSS.COM
   - 美国+CloudFlare节点-(重名3)
   - 美国+CloudFlare节点-(重名4)
-  - 芬兰+V2CROSS.COM
-  - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-  - 澳大利亚+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
   - 阿富汗+V2CROSS.COM
+  - 芬兰+V2CROSS.COM
   - 美国+CloudFlare节点-(重名5)
+  - 德国+V2CROSS.COM
+  - 德国+V2CROSS.COM-(重名1)
   - 美国+CloudFlare节点-(重名6)
-  - 美国+俄勒冈州波特兰Amazon数据中心
   - 美国+CloudFlare节点-(重名7)
-  - 美国+CloudFlare节点-(重名8)
-  - 美国+CloudFlare节点-(重名9)
+  - 巴西+V2CROSS.COM
+  - 新加坡+Amazon数据中心
+  - 英国+V2CROSS.COM
+  - 美国+俄勒冈州波特兰Amazon数据中心
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -28000,29 +27659,25 @@ proxy-groups:
   - 🇫🇮 Finland [*CIDR]
   - 🇫🇮 Finland [*CIDR]-(重名1)
   - 🇫🇮 Finland [*CIDR]-(重名2)
-  - 🇫🇮 Finland [*CIDR]-(重名3)
   - 🇫🇮 Finland | [*CIDR]
-  - 🇫🇮 Finland | [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]
   - 🇫🇷 France [*CIDR]-(重名1)
   - 🇫🇷 France [*CIDR]-(重名2)
   - 🇫🇷 France [*CIDR]-(重名3)
-  - 🇫🇷 France [*CIDR]-(重名4)
   - 🇫🇷 France | [*CIDR]
   - 🇫🇷 France | [*CIDR]-(重名1)
   - 🇫🇷 France | [*CIDR]-(重名2)
   - 🇫🇷 France | [*CIDR]-(重名3)
+  - 🇫🇷 France | [*CIDR]-(重名4)
+  - 🇫🇷 France | [*CIDR]-(重名5)
   - 🇩🇪 Germany | [*CIDR]
   - 🇩🇪 Germany | [*CIDR]-(重名1)
   - 🇩🇪 Germany | [*CIDR]-(重名2)
-  - 🇩🇪 Germany | [*CIDR]-(重名3)
-  - 🇩🇪 Germany | [*CIDR]-(重名4)
-  - 🇩🇪 Germany | [*CIDR]-(重名5)
-  - 🇩🇪 Germany | [*CIDR] VK
-  - 🇩🇪 Germany [*CIDR] VK
   - 🇮🇹 Italy [*CIDR]
   - 🇮🇹 Italy [*CIDR]-(重名1)
   - 🇮🇹 Italy [*CIDR]-(重名2)
+  - 🇮🇹 Italy [*CIDR]-(重名3)
+  - 🇮🇹 Italy [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]
   - 🇮🇹 Italy | [*CIDR]-(重名1)
   - 🇮🇹 Italy | [*CIDR]-(重名2)
@@ -28030,20 +27685,9 @@ proxy-groups:
   - 🇮🇹 Italy | [*CIDR]-(重名4)
   - 🇮🇹 Italy | [*CIDR]-(重名5)
   - 🇮🇹 Italy | [*CIDR]-(重名6)
-  - 🇮🇹 Italy | [*CIDR]-(重名7)
-  - 🇮🇹 Italy | [*CIDR]-(重名8)
   - 🇳🇴 Norway | [*CIDR]
   - 🇳🇴 Norway | [*CIDR]-(重名1)
   - 🇳🇴 Norway | [*CIDR]-(重名2)
-  - 🇳🇴 Norway | [*CIDR]-(重名3)
-  - 🇳🇴 Norway | [*CIDR]-(重名4)
-  - 🇳🇴 Norway | [*CIDR]-(重名5)
-  - 🇵🇱 Poland [*CIDR]
-  - 🇵🇱 Poland [*CIDR]-(重名1)
-  - 🇵🇱 Poland [*CIDR]-(重名2)
-  - 🇵🇱 Poland [*CIDR]-(重名3)
-  - 🇵🇱 Poland [*CIDR]-(重名4)
-  - 🇵🇱 Poland [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]
   - 🇵🇱 Poland | [*CIDR]-(重名1)
   - 🇵🇱 Poland | [*CIDR]-(重名2)
@@ -28052,31 +27696,29 @@ proxy-groups:
   - 🇵🇱 Poland | [*CIDR]-(重名5)
   - 🇵🇱 Poland | [*CIDR]-(重名6)
   - 🇵🇱 Poland | [*CIDR]-(重名7)
+  - 🇵🇱 Poland | [*CIDR]-(重名8)
+  - 🇵🇱 Poland | [*CIDR]-(重名9)
+  - 🇵🇱 Poland | [*CIDR]-(重名10)
+  - 🇵🇱 Poland | [*CIDR]-(重名11)
+  - 🇵🇱 Poland | [*CIDR]-(重名12)
   - 🇵🇱 Poland | [*CIDR] VK
   - 🇵🇱 Poland | [*CIDR] VK-(重名1)
   - 🇵🇱 Poland | [*CIDR] VK-(重名2)
   - 🇵🇱 Poland | [*CIDR] VK-(重名3)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名4)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名5)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名6)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名7)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名8)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名9)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名10)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名11)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名12)
-  - 🇵🇱 Poland | [*CIDR] VK-(重名13)
   - 🇵🇱 Poland [*CIDR] VK
   - 🇵🇱 Poland [*CIDR] VK-(重名1)
   - 🇵🇱 Poland [*CIDR] VK-(重名2)
   - 🇵🇱 Poland [*CIDR] VK-(重名3)
+  - 🇵🇱 Poland [*CIDR] VK-(重名4)
+  - 🇪🇸 Spain [*CIDR]
   - 🇪🇸 Spain | [*CIDR]
   - 🇪🇸 Spain | [*CIDR]-(重名1)
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]
-  - 🇸🇪 Sweden | 🌐 | [*CIDR]-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands | [*CIDR] VK-(重名2)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名3)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名4)
+  - 🇳🇱 The Netherlands | [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名1)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名2)
@@ -28084,21 +27726,15 @@ proxy-groups:
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名4)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名5)
   - 🇳🇱 The Netherlands [*CIDR] VK-(重名6)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名7)
-  - 🇳🇱 The Netherlands [*CIDR] VK-(重名8)
-  - 🇬🇧 United Kingdom [*CIDR]
-  - 🇬🇧 United Kingdom | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]
-  - 🇺🇸 United States | 🌐 | [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名1)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名2)
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [*CIDR]-(重名3)
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 [*CIDR]-(重名1)
-  - 🌐 Anycast-IP | 🇨🇦 🇷🇺 [*CIDR]
   - 🌐 Anycast-IP | 🇫🇮 🇬🇧 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | 🌐 [*CIDR]-(重名1)
-  - 🇷🇺 Russia [*CIDR]
-  - 🇷🇺 Russia | 🌐 [*CIDR]
   - 🇳🇱 The Netherlands | [*CIDR]
   - 🇪🇪
   - 🇫🇮
@@ -29660,18 +29296,17 @@ proxy-groups:
   lazy: true
   name: 美国AI节点
   proxies:
+  - 美国+FDC芝加哥机房
+  - 美国纽约州水牛城+ColoCrossing数据中心
   - 美国+CloudFlare节点
   - 美国+CloudFlare节点-(重名1)
   - 美国+CloudFlare节点-(重名2)
   - 美国+CloudFlare节点-(重名3)
   - 美国+CloudFlare节点-(重名4)
-  - 美国+纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - 美国+CloudFlare节点-(重名5)
   - 美国+CloudFlare节点-(重名6)
-  - 美国+俄勒冈州波特兰Amazon数据中心
   - 美国+CloudFlare节点-(重名7)
-  - 美国+CloudFlare节点-(重名8)
-  - 美国+CloudFlare节点-(重名9)
+  - 美国+俄勒冈州波特兰Amazon数据中心
   - US VLESS-196 | free-nodes
   - US VLESS-451 | free-nodes
   - US VLESS-454 | free-nodes
