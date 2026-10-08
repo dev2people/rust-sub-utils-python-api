@@ -5,11 +5,11 @@ services:
     ports:
       - "18189:8189"
     volumes:
-      - data:/app/data
+      # - data:/app/data
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TZ=Asia/Shanghai
-      - DATABASE_URL=sqlite:///app/data/sub.db?mode=rwc
+      - DATABASE_URL=sqlite:///sub.db?mode=rwc
       - RUST_LOG=info
       - JS_TEMPLATE_DIR=./config/js_templates
       - API_AUTH_KEY=epYeobK02c6ee9ELuCkPAplZYyqAjOJN
