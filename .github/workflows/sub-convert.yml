@@ -109,8 +109,9 @@ jobs:
       - name: 停止本地容器服务 (如果已启动)
         if: always() && steps.prepare-backend.outputs.use_remote == 'false'
         run: |
+          # 打印运行日志
+          docker compose logs --tail 10000
           docker compose down
-
       - name: 提交并推送到 GitHub 仓库
         run: |
           git config --global user.name "github-actions[bot]"

@@ -16,7 +16,7 @@ services:
     depends_on:
       - clashsub-tools-clashspeedtest
 
-  clashsub-tools-clashspeedtest:
+  clash-speedtest:
     restart: unless-stopped
     image: dev2people/clashsub-tools-clashspeedtest-v0
     container_name: clash-speedtest
