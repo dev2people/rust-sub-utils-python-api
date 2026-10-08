@@ -14,7 +14,7 @@ services:
       - JS_TEMPLATE_DIR=./config/js_templates
       - API_AUTH_KEY=epYeobK02c6ee9ELuCkPAplZYyqAjOJN
     depends_on:
-      - clashsub-tools-clashspeedtest
+      - clash-speedtest
 
   clash-speedtest:
     restart: unless-stopped
