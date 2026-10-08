@@ -1,0 +1,137 @@
+name: Auto Update Subscriptions
+
+on:
+  # 定时触发：默认每 6 小时自动运行一次 (UTC 0:00, 6:00, 12:00, 18:00，对应北京时间 8:00, 14:00, 20:00, 2:00)
+  schedule:
+    - cron: '0 */6 * * *'
+
+  # 支持手动在 GitHub Actions 页面一键触发
+  workflow_dispatch:
+    inputs:
+      target:
+        description: '转换目标格式'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - clash
+          - v2rayn
+      force_commit:
+        description: '即使无变动也强制提交'
+        required: false
+        default: false
+        type: boolean
+
+  # 当 input 目录下的源、脚本或服务配置发生变动时触发
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'input/**'
+      - 'py-run-script.py'
+      - '.github/workflows/**'
+
+concurrency:
+  group: sub-update-job
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-subscription:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: 安装 Python 依赖
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install requests
+          fi
+
+      - name: 准备后端服务环境
+        id: prepare-backend
+        run: |
+          # 如果在 GitHub Secrets 中配置了 SUB_API_URL，则直接连接外部服务端；
+          # 否则在 Action Runner 本地通过 docker compose 启动后端转换服务与测速服务
+          if [ -n "${{ secrets.SUB_API_URL }}" ]; then
+            echo "检测到自定义环境变量 SUB_API_URL，使用远程服务..."
+            echo "use_remote=true" >> $GITHUB_OUTPUT
+            echo "api_url=${{ secrets.SUB_API_URL }}" >> $GITHUB_OUTPUT
+            echo "api_key=${{ secrets.SUB_API_KEY || 'epYeobK02c6ee9ELuCkPAplZYyqAjOJN' }}" >> $GITHUB_OUTPUT
+          else
+            echo "未配置 SUB_API_URL，使用本地 docker-compose 服务..."
+            echo "use_remote=false" >> $GITHUB_OUTPUT
+            echo "api_url=http://127.0.0.1:18189/sub-api/custom/convert" >> $GITHUB_OUTPUT
+            echo "api_key=epYeobK02c6ee9ELuCkPAplZYyqAjOJN" >> $GITHUB_OUTPUT
+
+            # 启动本地 docker compose
+            docker compose up -d
+
+            echo "等待本地后端服务就绪..."
+            timeout 60 bash -c 'until curl -s http://127.0.0.1:18189/ > /dev/null; do sleep 2; done' || {
+              echo "后端服务启动超时，输出容器日志:"
+              docker compose logs
+              exit 1
+            }
+            echo "后端服务已成功就绪！"
+          fi
+
+      - name: 执行订阅转换并生成文件
+        run: |
+          TARGET="${{ inputs.target || 'all' }}"
+          API_URL="${{ steps.prepare-backend.outputs.api_url }}"
+          API_KEY="${{ steps.prepare-backend.outputs.api_key }}"
+
+          echo "运行转换任务: URL=${API_URL}, 格式=${TARGET}"
+          python py-run-script.py \
+            --url "${API_URL}" \
+            --key "${API_KEY}" \
+            --target "${TARGET}" \
+            --timeout 120
+
+      - name: 停止本地容器服务 (如果已启动)
+        if: always() && steps.prepare-backend.outputs.use_remote == 'false'
+        run: |
+          docker compose down
+
+      - name: 提交并推送到 GitHub 仓库
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 确保 output 目录变更加入暂存
+          git add output/
+
+          FORCE_COMMIT="${{ inputs.force_commit || false }}"
+          
+          if git diff --staged --quiet && [ "$FORCE_COMMIT" != "true" ]; then
+            echo "订阅文件无变化，跳过提交。"
+          else
+            # 使用北京时间生成提交信息
+            CURRENT_TIME=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+            git commit -m "chore(sub): 自动更新订阅配置 [${CURRENT_TIME}] [skip ci]"
+            
+            # 推送变动，遇到并发冲突时自动重试 rebase
+            for i in {1..3}; do
+              git pull --rebase origin main || git pull --rebase origin master || true
+              git push && break || sleep 3
+            done
+            echo "✅ 新的订阅文件已成功更新并提交到仓库！"
+          fi

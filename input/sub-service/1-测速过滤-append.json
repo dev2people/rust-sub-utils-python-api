@@ -1,0 +1,6 @@
+{
+    name: "测速过滤-append",
+    type: "sub-service",
+    url:"http://clash-speedtest:8080/speedtest_append_name",
+    token: "epYeobK02c6ee9ELuCkPAplZYyqAjOJN",
+}
