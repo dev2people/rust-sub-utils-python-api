@@ -249,7 +249,7 @@ function getProxyGroupConfigs() {
   // 公共参数
   const base = {
     url: TEST_URL,
-    timeout: 1500,          // 测试超时 (ms)
+    timeout: 5000,          // 测试超时 (ms)
     lazy: true,             // 仅在被使用时才测试
     "disable-udp": false,
   };
