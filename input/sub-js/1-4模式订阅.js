@@ -242,55 +242,39 @@ function filterProxyNodes(proxies) {
  * @returns {object} 包含各种代理组类型通用配置的对象
  */
 function getProxyGroupConfigs() {
-  // const globalTestUrl = "https://www.gstatic.com/generate_204";
-  const globalTestUrl = "https://www.google.com/generate_204";
-  // const globalTestUrl = "https://cp.cloudflare.com/generate_204";
-  //多少秒测试一次
-  const globalTestInterval = 120;
-  const fallbackTestInterval = 30;
-  //节点切换容忍度，单位ms
-  const globalTestTolerance = 200;
-  //测试超时时间，单位ms
-  const globalTestTimeout = 1500;
-  //是否减少测试
-  const globalTestLazy = true;
-  //是否关闭UDP
-  const globalTestDisableUdp = false;
-
+  // 可选测试地址(按需切换)
+  // "https://www.gstatic.com/generate_204"
+  // "https://cp.cloudflare.com/generate_204"
+  const TEST_URL = "https://www.google.com/generate_204";
+  // 公共参数
+  const base = {
+    url: TEST_URL,
+    timeout: 1500,          // 测试超时 (ms)
+    lazy: true,             // 仅在被使用时才测试
+    "disable-udp": false,
+  };
+  // 各类型独有参数
+  const INTERVAL_DEFAULT = 120;   // url-test 测试间隔 (s)
+  const INTERVAL_FAST = 30;       // fallback / load-balance 测试间隔 (s)
+  const TOLERANCE = 200;          // 切换容忍度 (ms)
   return {
-    handSelectConfig: {
-      type: "select",
-      url: globalTestUrl,
-      timeout: globalTestTimeout,
-      lazy: globalTestLazy,
-      "disable-udp": globalTestDisableUdp,
-    },
+    handSelectConfig: { ...base, type: "select" },
     urlTestConfig: {
+      ...base,
       type: "url-test",
-      url: globalTestUrl,
-      interval: globalTestInterval,
-      tolerance: globalTestTolerance,
-      timeout: globalTestTimeout,
-      lazy: globalTestLazy,
-      "disable-udp": globalTestDisableUdp,
+      interval: INTERVAL_DEFAULT,
+      tolerance: TOLERANCE,
     },
     fallbackTestConfig: {
+      ...base,
       type: "fallback",
-      url: globalTestUrl,
-      interval: fallbackTestInterval,
-      tolerance: globalTestTolerance,
-      timeout: globalTestTimeout,
-      lazy: globalTestLazy,
-      "disable-udp": globalTestDisableUdp,
+      interval: INTERVAL_FAST,
     },
     loadBalanceConfig: {
+      ...base,
       type: "load-balance",
-      url: globalTestUrl,
-      interval: globalTestTolerance,
-      timeout: globalTestTimeout,
-      lazy: globalTestLazy,
+      interval: INTERVAL_FAST,
       strategy: "consistent-hashing",
-      "disable-udp": globalTestDisableUdp,
     },
   };
 }
