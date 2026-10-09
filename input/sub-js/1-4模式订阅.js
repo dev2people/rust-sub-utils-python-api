@@ -175,7 +175,7 @@ function main(configJsonStr) {
   // 4. 添加和合并规则
   const configWithRules = addAndMergeRules(finalConfig);
   // 5. 关闭ipv6
-  configWithRules["ipv6"] = 'false';
+  configWithRules["ipv6"] = false;
   return JSON.stringify(configWithRules, null, 2); // 使用2个空格美化输出
 }
 /**
