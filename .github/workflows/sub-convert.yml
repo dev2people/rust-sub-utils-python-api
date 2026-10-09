@@ -104,7 +104,7 @@ jobs:
             --url "${API_URL}" \
             --key "${API_KEY}" \
             --target "${TARGET}" \
-            --timeout 600
+            --timeout 1200
 
       - name: 停止本地容器服务 (如果已启动)
         if: always() && steps.prepare-backend.outputs.use_remote == 'false'
