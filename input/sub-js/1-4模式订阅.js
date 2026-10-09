@@ -363,7 +363,7 @@ function addProxyGroups(configObj) {
     },
     {
       name: "美国AI节点",
-      ...handSelectConfig,
+      ...fallbackTestConfig,
       proxies: [...usAiProxyNodeNames],
     },
   ];

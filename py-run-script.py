@@ -153,7 +153,7 @@ def load_services() -> list:
     return services
 
 
-def run_convert(api_base: str, api_key: str, target: str = "all", timeout: int = 120):
+def run_convert(api_base: str, api_key: str, target: str = "all", timeout: int = 500):
     """组装请求调用后台转换 API 并保存结果"""
     # 构造 API URL（支持传入基础地址或完整路径）
     if api_base.endswith("/sub-api/custom/convert") or api_base.endswith("/api/custom/convert"):
@@ -244,8 +244,8 @@ def main():
     parser.add_argument(
         "--timeout",
         type=int,
-        default=300,
-        help="请求超时时间秒数 (默认: 300)",
+        default=500,
+        help="请求超时时间秒数 (默认: 500)",
     )
     args = parser.parse_args()
 
