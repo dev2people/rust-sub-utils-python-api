@@ -253,60 +253,51 @@ proxies:
   type: hysteria2
 - name: 美国+CloudFlare节点
   network: ws
-  port: 2052
-  server: freesocks.work
-  servername: freesocks.work
-  sni: freesocks.work
+  port: 8080
+  server: 104.21.11.152
+  servername: server6.diwir81236.workers.dev
+  sni: server6.diwir81236.workers.dev
   tls: false
   type: vless
   udp: true
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: d7a8ae86-9904-4f71-8fe4-d754ded610d7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 美国+V2CROSS.COM
+  name: 英国+V2CROSS.COM
   network: tcp
-  port: 443
+  port: 2063
   reality-opts:
-    public-key: -BN9yCN0ECqxOPoJOan1-CIMEYc5e7wdJwaeDxsUM20
-  server: sundaylanzgem.site
-  servername: sundaylanzgem.site
-  sni: sundaylanzgem.site
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  server: pl-waw.dontblockmepls.com
+  servername: rusbid.de
+  sni: rusbid.de
   tls: true
   type: vless
   udp: true
-  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 美国+纽约州纽约BuyVM
+  name: 芬兰+V2CROSS.COM
   network: tcp
-  port: 57233
-  server: s554.csgfw.top
-  servername: u695098u8fad5a44s552.gogocs.xyz
-  sni: u695098u8fad5a44s552.gogocs.xyz
+  port: 10829
+  server: s1244.csgfw.top
+  servername: u695098ueb8953b4s861.gogocs.xyz
+  sni: u695098ueb8953b4s861.gogocs.xyz
   tls: true
   type: vless
   udp: true
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- cipher: chacha20-ietf-poly1305
-  name: 新加坡+Amazon数据中心
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 13.212.141.33
-  type: ss
-- client-fingerprint: qq
-  name: 美国+V2CROSS.COM-(重名1)
-  network: tcp
-  port: 35302
-  reality-opts:
-    public-key: DtVBvGoI2P-aAqhOA3_v06MMaHBk0CFVBpAOUTtv4RY
-    short-id: 14153cf0dcda62ed
-  server: 6fac.n9ne.com.tr
-  servername: n9ne.com.tr
-  sni: n9ne.com.tr
+- client-fingerprint: chrome
+  name: 美国+CloudFlare节点-(重名1)
+  network: ws
+  port: 443
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  sni: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: e81e1114-99b5-4fea-aafc-84426e845a14
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: 美国+加利福尼亚州洛杉矶
@@ -319,42 +310,6 @@ proxies:
   type: vless
   udp: true
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 俄罗斯+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 9J5SrrBYJ4Tz_zpSM3n-EWuin5jmUqEI8LJ5htsGZy8
-  server: 147.45.63.64
-  servername: cloudflare.com
-  sni: cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 579b72a5-785a-4fb6-ac64-1de2f8c49601
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 亚太地区+V2CROSS.COM
-  network: tcp
-  port: 10829
-  server: 103.173.155.212
-  servername: u695098u4d99b056s591.csgfw.top
-  sni: u695098u4d99b056s591.csgfw.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- name: 美国+CloudFlare节点-(重名1)
-  network: ws
-  port: 443
-  server: 162.159.135.234
-  servername: snip.edgeoneai.cc.cd
-  sni: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 巴西+V2CROSS.COM
@@ -371,102 +326,68 @@ proxies:
   udp: true
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 俄罗斯+V2CROSS.COM-(重名1)
-  network: tcp
-  port: 443
+  name: 俄罗斯+V2CROSS.COM
+  network: grpc
+  port: 7443
   reality-opts:
-    public-key: xV6-xT1D05e6ARRKCGLxfMeBnE_BSS3CiFUTtsdntmg
-    short-id: 6088b605366523fc
-    spider-x: /
-  server: 193.233.216.27
-  servername: www.lenovo.com
-  sni: www.lenovo.com
+    public-key: EuRD8QK-uL3uQqnQ_IC2Ybj7v8feXRxCiEaXYjhHx3c
+  server: 217.26.30.125
+  servername: yahoo.com
+  sni: yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 95621b8e-5cf7-4123-9df4-38d903054a1b
-- name: 芬兰+V2CROSS.COM
-  network: tcp
-  port: 2053
-  server: test.keoplentuio.xyz
+  uuid: 4f466863-b6c5-4fdc-955e-7a601c18d89a
+- name: 美国+CloudFlare节点-(重名2)
+  network: ws
+  port: 8880
+  server: 104.21.55.229
+  servername: autumn-cloud-ab5e.229-601.workers.dev
+  sni: autumn-cloud-ab5e.229-601.workers.dev
   tls: false
   type: vless
   udp: true
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 美国+CloudFlare节点-(重名2)
+  uuid: f55a75a7-5aa6-4df7-814a-99da0edb5c86
+- client-fingerprint: chrome
+  name: 美国+CloudFlare节点-(重名3)
   network: ws
   port: 443
-  server: saas.sin.fan
-  servername: snip.edgeoneai.cc.cd
-  sni: snip.edgeoneai.cc.cd
+  server: vl.cocopon.top
+  servername: vl.cocopon.top
+  sni: vl.cocopon.top
   tls: true
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-- client-fingerprint: firefox
+  uuid: 44f06ad1-982c-4e03-849f-899c1c8dc14f
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 俄罗斯+V2CROSS.COM-(重名2)
+  name: 北美地区+V2CROSS.COM
   network: tcp
   port: 443
-  server: 212.192.15.191
-  servername: u695098u54d73951s298.kukuss.top
-  sni: u695098u54d73951s298.kukuss.top
+  reality-opts:
+    public-key: cYmfBXsDs1sqQ2ZBW3xsFroB7JHV_ufFT5m7ab7STnU
+    short-id: 9ab513f082d4c6e1
+    spider-x: /
+  server: 23.134.76.212
+  servername: us.dark-bit.cc
+  sni: us.dark-bit.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3cd1770d-f285-4cf4-8979-e9dd8f4be36a
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 美国+加利福尼亚州洛杉矶-(重名1)
+  network: tcp
+  port: 10829
+  server: s849.kukuss.top
+  servername: u695098u99a93686s848.gogocs.xyz
+  sni: u695098u99a93686s848.gogocs.xyz
   tls: true
   type: vless
   udp: true
   uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- name: 美国+Alabanza
-  network: tcp
-  port: 2025
-  server: 65.109.212.195
-  tls: false
-  type: vless
-  udp: true
-  uuid: afd1fb0c-7c51-4c4c-a1ed-07e8493030d2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 英国+V2CROSS.COM
-  network: tcp
-  port: 2063
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  server: pl-waw.dontblockmepls.com
-  servername: rusbid.de
-  sni: rusbid.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-- client-fingerprint: chrome
-  name: 美国+V2CROSS.COM-(重名2)
-  network: tcp
-  port: 35306
-  reality-opts:
-    public-key: NHurz_4uphCHgIbrnr3HRzfsq-LmIaPaUopWwHNJ8HU
-    short-id: ceb4496ab0cc7a9f
-  server: f0b7.n9ne.com.tr
-  servername: n9ne.com.tr
-  sni: n9ne.com.tr
-  tls: true
-  type: vless
-  udp: true
-  uuid: e81e1114-99b5-4fea-aafc-84426e845a14
-- client-fingerprint: chrome
-  name: 英国+V2CROSS.COM-(重名1)
-  network: tcp
-  port: 33303
-  reality-opts:
-    public-key: p6B2mBPsdjNOY64TTplBXRcsrh3sL0SzqVlbyCRR8Us
-    short-id: dd4ef91df2f00d60
-  server: 382d.n9ne.com.tr
-  servername: n9ne.com.tr
-  sni: n9ne.com.tr
-  tls: true
-  type: vless
-  udp: true
-  uuid: e81e1114-99b5-4fea-aafc-84426e845a14
-- client-fingerprint: chrome
+- client-fingerprint: randomized
   flow: xtls-rprx-vision
   name: 巴西+V2CROSS.COM-(重名1)
   network: tcp
@@ -474,21 +395,54 @@ proxies:
   reality-opts:
     public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
     short-id: 4be4110078ebed4a
-  server: fl1.balancer.vbuste-bot.com
-  servername: fl1.balancer.vbuste-bot.com
-  sni: fl1.balancer.vbuste-bot.com
+  server: 177.1.187.251
+  servername: de2.srv.vbuste.ru
+  sni: de2.srv.vbuste.ru
   tls: true
   type: vless
   udp: true
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-- name: 北京市+百度电信节点
-  network: tcp
-  port: 52683
-  server: jp.sofast.live
+- name: 美国+CloudFlare节点-(重名4)
+  network: ws
+  port: 8880
+  server: deepl.com
   tls: false
   type: vless
   udp: true
-  uuid: 399b6b23-cc40-4831-a494-61948e2df133
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+- name: 土耳其+V2CROSS.COM
+  port: 2060
+  server: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be@rb.mangshe.xyz
+  skip-cert-verify: false
+  sni: null
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 芬兰+V2CROSS.COM-(重名1)
+  network: tcp
+  port: 10829
+  server: 193.142.59.97
+  servername: u695098ueb8953b4s861.gogocs.xyz
+  sni: u695098ueb8953b4s861.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 英国+V2CROSS.COM-(重名1)
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  server: ee.edgemedia.lol
+  servername: ya.ru
+  sni: ya.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ff3db5a-5f41-4f25-a8a4-7fbf00f1c319
 - cipher: 2022-blake3-chacha20-poly1305
   name: 未知 SS-01 | free-nodes
   password: +n5JF83I0RydYOC0f8bFw2GEKIAkYDaSSTq0epm0JDM=
@@ -41102,25 +41056,21 @@ proxy-groups:
   - jp|a89b|puddincat07@Telegram
   - gb|f8b8|puddincat07@Telegram
   - 美国+CloudFlare节点
-  - 美国+V2CROSS.COM
-  - 美国+纽约州纽约BuyVM
-  - 新加坡+Amazon数据中心
-  - 美国+V2CROSS.COM-(重名1)
-  - 美国+加利福尼亚州洛杉矶
-  - 俄罗斯+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名1)
-  - 巴西+V2CROSS.COM
-  - 俄罗斯+V2CROSS.COM-(重名1)
-  - 芬兰+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名2)
-  - 俄罗斯+V2CROSS.COM-(重名2)
-  - 美国+Alabanza
   - 英国+V2CROSS.COM
-  - 美国+V2CROSS.COM-(重名2)
-  - 英国+V2CROSS.COM-(重名1)
+  - 芬兰+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名1)
+  - 美国+加利福尼亚州洛杉矶
+  - 巴西+V2CROSS.COM
+  - 俄罗斯+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名2)
+  - 美国+CloudFlare节点-(重名3)
+  - 北美地区+V2CROSS.COM
+  - 美国+加利福尼亚州洛杉矶-(重名1)
   - 巴西+V2CROSS.COM-(重名1)
-  - 北京市+百度电信节点
+  - 美国+CloudFlare节点-(重名4)
+  - 土耳其+V2CROSS.COM
+  - 芬兰+V2CROSS.COM-(重名1)
+  - 英国+V2CROSS.COM-(重名1)
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -45389,25 +45339,21 @@ proxy-groups:
   - jp|a89b|puddincat07@Telegram
   - gb|f8b8|puddincat07@Telegram
   - 美国+CloudFlare节点
-  - 美国+V2CROSS.COM
-  - 美国+纽约州纽约BuyVM
-  - 新加坡+Amazon数据中心
-  - 美国+V2CROSS.COM-(重名1)
-  - 美国+加利福尼亚州洛杉矶
-  - 俄罗斯+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名1)
-  - 巴西+V2CROSS.COM
-  - 俄罗斯+V2CROSS.COM-(重名1)
-  - 芬兰+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名2)
-  - 俄罗斯+V2CROSS.COM-(重名2)
-  - 美国+Alabanza
   - 英国+V2CROSS.COM
-  - 美国+V2CROSS.COM-(重名2)
-  - 英国+V2CROSS.COM-(重名1)
+  - 芬兰+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名1)
+  - 美国+加利福尼亚州洛杉矶
+  - 巴西+V2CROSS.COM
+  - 俄罗斯+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名2)
+  - 美国+CloudFlare节点-(重名3)
+  - 北美地区+V2CROSS.COM
+  - 美国+加利福尼亚州洛杉矶-(重名1)
   - 巴西+V2CROSS.COM-(重名1)
-  - 北京市+百度电信节点
+  - 美国+CloudFlare节点-(重名4)
+  - 土耳其+V2CROSS.COM
+  - 芬兰+V2CROSS.COM-(重名1)
+  - 英国+V2CROSS.COM-(重名1)
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -49677,25 +49623,21 @@ proxy-groups:
   - jp|a89b|puddincat07@Telegram
   - gb|f8b8|puddincat07@Telegram
   - 美国+CloudFlare节点
-  - 美国+V2CROSS.COM
-  - 美国+纽约州纽约BuyVM
-  - 新加坡+Amazon数据中心
-  - 美国+V2CROSS.COM-(重名1)
-  - 美国+加利福尼亚州洛杉矶
-  - 俄罗斯+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名1)
-  - 巴西+V2CROSS.COM
-  - 俄罗斯+V2CROSS.COM-(重名1)
-  - 芬兰+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名2)
-  - 俄罗斯+V2CROSS.COM-(重名2)
-  - 美国+Alabanza
   - 英国+V2CROSS.COM
-  - 美国+V2CROSS.COM-(重名2)
-  - 英国+V2CROSS.COM-(重名1)
+  - 芬兰+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名1)
+  - 美国+加利福尼亚州洛杉矶
+  - 巴西+V2CROSS.COM
+  - 俄罗斯+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名2)
+  - 美国+CloudFlare节点-(重名3)
+  - 北美地区+V2CROSS.COM
+  - 美国+加利福尼亚州洛杉矶-(重名1)
   - 巴西+V2CROSS.COM-(重名1)
-  - 北京市+百度电信节点
+  - 美国+CloudFlare节点-(重名4)
+  - 土耳其+V2CROSS.COM
+  - 芬兰+V2CROSS.COM-(重名1)
+  - 英国+V2CROSS.COM-(重名1)
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -53965,25 +53907,21 @@ proxy-groups:
   - jp|a89b|puddincat07@Telegram
   - gb|f8b8|puddincat07@Telegram
   - 美国+CloudFlare节点
-  - 美国+V2CROSS.COM
-  - 美国+纽约州纽约BuyVM
-  - 新加坡+Amazon数据中心
-  - 美国+V2CROSS.COM-(重名1)
-  - 美国+加利福尼亚州洛杉矶
-  - 俄罗斯+V2CROSS.COM
-  - 亚太地区+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名1)
-  - 巴西+V2CROSS.COM
-  - 俄罗斯+V2CROSS.COM-(重名1)
-  - 芬兰+V2CROSS.COM
-  - 美国+CloudFlare节点-(重名2)
-  - 俄罗斯+V2CROSS.COM-(重名2)
-  - 美国+Alabanza
   - 英国+V2CROSS.COM
-  - 美国+V2CROSS.COM-(重名2)
-  - 英国+V2CROSS.COM-(重名1)
+  - 芬兰+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名1)
+  - 美国+加利福尼亚州洛杉矶
+  - 巴西+V2CROSS.COM
+  - 俄罗斯+V2CROSS.COM
+  - 美国+CloudFlare节点-(重名2)
+  - 美国+CloudFlare节点-(重名3)
+  - 北美地区+V2CROSS.COM
+  - 美国+加利福尼亚州洛杉矶-(重名1)
   - 巴西+V2CROSS.COM-(重名1)
-  - 北京市+百度电信节点
+  - 美国+CloudFlare节点-(重名4)
+  - 土耳其+V2CROSS.COM
+  - 芬兰+V2CROSS.COM-(重名1)
+  - 英国+V2CROSS.COM-(重名1)
   - 未知 SS-01 | free-nodes
   - 未知 SS-02 | free-nodes
   - 未知 SS-03 | free-nodes
@@ -58255,14 +58193,12 @@ proxy-groups:
   name: 美国AI节点
   proxies:
   - 美国+CloudFlare节点
-  - 美国+V2CROSS.COM
-  - 美国+纽约州纽约BuyVM
-  - 美国+V2CROSS.COM-(重名1)
-  - 美国+加利福尼亚州洛杉矶
   - 美国+CloudFlare节点-(重名1)
+  - 美国+加利福尼亚州洛杉矶
   - 美国+CloudFlare节点-(重名2)
-  - 美国+Alabanza
-  - 美国+V2CROSS.COM-(重名2)
+  - 美国+CloudFlare节点-(重名3)
+  - 美国+加利福尼亚州洛杉矶-(重名1)
+  - 美国+CloudFlare节点-(重名4)
   - US VLESS-224 | free-nodes
   - US VLESS-490 | free-nodes
   - US VLESS-493 | free-nodes
