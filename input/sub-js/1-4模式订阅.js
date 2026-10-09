@@ -247,9 +247,9 @@ function getProxyGroupConfigs() {
   const globalTestInterval = 120;
   const fallbackTestInterval = 30;
   //节点切换容忍度，单位ms
-  const globalTestTolerance = 150;
+  const globalTestTolerance = 200;
   //测试超时时间，单位ms
-  const globalTestTimeout = 5000;
+  const globalTestTimeout = 1500;
   //是否减少测试
   const globalTestLazy = true;
   //是否关闭UDP
