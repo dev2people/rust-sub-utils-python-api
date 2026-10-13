@@ -101,23 +101,41 @@ dns:
 hosts: {}
 ipv6: false
 proxies:
-- name: 日本|JP|🇯🇵|4113ms|🇯🇵JP_59|193KB/s|A004-260618
-  password: UX82473651
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 美国|US|🇺🇸|4023ms|🇺🇸US_62|456KB/s|A004-260618
+  network: raw
   port: 443
-  server: allowed-poodle.rooster465.autos
-  sni: allowed-poodle.rooster465.autos
-  type: trojan
-- name: 日本|JP|🇯🇵|3019ms|🇯🇵JP_25|439KB/s|A004-260618
-  password: UX82473651
+  reality-opts:
+    public-key: wGU52D9ma5glfMZBlecIb1nVcBdG1nKsBtSXxMTttCA
+    short-id: 844a9f695e96785e
+  server: 5.161.243.170
+  servername: ajax.aspnetcdn.com
+  sni: ajax.aspnetcdn.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 荷兰|NL|🇳🇱|4886ms|🇳🇱NL_59|211KB/s|A004-260618
+  network: tcp
   port: 443
-  server: 52.192.45.137
-  sni: promoted-rattler.rooster465.autos
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|3867ms|🇳🇱NL_14|269KB/s|A004-260618
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.197
+  reality-opts:
+    public-key: -ADm-o6yFYNcLgLQgHguNWDWrH9xcRwQyqLMoVuajgo
+    short-id: 8944e69f4aadde1e
+  server: 89.105.195.41
+  servername: azxcc.kovsh.lol
+  sni: azxcc.kovsh.lol
+  tls: true
+  type: vless
+  udp: true
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+- cipher: aes-256-cfb
+  name: 英国|GB|🇬🇧|2173ms|🇬🇧GB_7|342KB/s|A004-260618
+  password: amazonskr05
+  port: 443
+  server: 3.10.142.119
   type: ss
 proxy-groups:
 - name: 代理模式
@@ -131,9 +149,9 @@ proxy-groups:
   lazy: true
   name: 手工选择
   proxies:
-  - 日本|JP|🇯🇵|4113ms|🇯🇵JP_59|193KB/s|A004-260618
-  - 日本|JP|🇯🇵|3019ms|🇯🇵JP_25|439KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3867ms|🇳🇱NL_14|269KB/s|A004-260618
+  - 美国|US|🇺🇸|4023ms|🇺🇸US_62|456KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4886ms|🇳🇱NL_59|211KB/s|A004-260618
+  - 英国|GB|🇬🇧|2173ms|🇬🇧GB_7|342KB/s|A004-260618
   timeout: 5000
   type: select
   url: https://www.google.com/generate_204
@@ -142,9 +160,9 @@ proxy-groups:
   lazy: true
   name: 超时自动换
   proxies:
-  - 日本|JP|🇯🇵|4113ms|🇯🇵JP_59|193KB/s|A004-260618
-  - 日本|JP|🇯🇵|3019ms|🇯🇵JP_25|439KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3867ms|🇳🇱NL_14|269KB/s|A004-260618
+  - 美国|US|🇺🇸|4023ms|🇺🇸US_62|456KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4886ms|🇳🇱NL_59|211KB/s|A004-260618
+  - 英国|GB|🇬🇧|2173ms|🇬🇧GB_7|342KB/s|A004-260618
   timeout: 5000
   type: fallback
   url: https://www.google.com/generate_204
@@ -153,9 +171,9 @@ proxy-groups:
   lazy: true
   name: 速度最快
   proxies:
-  - 日本|JP|🇯🇵|4113ms|🇯🇵JP_59|193KB/s|A004-260618
-  - 日本|JP|🇯🇵|3019ms|🇯🇵JP_25|439KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3867ms|🇳🇱NL_14|269KB/s|A004-260618
+  - 美国|US|🇺🇸|4023ms|🇺🇸US_62|456KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4886ms|🇳🇱NL_59|211KB/s|A004-260618
+  - 英国|GB|🇬🇧|2173ms|🇬🇧GB_7|342KB/s|A004-260618
   timeout: 5000
   tolerance: 200
   type: url-test
@@ -165,9 +183,9 @@ proxy-groups:
   lazy: true
   name: 负载均衡
   proxies:
-  - 日本|JP|🇯🇵|4113ms|🇯🇵JP_59|193KB/s|A004-260618
-  - 日本|JP|🇯🇵|3019ms|🇯🇵JP_25|439KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3867ms|🇳🇱NL_14|269KB/s|A004-260618
+  - 美国|US|🇺🇸|4023ms|🇺🇸US_62|456KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4886ms|🇳🇱NL_59|211KB/s|A004-260618
+  - 英国|GB|🇬🇧|2173ms|🇬🇧GB_7|342KB/s|A004-260618
   strategy: consistent-hashing
   timeout: 5000
   type: load-balance
@@ -195,7 +213,7 @@ proxy-groups:
   lazy: true
   name: 美国AI节点
   proxies:
-  - DIRECT
+  - 美国|US|🇺🇸|4023ms|🇺🇸US_62|456KB/s|A004-260618
   - 代理模式
   - DIRECT
   timeout: 5000
