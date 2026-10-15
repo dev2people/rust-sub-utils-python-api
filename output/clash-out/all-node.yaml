@@ -102,201 +102,107 @@ hosts: {}
 ipv6: false
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|2640ms|🇳🇱NL_11|215KB/s|B007-260618
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-- cipher: rc4-md5
-  name: 加拿大|CA|🇨🇦|2669ms|❓Other_24|211KB/s|A004-260618
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 137.184.174.93
-  type: ss
-- name: 意大利|IT|🇮🇹|2699ms|🇮🇹IT_5|231KB/s|A004-260618
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
-  servername: /?v2raynplus
-  sni: /?v2raynplus
-  tls: false
-  type: vless
-  udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|2751ms|🇳🇱NL_49|1.4MB/s|S004-260618
+  name: 荷兰|NL|🇳🇱|2488ms|🇳🇱NL_49|1.4MB/s|S004-260618
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.175
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 未知|IN|🏳️|2807ms|🇮🇳IN_6|66KB/s|A004-260618
-  network: ws
-  port: 80
-  server: 152.67.8.205
-  tls: false
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-- name: 芬兰|FI|🇫🇮|3113ms|❓Other_71|253KB/s|A004-260618
-  network: raw
-  port: 2052
-  server: edge10.cyrionflare.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 美国|US|🇺🇸|3113ms|🇺🇸US_32|594KB/s|A004-260618
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.95
-  servername: yahoo.com
-  sni: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - cipher: chacha20-ietf-poly1305
-  name: 未知|UNKNOWN|🏳️|3190ms|🇳🇱NL_33|229KB/s|B007-260618
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 193.29.139.147
-  type: ss
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: 荷兰|NL|🇳🇱|3405ms|🇳🇱NL_46|775KB/s|A001-260618
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 5tMM2VdgddmxOKhdNa3b7i_aXno1g-_61SzkppS2UXQ
-    short-id: f3c023cc
-  server: 2.27.71.53
-  servername: addons.mozilla.org
-  sni: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  name: 韩国|KR|🇰🇷|1956ms|🇰🇷KR_7|152KB/s|A004-260618
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-    short-id: 8685f8b4d9f4f51e
-  server: 34.22.111.30
-  servername: www.cloudflare.com
-  sni: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|2120ms|未知 SS-82 | free-nodes
+  name: 荷兰|NL|🇳🇱|2482ms|🇳🇱NL_20|946KB/s|A004-260618
   password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.159
+  port: 8080
+  server: 193.29.139.197
   type: ss
-- name: 美国|US|🇺🇸|2052ms|未知 VLESS-152 | free-nodes
-  network: tcp
-  port: 30006
-  server: 104.207.132.12
-  tls: false
-  type: vless
-  udp: true
-  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
-- name: 新加坡|SG|🇸🇬|3729ms|未知 TROJAN-131 | free-nodes
+- name: 韩国|KR|🇰🇷|2685ms|未知 TROJAN-129 | free-nodes
   password: UX82473651
   port: 443
-  server: musical-mouse.rooster465.autos
-  sni: musical-mouse.rooster465.autos
+  server: 3.34.131.153
+  sni: pretty-rat.rooster465.autos
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 法国|FR|🇫🇷|4126ms|🇫🇷
+  name: 韩国|KR|🇰🇷|2849ms|未知 VLESS-184 | free-nodes
   network: tcp
-  port: 443
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  sni: e3k67dwms3-51255166202-direct.tavafog.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e3k67dwms3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 芬兰|FI|🇫🇮|4364ms|❓Other_37|176KB/s|M002-260618
-  network: raw
-  port: 443
+  port: 2053
   reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 5a018643df03
-  server: 107.181.151.241
-  servername: www.microsoft.com
-  sni: www.microsoft.com
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  server: 47.80.19.173
+  servername: gateway.icloud.com
+  sni: gateway.icloud.com
   tls: true
   type: vless
   udp: true
-  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 香港|HK|🇭🇰|3265ms|巴西+V2CROSS.COM
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  server: 152.233.71.81
-  servername: brointelengence.com
-  sni: brointelengence.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 德国|DE|🇩🇪|2159ms|未知 VLESS-235 | free-nodes
-  network: tcp
-  port: 1984
-  reality-opts:
-    public-key: ikKnBJfcuPy1U0O3Cb71zv_G1liM5QcAYhR10A0Ech0
-    short-id: 0f00666a
-  server: 177.1.187.139
-  servername: ruori.ai
-  sni: ruori.ai
-  tls: true
-  type: vless
-  udp: true
-  uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
-- alterId: 0
-  cipher: auto
-  name: 澳大利亚|AU|🇦🇺|1256ms|🇸🇬SG_1|217KB/s|A004-260618
-  network: tcp
-  port: 18000
-  server: 149.88.23.202
-  tls: false
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+- cipher: aes-256-cfb
+  name: 西班牙|ES|🇪🇸|2973ms|🇪🇸ES_1|1.6MB/s|M001-260618
+  password: EXN3S3eQpjE7EJu8
+  port: 9027
+  server: 5.188.181.201
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|1698ms|🇳🇱NL_16|494KB/s|A004-260618
+  name: 荷兰|NL|🇳🇱|3255ms|🇳🇱NL_21|1.1MB/s
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 193.29.139.235
+  server: 82.38.31.35
+  type: ss
+- cipher: aes-256-cfb
+  name: 未知|LT|🏳️|3519ms|🇱🇹LT_1|1.4MB/s|A004-260618
+  password: y9VURyNzJWNRYEGQ
+  port: 9008
+  server: 195.238.126.20
+  type: ss
+- name: 韩国|KR|🇰🇷|3587ms|未知 TROJAN-132 | free-nodes
+  password: UX82473651
+  port: 443
+  server: central-jawfish.rooster465.autos
+  sni: central-jawfish.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国|US|🇺🇸|3597ms|❓Other_27|350KB/s|B007-260618
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.206
+  servername: fuck.rkn
+  sni: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: aes-256-gcm
+  name: 未知|TH|🏳️|3618ms|未知 SS-118 | free-nodes
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  port: 52351
+  server: pphfree2.mvpnpvpn.de5.net
   type: ss
 - cipher: aes-256-gcm
-  name: 俄罗斯|RU|🇷🇺|2188ms|🇷🇺RU_3|229KB/s|K001-260618
-  password: 994ccabf6f0950d6
-  port: 20111
-  server: 89.125.103.208
+  name: 未知|TH|🏳️|3666ms|未知 SS-116 | free-nodes
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  port: 52351
+  server: 103.107.52.106
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 法国|FR|🇫🇷|3404ms|🇫🇷FR_5|245KB/s|S004-260618
+  name: 德国|DE|🇩🇪|3763ms|🇩🇪DE_10|239KB/s|S001-260618
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 0fa4a0e2493392
+  server: defrnode.xyy123.bid
+  servername: p-y3-www-amazon-com-kalias.amazon.com
+  sni: p-y3-www-amazon-com-kalias.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 法国|FR|🇫🇷|3947ms|🇫🇷FR_5|245KB/s|S004-260618
   network: tcp
   port: 23576
   reality-opts:
@@ -309,21 +215,134 @@ proxies:
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|4248ms|🇳🇱NL_56|195KB/s|A004-260618
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.54
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 未知|PL|🏳️|3944ms|未知 VLESS-201 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  server: 177.1.192.74
+  servername: addons.mozilla.org
+  sni: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+- client-fingerprint: random
+  name: 德国|DE|🇩🇪|3964ms|未知 VLESS-311 | free-nodes
+  network: grpc
+  port: 8444
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  server: 178.17.57.33
+  servername: github.com
+  sni: github.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 芬兰|FI|🇫🇮|4316ms|🇫🇮FI_10|155KB/s|M002-260618
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 87f895f23064
+  server: server.slavkiti.monster
+  servername: www.techradar.com
+  sni: www.techradar.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
 - alterId: 0
   cipher: auto
-  name: 台湾|TW|🇹🇼|3488ms|未知 VMESS-546 | free-nodes
+  name: 澳大利亚|AU|🇦🇺|4321ms|🇺🇸US_8|248KB/s|C002-260622
+  network: raw
+  port: 18000
+  server: 38.91.107.49
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 台湾|TW|🇹🇼|4508ms|未知 VMESS-445 | free-nodes
   network: ws
   port: 443
   server: fujrdt.d6f54hd1j.cc
   tls: true
   type: vmess
   uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+- cipher: aes-256-gcm
+  name: 英国|GB|🇬🇧|4785ms|❓Other_7|227KB/s|A004-260618
+  password: g5h5jleTRSyO3Rk4
+  port: 443
+  server: 149.102.132.184
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 未知|UNKNOWN|🏳️|2471ms|🇺🇸US_54|278KB/s|C002-260622
+  network: tcp
+  port: 48111
+  server: 129.146.143.80
+  tls: false
+  type: vmess
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+- alterId: 0
+  cipher: auto
+  name: 澳大利亚|AU|🇦🇺|3569ms|❓Other_1|307KB/s|B007-260618
+  network: tcp
+  port: 18000
+  server: 84.17.41.2
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 荷兰|NL|🇳🇱|3072ms|未知 VLESS-237 | free-nodes
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  server: 31.77.114.114
+  servername: api.vk.me
+  sni: api.vk.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 法国|FR|🇫🇷|4093ms|❓Other_5|211KB/s|T001-260618
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  sni: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 美国|US|🇺🇸|2754ms|未知 TROJAN-127 | free-nodes
+  password: M7v%w11Se*
+  port: 443
+  server: 34.94.125.227
+  sni: mxlo.wsone.icu
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|2442ms|🇳🇱NL_8|327KB/s|A004-260618
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.175
+  type: ss
 proxy-groups:
 - name: 代理模式
   proxies:
@@ -336,29 +355,31 @@ proxy-groups:
   lazy: true
   name: 手工选择
   proxies:
-  - 荷兰|NL|🇳🇱|2640ms|🇳🇱NL_11|215KB/s|B007-260618
-  - 加拿大|CA|🇨🇦|2669ms|❓Other_24|211KB/s|A004-260618
-  - 意大利|IT|🇮🇹|2699ms|🇮🇹IT_5|231KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2751ms|🇳🇱NL_49|1.4MB/s|S004-260618
-  - 未知|IN|🏳️|2807ms|🇮🇳IN_6|66KB/s|A004-260618
-  - 芬兰|FI|🇫🇮|3113ms|❓Other_71|253KB/s|A004-260618
-  - 美国|US|🇺🇸|3113ms|🇺🇸US_32|594KB/s|A004-260618
-  - 未知|UNKNOWN|🏳️|3190ms|🇳🇱NL_33|229KB/s|B007-260618
-  - 荷兰|NL|🇳🇱|3405ms|🇳🇱NL_46|775KB/s|A001-260618
-  - 韩国|KR|🇰🇷|1956ms|🇰🇷KR_7|152KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2120ms|未知 SS-82 | free-nodes
-  - 美国|US|🇺🇸|2052ms|未知 VLESS-152 | free-nodes
-  - 新加坡|SG|🇸🇬|3729ms|未知 TROJAN-131 | free-nodes
-  - 法国|FR|🇫🇷|4126ms|🇫🇷
-  - 芬兰|FI|🇫🇮|4364ms|❓Other_37|176KB/s|M002-260618
-  - 香港|HK|🇭🇰|3265ms|巴西+V2CROSS.COM
-  - 德国|DE|🇩🇪|2159ms|未知 VLESS-235 | free-nodes
-  - 澳大利亚|AU|🇦🇺|1256ms|🇸🇬SG_1|217KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|1698ms|🇳🇱NL_16|494KB/s|A004-260618
-  - 俄罗斯|RU|🇷🇺|2188ms|🇷🇺RU_3|229KB/s|K001-260618
-  - 法国|FR|🇫🇷|3404ms|🇫🇷FR_5|245KB/s|S004-260618
-  - 荷兰|NL|🇳🇱|4248ms|🇳🇱NL_56|195KB/s|A004-260618
-  - 台湾|TW|🇹🇼|3488ms|未知 VMESS-546 | free-nodes
+  - 荷兰|NL|🇳🇱|2488ms|🇳🇱NL_49|1.4MB/s|S004-260618
+  - 荷兰|NL|🇳🇱|2482ms|🇳🇱NL_20|946KB/s|A004-260618
+  - 韩国|KR|🇰🇷|2685ms|未知 TROJAN-129 | free-nodes
+  - 韩国|KR|🇰🇷|2849ms|未知 VLESS-184 | free-nodes
+  - 西班牙|ES|🇪🇸|2973ms|🇪🇸ES_1|1.6MB/s|M001-260618
+  - 荷兰|NL|🇳🇱|3255ms|🇳🇱NL_21|1.1MB/s
+  - 未知|LT|🏳️|3519ms|🇱🇹LT_1|1.4MB/s|A004-260618
+  - 韩国|KR|🇰🇷|3587ms|未知 TROJAN-132 | free-nodes
+  - 美国|US|🇺🇸|3597ms|❓Other_27|350KB/s|B007-260618
+  - 未知|TH|🏳️|3618ms|未知 SS-118 | free-nodes
+  - 未知|TH|🏳️|3666ms|未知 SS-116 | free-nodes
+  - 德国|DE|🇩🇪|3763ms|🇩🇪DE_10|239KB/s|S001-260618
+  - 法国|FR|🇫🇷|3947ms|🇫🇷FR_5|245KB/s|S004-260618
+  - 未知|PL|🏳️|3944ms|未知 VLESS-201 | free-nodes
+  - 德国|DE|🇩🇪|3964ms|未知 VLESS-311 | free-nodes
+  - 芬兰|FI|🇫🇮|4316ms|🇫🇮FI_10|155KB/s|M002-260618
+  - 澳大利亚|AU|🇦🇺|4321ms|🇺🇸US_8|248KB/s|C002-260622
+  - 台湾|TW|🇹🇼|4508ms|未知 VMESS-445 | free-nodes
+  - 英国|GB|🇬🇧|4785ms|❓Other_7|227KB/s|A004-260618
+  - 未知|UNKNOWN|🏳️|2471ms|🇺🇸US_54|278KB/s|C002-260622
+  - 澳大利亚|AU|🇦🇺|3569ms|❓Other_1|307KB/s|B007-260618
+  - 荷兰|NL|🇳🇱|3072ms|未知 VLESS-237 | free-nodes
+  - 法国|FR|🇫🇷|4093ms|❓Other_5|211KB/s|T001-260618
+  - 美国|US|🇺🇸|2754ms|未知 TROJAN-127 | free-nodes
+  - 荷兰|NL|🇳🇱|2442ms|🇳🇱NL_8|327KB/s|A004-260618
   timeout: 5000
   type: select
   url: https://www.google.com/generate_204
@@ -367,29 +388,31 @@ proxy-groups:
   lazy: true
   name: 超时自动换
   proxies:
-  - 荷兰|NL|🇳🇱|2640ms|🇳🇱NL_11|215KB/s|B007-260618
-  - 加拿大|CA|🇨🇦|2669ms|❓Other_24|211KB/s|A004-260618
-  - 意大利|IT|🇮🇹|2699ms|🇮🇹IT_5|231KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2751ms|🇳🇱NL_49|1.4MB/s|S004-260618
-  - 未知|IN|🏳️|2807ms|🇮🇳IN_6|66KB/s|A004-260618
-  - 芬兰|FI|🇫🇮|3113ms|❓Other_71|253KB/s|A004-260618
-  - 美国|US|🇺🇸|3113ms|🇺🇸US_32|594KB/s|A004-260618
-  - 未知|UNKNOWN|🏳️|3190ms|🇳🇱NL_33|229KB/s|B007-260618
-  - 荷兰|NL|🇳🇱|3405ms|🇳🇱NL_46|775KB/s|A001-260618
-  - 韩国|KR|🇰🇷|1956ms|🇰🇷KR_7|152KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2120ms|未知 SS-82 | free-nodes
-  - 美国|US|🇺🇸|2052ms|未知 VLESS-152 | free-nodes
-  - 新加坡|SG|🇸🇬|3729ms|未知 TROJAN-131 | free-nodes
-  - 法国|FR|🇫🇷|4126ms|🇫🇷
-  - 芬兰|FI|🇫🇮|4364ms|❓Other_37|176KB/s|M002-260618
-  - 香港|HK|🇭🇰|3265ms|巴西+V2CROSS.COM
-  - 德国|DE|🇩🇪|2159ms|未知 VLESS-235 | free-nodes
-  - 澳大利亚|AU|🇦🇺|1256ms|🇸🇬SG_1|217KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|1698ms|🇳🇱NL_16|494KB/s|A004-260618
-  - 俄罗斯|RU|🇷🇺|2188ms|🇷🇺RU_3|229KB/s|K001-260618
-  - 法国|FR|🇫🇷|3404ms|🇫🇷FR_5|245KB/s|S004-260618
-  - 荷兰|NL|🇳🇱|4248ms|🇳🇱NL_56|195KB/s|A004-260618
-  - 台湾|TW|🇹🇼|3488ms|未知 VMESS-546 | free-nodes
+  - 荷兰|NL|🇳🇱|2488ms|🇳🇱NL_49|1.4MB/s|S004-260618
+  - 荷兰|NL|🇳🇱|2482ms|🇳🇱NL_20|946KB/s|A004-260618
+  - 韩国|KR|🇰🇷|2685ms|未知 TROJAN-129 | free-nodes
+  - 韩国|KR|🇰🇷|2849ms|未知 VLESS-184 | free-nodes
+  - 西班牙|ES|🇪🇸|2973ms|🇪🇸ES_1|1.6MB/s|M001-260618
+  - 荷兰|NL|🇳🇱|3255ms|🇳🇱NL_21|1.1MB/s
+  - 未知|LT|🏳️|3519ms|🇱🇹LT_1|1.4MB/s|A004-260618
+  - 韩国|KR|🇰🇷|3587ms|未知 TROJAN-132 | free-nodes
+  - 美国|US|🇺🇸|3597ms|❓Other_27|350KB/s|B007-260618
+  - 未知|TH|🏳️|3618ms|未知 SS-118 | free-nodes
+  - 未知|TH|🏳️|3666ms|未知 SS-116 | free-nodes
+  - 德国|DE|🇩🇪|3763ms|🇩🇪DE_10|239KB/s|S001-260618
+  - 法国|FR|🇫🇷|3947ms|🇫🇷FR_5|245KB/s|S004-260618
+  - 未知|PL|🏳️|3944ms|未知 VLESS-201 | free-nodes
+  - 德国|DE|🇩🇪|3964ms|未知 VLESS-311 | free-nodes
+  - 芬兰|FI|🇫🇮|4316ms|🇫🇮FI_10|155KB/s|M002-260618
+  - 澳大利亚|AU|🇦🇺|4321ms|🇺🇸US_8|248KB/s|C002-260622
+  - 台湾|TW|🇹🇼|4508ms|未知 VMESS-445 | free-nodes
+  - 英国|GB|🇬🇧|4785ms|❓Other_7|227KB/s|A004-260618
+  - 未知|UNKNOWN|🏳️|2471ms|🇺🇸US_54|278KB/s|C002-260622
+  - 澳大利亚|AU|🇦🇺|3569ms|❓Other_1|307KB/s|B007-260618
+  - 荷兰|NL|🇳🇱|3072ms|未知 VLESS-237 | free-nodes
+  - 法国|FR|🇫🇷|4093ms|❓Other_5|211KB/s|T001-260618
+  - 美国|US|🇺🇸|2754ms|未知 TROJAN-127 | free-nodes
+  - 荷兰|NL|🇳🇱|2442ms|🇳🇱NL_8|327KB/s|A004-260618
   timeout: 5000
   type: fallback
   url: https://www.google.com/generate_204
@@ -398,29 +421,31 @@ proxy-groups:
   lazy: true
   name: 速度最快
   proxies:
-  - 荷兰|NL|🇳🇱|2640ms|🇳🇱NL_11|215KB/s|B007-260618
-  - 加拿大|CA|🇨🇦|2669ms|❓Other_24|211KB/s|A004-260618
-  - 意大利|IT|🇮🇹|2699ms|🇮🇹IT_5|231KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2751ms|🇳🇱NL_49|1.4MB/s|S004-260618
-  - 未知|IN|🏳️|2807ms|🇮🇳IN_6|66KB/s|A004-260618
-  - 芬兰|FI|🇫🇮|3113ms|❓Other_71|253KB/s|A004-260618
-  - 美国|US|🇺🇸|3113ms|🇺🇸US_32|594KB/s|A004-260618
-  - 未知|UNKNOWN|🏳️|3190ms|🇳🇱NL_33|229KB/s|B007-260618
-  - 荷兰|NL|🇳🇱|3405ms|🇳🇱NL_46|775KB/s|A001-260618
-  - 韩国|KR|🇰🇷|1956ms|🇰🇷KR_7|152KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2120ms|未知 SS-82 | free-nodes
-  - 美国|US|🇺🇸|2052ms|未知 VLESS-152 | free-nodes
-  - 新加坡|SG|🇸🇬|3729ms|未知 TROJAN-131 | free-nodes
-  - 法国|FR|🇫🇷|4126ms|🇫🇷
-  - 芬兰|FI|🇫🇮|4364ms|❓Other_37|176KB/s|M002-260618
-  - 香港|HK|🇭🇰|3265ms|巴西+V2CROSS.COM
-  - 德国|DE|🇩🇪|2159ms|未知 VLESS-235 | free-nodes
-  - 澳大利亚|AU|🇦🇺|1256ms|🇸🇬SG_1|217KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|1698ms|🇳🇱NL_16|494KB/s|A004-260618
-  - 俄罗斯|RU|🇷🇺|2188ms|🇷🇺RU_3|229KB/s|K001-260618
-  - 法国|FR|🇫🇷|3404ms|🇫🇷FR_5|245KB/s|S004-260618
-  - 荷兰|NL|🇳🇱|4248ms|🇳🇱NL_56|195KB/s|A004-260618
-  - 台湾|TW|🇹🇼|3488ms|未知 VMESS-546 | free-nodes
+  - 荷兰|NL|🇳🇱|2488ms|🇳🇱NL_49|1.4MB/s|S004-260618
+  - 荷兰|NL|🇳🇱|2482ms|🇳🇱NL_20|946KB/s|A004-260618
+  - 韩国|KR|🇰🇷|2685ms|未知 TROJAN-129 | free-nodes
+  - 韩国|KR|🇰🇷|2849ms|未知 VLESS-184 | free-nodes
+  - 西班牙|ES|🇪🇸|2973ms|🇪🇸ES_1|1.6MB/s|M001-260618
+  - 荷兰|NL|🇳🇱|3255ms|🇳🇱NL_21|1.1MB/s
+  - 未知|LT|🏳️|3519ms|🇱🇹LT_1|1.4MB/s|A004-260618
+  - 韩国|KR|🇰🇷|3587ms|未知 TROJAN-132 | free-nodes
+  - 美国|US|🇺🇸|3597ms|❓Other_27|350KB/s|B007-260618
+  - 未知|TH|🏳️|3618ms|未知 SS-118 | free-nodes
+  - 未知|TH|🏳️|3666ms|未知 SS-116 | free-nodes
+  - 德国|DE|🇩🇪|3763ms|🇩🇪DE_10|239KB/s|S001-260618
+  - 法国|FR|🇫🇷|3947ms|🇫🇷FR_5|245KB/s|S004-260618
+  - 未知|PL|🏳️|3944ms|未知 VLESS-201 | free-nodes
+  - 德国|DE|🇩🇪|3964ms|未知 VLESS-311 | free-nodes
+  - 芬兰|FI|🇫🇮|4316ms|🇫🇮FI_10|155KB/s|M002-260618
+  - 澳大利亚|AU|🇦🇺|4321ms|🇺🇸US_8|248KB/s|C002-260622
+  - 台湾|TW|🇹🇼|4508ms|未知 VMESS-445 | free-nodes
+  - 英国|GB|🇬🇧|4785ms|❓Other_7|227KB/s|A004-260618
+  - 未知|UNKNOWN|🏳️|2471ms|🇺🇸US_54|278KB/s|C002-260622
+  - 澳大利亚|AU|🇦🇺|3569ms|❓Other_1|307KB/s|B007-260618
+  - 荷兰|NL|🇳🇱|3072ms|未知 VLESS-237 | free-nodes
+  - 法国|FR|🇫🇷|4093ms|❓Other_5|211KB/s|T001-260618
+  - 美国|US|🇺🇸|2754ms|未知 TROJAN-127 | free-nodes
+  - 荷兰|NL|🇳🇱|2442ms|🇳🇱NL_8|327KB/s|A004-260618
   timeout: 5000
   tolerance: 200
   type: url-test
@@ -430,29 +455,31 @@ proxy-groups:
   lazy: true
   name: 负载均衡
   proxies:
-  - 荷兰|NL|🇳🇱|2640ms|🇳🇱NL_11|215KB/s|B007-260618
-  - 加拿大|CA|🇨🇦|2669ms|❓Other_24|211KB/s|A004-260618
-  - 意大利|IT|🇮🇹|2699ms|🇮🇹IT_5|231KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2751ms|🇳🇱NL_49|1.4MB/s|S004-260618
-  - 未知|IN|🏳️|2807ms|🇮🇳IN_6|66KB/s|A004-260618
-  - 芬兰|FI|🇫🇮|3113ms|❓Other_71|253KB/s|A004-260618
-  - 美国|US|🇺🇸|3113ms|🇺🇸US_32|594KB/s|A004-260618
-  - 未知|UNKNOWN|🏳️|3190ms|🇳🇱NL_33|229KB/s|B007-260618
-  - 荷兰|NL|🇳🇱|3405ms|🇳🇱NL_46|775KB/s|A001-260618
-  - 韩国|KR|🇰🇷|1956ms|🇰🇷KR_7|152KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2120ms|未知 SS-82 | free-nodes
-  - 美国|US|🇺🇸|2052ms|未知 VLESS-152 | free-nodes
-  - 新加坡|SG|🇸🇬|3729ms|未知 TROJAN-131 | free-nodes
-  - 法国|FR|🇫🇷|4126ms|🇫🇷
-  - 芬兰|FI|🇫🇮|4364ms|❓Other_37|176KB/s|M002-260618
-  - 香港|HK|🇭🇰|3265ms|巴西+V2CROSS.COM
-  - 德国|DE|🇩🇪|2159ms|未知 VLESS-235 | free-nodes
-  - 澳大利亚|AU|🇦🇺|1256ms|🇸🇬SG_1|217KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|1698ms|🇳🇱NL_16|494KB/s|A004-260618
-  - 俄罗斯|RU|🇷🇺|2188ms|🇷🇺RU_3|229KB/s|K001-260618
-  - 法国|FR|🇫🇷|3404ms|🇫🇷FR_5|245KB/s|S004-260618
-  - 荷兰|NL|🇳🇱|4248ms|🇳🇱NL_56|195KB/s|A004-260618
-  - 台湾|TW|🇹🇼|3488ms|未知 VMESS-546 | free-nodes
+  - 荷兰|NL|🇳🇱|2488ms|🇳🇱NL_49|1.4MB/s|S004-260618
+  - 荷兰|NL|🇳🇱|2482ms|🇳🇱NL_20|946KB/s|A004-260618
+  - 韩国|KR|🇰🇷|2685ms|未知 TROJAN-129 | free-nodes
+  - 韩国|KR|🇰🇷|2849ms|未知 VLESS-184 | free-nodes
+  - 西班牙|ES|🇪🇸|2973ms|🇪🇸ES_1|1.6MB/s|M001-260618
+  - 荷兰|NL|🇳🇱|3255ms|🇳🇱NL_21|1.1MB/s
+  - 未知|LT|🏳️|3519ms|🇱🇹LT_1|1.4MB/s|A004-260618
+  - 韩国|KR|🇰🇷|3587ms|未知 TROJAN-132 | free-nodes
+  - 美国|US|🇺🇸|3597ms|❓Other_27|350KB/s|B007-260618
+  - 未知|TH|🏳️|3618ms|未知 SS-118 | free-nodes
+  - 未知|TH|🏳️|3666ms|未知 SS-116 | free-nodes
+  - 德国|DE|🇩🇪|3763ms|🇩🇪DE_10|239KB/s|S001-260618
+  - 法国|FR|🇫🇷|3947ms|🇫🇷FR_5|245KB/s|S004-260618
+  - 未知|PL|🏳️|3944ms|未知 VLESS-201 | free-nodes
+  - 德国|DE|🇩🇪|3964ms|未知 VLESS-311 | free-nodes
+  - 芬兰|FI|🇫🇮|4316ms|🇫🇮FI_10|155KB/s|M002-260618
+  - 澳大利亚|AU|🇦🇺|4321ms|🇺🇸US_8|248KB/s|C002-260622
+  - 台湾|TW|🇹🇼|4508ms|未知 VMESS-445 | free-nodes
+  - 英国|GB|🇬🇧|4785ms|❓Other_7|227KB/s|A004-260618
+  - 未知|UNKNOWN|🏳️|2471ms|🇺🇸US_54|278KB/s|C002-260622
+  - 澳大利亚|AU|🇦🇺|3569ms|❓Other_1|307KB/s|B007-260618
+  - 荷兰|NL|🇳🇱|3072ms|未知 VLESS-237 | free-nodes
+  - 法国|FR|🇫🇷|4093ms|❓Other_5|211KB/s|T001-260618
+  - 美国|US|🇺🇸|2754ms|未知 TROJAN-127 | free-nodes
+  - 荷兰|NL|🇳🇱|2442ms|🇳🇱NL_8|327KB/s|A004-260618
   strategy: consistent-hashing
   timeout: 5000
   type: load-balance
@@ -480,8 +507,10 @@ proxy-groups:
   lazy: true
   name: 美国AI节点
   proxies:
-  - 美国|US|🇺🇸|3113ms|🇺🇸US_32|594KB/s|A004-260618
-  - 美国|US|🇺🇸|2052ms|未知 VLESS-152 | free-nodes
+  - 美国|US|🇺🇸|3597ms|❓Other_27|350KB/s|B007-260618
+  - 澳大利亚|AU|🇦🇺|4321ms|🇺🇸US_8|248KB/s|C002-260622
+  - 未知|UNKNOWN|🏳️|2471ms|🇺🇸US_54|278KB/s|C002-260622
+  - 美国|US|🇺🇸|2754ms|未知 TROJAN-127 | free-nodes
   - 代理模式
   - DIRECT
   timeout: 5000
