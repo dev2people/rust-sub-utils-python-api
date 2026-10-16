@@ -101,197 +101,200 @@ dns:
 hosts: {}
 ipv6: false
 proxies:
-- auth: maintell
-  name: 韩国|KR|🇰🇷|2644ms|kr|1325|puddincat07@Telegram
-  password: maintell
-  port: 2053
-  server: 152.70.237.123
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: 未知|PL|🏳️|2095ms|🇵🇱PL_49|3.1MB/s|B007-260618
-  password: itzvpn@321
-  port: 8388
-  server: 51.83.192.80
-  type: ss
-- cipher: aes-256-cfb
-  name: 未知|LV|🏳️|2192ms|❓Other_1|234KB/s|A004-260618
-  password: 45xgMgm386pjWjTx
-  port: 9082
-  server: 185.135.86.175
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 英国|GB|🇬🇧|1938ms|🇬🇧GB_36|311KB/s|A004-260618
-  network: tcp
-  port: 30836
-  server: v36.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-gcm
-  name: 美国|US|🇺🇸|4563ms|❓Other_2|433KB/s|A004-260618
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 15.204.246.132
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|4204ms|🇳🇱NL_89|6.3MB/s|A003-260618
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.17
-  type: ss
-- client-fingerprint: qq
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 未知|UA|🏳️|3757ms|🇳🇱NL_244|244KB/s|M002-260618
+  name: 美国|US|🇺🇸|2278ms|🇺🇸US_123|931KB/s|C002-260622
   network: raw
-  port: 443
+  port: 23576
   reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  server: 83.147.18.75
-  servername: www.bing.com
-  sni: www.bing.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 15.204.97.197
+  servername: fuck.rkn
+  sni: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-- client-fingerprint: firefox
-  name: 法国|FR|🇫🇷|4095ms|🇫🇷FR_91|4.9MB/s|A004-260618
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|4576ms|🇳🇱NL_188|7.5MB/s|A004-260618
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- cipher: aes-256-cfb
+  name: 未知|BG|🏳️|4532ms|🇧🇬BG_1|1.1MB/s|A004-260618
+  password: 9ej82EKe2gq7gLAM
+  port: 9085
+  server: 213.183.63.60
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|4612ms|🇳🇱NL_123|3.3MB/s|B007-260618
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|4535ms|🇳🇱NL_94|5.3MB/s
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|4555ms|🇳🇱NL_161|7.8MB/s|A004-260618
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.159
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|4643ms|🇳🇱NL_207|8.0MB/s
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.11
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国|US|🇺🇸|2226ms|🇺🇸US_194|915KB/s|A004-260618
   network: tcp
-  port: 2053
+  port: 23576
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: ww13.levikogjgfdd.ir
+  servername: fuck.rkn
+  sni: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 法国|FR|🇫🇷|4677ms|🇫🇷FR_135|5.4MB/s|A004-260618
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  server: api.videopereval.cc
+  servername: api.videopereval.cc
+  sni: api.videopereval.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+- cipher: chacha20-ietf-poly1305
+  name: 香港|HK|🇭🇰|4020ms|🇭🇰HK_76|729KB/s|A004-260618
+  password: 6qmp91myp2jj13dt
+  port: 1081
+  server: sth.free-outline.giize.com
+  type: ss
+- cipher: rc4-md5
+  name: 美国|US|🇺🇸|3766ms|🇺🇸US_12|950KB/s|A004-260618
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.43.159
+  type: ss
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 未知|EE|🏳️|4165ms|🇪🇪EE_20|350KB/s|A004-260618
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
+    short-id: 7f3a91c2d8e640ab
+  server: ees92.shhflow.xyz
+  servername: ees92.shhflow.xyz
+  sni: ees92.shhflow.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 43212c32-01f2-4356-b216-67dc1c178262
+- cipher: chacha20-ietf-poly1305
+  name: 荷兰|NL|🇳🇱|4377ms|🇳🇱NL_155|5.0MB/s|A004-260618
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.234
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 芬兰|FI|🇫🇮|4300ms|🇫🇮FI_81|533KB/s|A004-260618
+  network: raw
+  port: 443
+  server: fi.quic.best
+  servername: fi.quic.best
+  sni: fi.quic.best
+  tls: true
+  type: vless
+  udp: true
+  uuid: c2331311-c9fd-4af9-8f34-7a9edcee3b92
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国|US|🇺🇸|2257ms|🇺🇸US_442|984KB/s|A004-260618
+  network: raw
+  port: 443
+  reality-opts:
+    public-key: ABZFDD3Ne57Q0i7skCnEpyUVTKTdMhm3aqJ9mwLZ7lw
+    short-id: 62169cb853fb7503
+  server: 131.143.180.110
+  servername: learn.microsoft.com
+  sni: learn.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0dfaf133-be36-436a-bdad-a7b53ae58b30
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 荷兰|NL|🇳🇱|4192ms|🇳🇱NL_101|1.8MB/s|A004-260618
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
+  server: 86.54.28.75
   servername: www.apple.com
   sni: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-- client-fingerprint: chrome
-  name: 香港|HK|🇭🇰|3989ms|🇭🇰HK_55|534KB/s|C002-260622
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  server: 34.92.19.135
-  servername: www.cloudflare.com
-  sni: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 未知|PL|🏳️|4774ms|香港+特别行政区
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
-    short-id: acccaaaa9f72147d
-  server: pl.golangwikito.cfd
-  servername: pl.golangwikito.cfd
-  sni: pl.golangwikito.cfd
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国|US|🇺🇸|4594ms|未知 VLESS-183 | free-nodes
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-    short-id: 21270a66
-    spider-x: /a6f16ebc763b16c
-  server: tk1.high-speed-test-56424.me
-  servername: aws.amazon.com
-  sni: aws.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|4351ms|未知 SS-85 | free-nodes
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.171
-  type: ss
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 未知|MD|🏳️|4998ms|🇲🇩MD_1|1.1MB/s|A004-260618
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
-    short-id: 1d2fecf1d2475168
-  server: ro2.aiage.work
-  servername: ro2.aiage.work
-  sni: ro2.aiage.work
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: 美国|US|🇺🇸|2740ms|🇺🇸US_378|71KB/s|A004-260618
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.179
-  servername: yahoo.com
-  sni: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: firefox
-  name: 未知|PL|🏳️|3729ms|🇵🇱PL_6|2.8MB/s|A004-260618
-  network: raw
-  port: 2053
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  server: 54.37.136.194
-  servername: www.cloudflare.com
-  sni: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|2355ms|🇳🇱NL_209|987KB/s|A004-260618
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+- cipher: rc4-md5
+  name: 美国|US|🇺🇸|2878ms|🇺🇸US_43|918KB/s|M003-260806
+  password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 82.38.31.178
+  server: 79.110.53.169
   type: ss
-- name: 新加坡|SG|🇸🇬|3492ms|🇸🇬SG_52|311KB/s|C001-260618
-  password: UX82473651
-  port: 443
-  server: glorious-glider.rooster465.autos
-  sni: glorious-glider.rooster465.autos
-  type: trojan
+- name: 新加坡|SG|🇸🇬|4651ms|sg|0ed4|puddincat07@Telegram
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: 138.2.73.238
+  tls: false
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 澳大利亚|AU|🇦🇺|4041ms|🇺🇸US_117|726KB/s|C002-260622
+  network: tcp
+  port: 18000
+  server: 169.197.142.22
+  tls: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 美国|US|🇺🇸|4961ms|🇺🇸
+  name: 香港|HK|🇭🇰|3092ms|未知 VLESS-223 | free-nodes
   network: tcp
-  port: 28190
+  port: 443
   reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  server: 159.89.87.21
-  servername: aws.amazon.com
-  sni: aws.amazon.com
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  server: 152.233.71.81
+  servername: brointelengence.com
+  sni: brointelengence.com
   tls: true
   type: vless
   udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
 proxy-groups:
 - name: 代理模式
   proxies:
@@ -304,24 +307,26 @@ proxy-groups:
   lazy: true
   name: 手工选择
   proxies:
-  - 韩国|KR|🇰🇷|2644ms|kr|1325|puddincat07@Telegram
-  - 未知|PL|🏳️|2095ms|🇵🇱PL_49|3.1MB/s|B007-260618
-  - 未知|LV|🏳️|2192ms|❓Other_1|234KB/s|A004-260618
-  - 英国|GB|🇬🇧|1938ms|🇬🇧GB_36|311KB/s|A004-260618
-  - 美国|US|🇺🇸|4563ms|❓Other_2|433KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|4204ms|🇳🇱NL_89|6.3MB/s|A003-260618
-  - 未知|UA|🏳️|3757ms|🇳🇱NL_244|244KB/s|M002-260618
-  - 法国|FR|🇫🇷|4095ms|🇫🇷FR_91|4.9MB/s|A004-260618
-  - 香港|HK|🇭🇰|3989ms|🇭🇰HK_55|534KB/s|C002-260622
-  - 未知|PL|🏳️|4774ms|香港+特别行政区
-  - 美国|US|🇺🇸|4594ms|未知 VLESS-183 | free-nodes
-  - 荷兰|NL|🇳🇱|4351ms|未知 SS-85 | free-nodes
-  - 未知|MD|🏳️|4998ms|🇲🇩MD_1|1.1MB/s|A004-260618
-  - 美国|US|🇺🇸|2740ms|🇺🇸US_378|71KB/s|A004-260618
-  - 未知|PL|🏳️|3729ms|🇵🇱PL_6|2.8MB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2355ms|🇳🇱NL_209|987KB/s|A004-260618
-  - 新加坡|SG|🇸🇬|3492ms|🇸🇬SG_52|311KB/s|C001-260618
-  - 美国|US|🇺🇸|4961ms|🇺🇸
+  - 美国|US|🇺🇸|2278ms|🇺🇸US_123|931KB/s|C002-260622
+  - 荷兰|NL|🇳🇱|4576ms|🇳🇱NL_188|7.5MB/s|A004-260618
+  - 未知|BG|🏳️|4532ms|🇧🇬BG_1|1.1MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4612ms|🇳🇱NL_123|3.3MB/s|B007-260618
+  - 荷兰|NL|🇳🇱|4535ms|🇳🇱NL_94|5.3MB/s
+  - 荷兰|NL|🇳🇱|4555ms|🇳🇱NL_161|7.8MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4643ms|🇳🇱NL_207|8.0MB/s
+  - 美国|US|🇺🇸|2226ms|🇺🇸US_194|915KB/s|A004-260618
+  - 法国|FR|🇫🇷|4677ms|🇫🇷FR_135|5.4MB/s|A004-260618
+  - 香港|HK|🇭🇰|4020ms|🇭🇰HK_76|729KB/s|A004-260618
+  - 美国|US|🇺🇸|3766ms|🇺🇸US_12|950KB/s|A004-260618
+  - 未知|EE|🏳️|4165ms|🇪🇪EE_20|350KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4377ms|🇳🇱NL_155|5.0MB/s|A004-260618
+  - 芬兰|FI|🇫🇮|4300ms|🇫🇮FI_81|533KB/s|A004-260618
+  - 美国|US|🇺🇸|2257ms|🇺🇸US_442|984KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4192ms|🇳🇱NL_101|1.8MB/s|A004-260618
+  - 美国|US|🇺🇸|2878ms|🇺🇸US_43|918KB/s|M003-260806
+  - 新加坡|SG|🇸🇬|4651ms|sg|0ed4|puddincat07@Telegram
+  - 澳大利亚|AU|🇦🇺|4041ms|🇺🇸US_117|726KB/s|C002-260622
+  - 香港|HK|🇭🇰|3092ms|未知 VLESS-223 | free-nodes
   timeout: 5000
   type: select
   url: https://www.google.com/generate_204
@@ -330,24 +335,26 @@ proxy-groups:
   lazy: true
   name: 超时自动换
   proxies:
-  - 韩国|KR|🇰🇷|2644ms|kr|1325|puddincat07@Telegram
-  - 未知|PL|🏳️|2095ms|🇵🇱PL_49|3.1MB/s|B007-260618
-  - 未知|LV|🏳️|2192ms|❓Other_1|234KB/s|A004-260618
-  - 英国|GB|🇬🇧|1938ms|🇬🇧GB_36|311KB/s|A004-260618
-  - 美国|US|🇺🇸|4563ms|❓Other_2|433KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|4204ms|🇳🇱NL_89|6.3MB/s|A003-260618
-  - 未知|UA|🏳️|3757ms|🇳🇱NL_244|244KB/s|M002-260618
-  - 法国|FR|🇫🇷|4095ms|🇫🇷FR_91|4.9MB/s|A004-260618
-  - 香港|HK|🇭🇰|3989ms|🇭🇰HK_55|534KB/s|C002-260622
-  - 未知|PL|🏳️|4774ms|香港+特别行政区
-  - 美国|US|🇺🇸|4594ms|未知 VLESS-183 | free-nodes
-  - 荷兰|NL|🇳🇱|4351ms|未知 SS-85 | free-nodes
-  - 未知|MD|🏳️|4998ms|🇲🇩MD_1|1.1MB/s|A004-260618
-  - 美国|US|🇺🇸|2740ms|🇺🇸US_378|71KB/s|A004-260618
-  - 未知|PL|🏳️|3729ms|🇵🇱PL_6|2.8MB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2355ms|🇳🇱NL_209|987KB/s|A004-260618
-  - 新加坡|SG|🇸🇬|3492ms|🇸🇬SG_52|311KB/s|C001-260618
-  - 美国|US|🇺🇸|4961ms|🇺🇸
+  - 美国|US|🇺🇸|2278ms|🇺🇸US_123|931KB/s|C002-260622
+  - 荷兰|NL|🇳🇱|4576ms|🇳🇱NL_188|7.5MB/s|A004-260618
+  - 未知|BG|🏳️|4532ms|🇧🇬BG_1|1.1MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4612ms|🇳🇱NL_123|3.3MB/s|B007-260618
+  - 荷兰|NL|🇳🇱|4535ms|🇳🇱NL_94|5.3MB/s
+  - 荷兰|NL|🇳🇱|4555ms|🇳🇱NL_161|7.8MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4643ms|🇳🇱NL_207|8.0MB/s
+  - 美国|US|🇺🇸|2226ms|🇺🇸US_194|915KB/s|A004-260618
+  - 法国|FR|🇫🇷|4677ms|🇫🇷FR_135|5.4MB/s|A004-260618
+  - 香港|HK|🇭🇰|4020ms|🇭🇰HK_76|729KB/s|A004-260618
+  - 美国|US|🇺🇸|3766ms|🇺🇸US_12|950KB/s|A004-260618
+  - 未知|EE|🏳️|4165ms|🇪🇪EE_20|350KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4377ms|🇳🇱NL_155|5.0MB/s|A004-260618
+  - 芬兰|FI|🇫🇮|4300ms|🇫🇮FI_81|533KB/s|A004-260618
+  - 美国|US|🇺🇸|2257ms|🇺🇸US_442|984KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4192ms|🇳🇱NL_101|1.8MB/s|A004-260618
+  - 美国|US|🇺🇸|2878ms|🇺🇸US_43|918KB/s|M003-260806
+  - 新加坡|SG|🇸🇬|4651ms|sg|0ed4|puddincat07@Telegram
+  - 澳大利亚|AU|🇦🇺|4041ms|🇺🇸US_117|726KB/s|C002-260622
+  - 香港|HK|🇭🇰|3092ms|未知 VLESS-223 | free-nodes
   timeout: 5000
   type: fallback
   url: https://www.google.com/generate_204
@@ -356,24 +363,26 @@ proxy-groups:
   lazy: true
   name: 速度最快
   proxies:
-  - 韩国|KR|🇰🇷|2644ms|kr|1325|puddincat07@Telegram
-  - 未知|PL|🏳️|2095ms|🇵🇱PL_49|3.1MB/s|B007-260618
-  - 未知|LV|🏳️|2192ms|❓Other_1|234KB/s|A004-260618
-  - 英国|GB|🇬🇧|1938ms|🇬🇧GB_36|311KB/s|A004-260618
-  - 美国|US|🇺🇸|4563ms|❓Other_2|433KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|4204ms|🇳🇱NL_89|6.3MB/s|A003-260618
-  - 未知|UA|🏳️|3757ms|🇳🇱NL_244|244KB/s|M002-260618
-  - 法国|FR|🇫🇷|4095ms|🇫🇷FR_91|4.9MB/s|A004-260618
-  - 香港|HK|🇭🇰|3989ms|🇭🇰HK_55|534KB/s|C002-260622
-  - 未知|PL|🏳️|4774ms|香港+特别行政区
-  - 美国|US|🇺🇸|4594ms|未知 VLESS-183 | free-nodes
-  - 荷兰|NL|🇳🇱|4351ms|未知 SS-85 | free-nodes
-  - 未知|MD|🏳️|4998ms|🇲🇩MD_1|1.1MB/s|A004-260618
-  - 美国|US|🇺🇸|2740ms|🇺🇸US_378|71KB/s|A004-260618
-  - 未知|PL|🏳️|3729ms|🇵🇱PL_6|2.8MB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2355ms|🇳🇱NL_209|987KB/s|A004-260618
-  - 新加坡|SG|🇸🇬|3492ms|🇸🇬SG_52|311KB/s|C001-260618
-  - 美国|US|🇺🇸|4961ms|🇺🇸
+  - 美国|US|🇺🇸|2278ms|🇺🇸US_123|931KB/s|C002-260622
+  - 荷兰|NL|🇳🇱|4576ms|🇳🇱NL_188|7.5MB/s|A004-260618
+  - 未知|BG|🏳️|4532ms|🇧🇬BG_1|1.1MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4612ms|🇳🇱NL_123|3.3MB/s|B007-260618
+  - 荷兰|NL|🇳🇱|4535ms|🇳🇱NL_94|5.3MB/s
+  - 荷兰|NL|🇳🇱|4555ms|🇳🇱NL_161|7.8MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4643ms|🇳🇱NL_207|8.0MB/s
+  - 美国|US|🇺🇸|2226ms|🇺🇸US_194|915KB/s|A004-260618
+  - 法国|FR|🇫🇷|4677ms|🇫🇷FR_135|5.4MB/s|A004-260618
+  - 香港|HK|🇭🇰|4020ms|🇭🇰HK_76|729KB/s|A004-260618
+  - 美国|US|🇺🇸|3766ms|🇺🇸US_12|950KB/s|A004-260618
+  - 未知|EE|🏳️|4165ms|🇪🇪EE_20|350KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4377ms|🇳🇱NL_155|5.0MB/s|A004-260618
+  - 芬兰|FI|🇫🇮|4300ms|🇫🇮FI_81|533KB/s|A004-260618
+  - 美国|US|🇺🇸|2257ms|🇺🇸US_442|984KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4192ms|🇳🇱NL_101|1.8MB/s|A004-260618
+  - 美国|US|🇺🇸|2878ms|🇺🇸US_43|918KB/s|M003-260806
+  - 新加坡|SG|🇸🇬|4651ms|sg|0ed4|puddincat07@Telegram
+  - 澳大利亚|AU|🇦🇺|4041ms|🇺🇸US_117|726KB/s|C002-260622
+  - 香港|HK|🇭🇰|3092ms|未知 VLESS-223 | free-nodes
   timeout: 5000
   tolerance: 200
   type: url-test
@@ -383,24 +392,26 @@ proxy-groups:
   lazy: true
   name: 负载均衡
   proxies:
-  - 韩国|KR|🇰🇷|2644ms|kr|1325|puddincat07@Telegram
-  - 未知|PL|🏳️|2095ms|🇵🇱PL_49|3.1MB/s|B007-260618
-  - 未知|LV|🏳️|2192ms|❓Other_1|234KB/s|A004-260618
-  - 英国|GB|🇬🇧|1938ms|🇬🇧GB_36|311KB/s|A004-260618
-  - 美国|US|🇺🇸|4563ms|❓Other_2|433KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|4204ms|🇳🇱NL_89|6.3MB/s|A003-260618
-  - 未知|UA|🏳️|3757ms|🇳🇱NL_244|244KB/s|M002-260618
-  - 法国|FR|🇫🇷|4095ms|🇫🇷FR_91|4.9MB/s|A004-260618
-  - 香港|HK|🇭🇰|3989ms|🇭🇰HK_55|534KB/s|C002-260622
-  - 未知|PL|🏳️|4774ms|香港+特别行政区
-  - 美国|US|🇺🇸|4594ms|未知 VLESS-183 | free-nodes
-  - 荷兰|NL|🇳🇱|4351ms|未知 SS-85 | free-nodes
-  - 未知|MD|🏳️|4998ms|🇲🇩MD_1|1.1MB/s|A004-260618
-  - 美国|US|🇺🇸|2740ms|🇺🇸US_378|71KB/s|A004-260618
-  - 未知|PL|🏳️|3729ms|🇵🇱PL_6|2.8MB/s|A004-260618
-  - 荷兰|NL|🇳🇱|2355ms|🇳🇱NL_209|987KB/s|A004-260618
-  - 新加坡|SG|🇸🇬|3492ms|🇸🇬SG_52|311KB/s|C001-260618
-  - 美国|US|🇺🇸|4961ms|🇺🇸
+  - 美国|US|🇺🇸|2278ms|🇺🇸US_123|931KB/s|C002-260622
+  - 荷兰|NL|🇳🇱|4576ms|🇳🇱NL_188|7.5MB/s|A004-260618
+  - 未知|BG|🏳️|4532ms|🇧🇬BG_1|1.1MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4612ms|🇳🇱NL_123|3.3MB/s|B007-260618
+  - 荷兰|NL|🇳🇱|4535ms|🇳🇱NL_94|5.3MB/s
+  - 荷兰|NL|🇳🇱|4555ms|🇳🇱NL_161|7.8MB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4643ms|🇳🇱NL_207|8.0MB/s
+  - 美国|US|🇺🇸|2226ms|🇺🇸US_194|915KB/s|A004-260618
+  - 法国|FR|🇫🇷|4677ms|🇫🇷FR_135|5.4MB/s|A004-260618
+  - 香港|HK|🇭🇰|4020ms|🇭🇰HK_76|729KB/s|A004-260618
+  - 美国|US|🇺🇸|3766ms|🇺🇸US_12|950KB/s|A004-260618
+  - 未知|EE|🏳️|4165ms|🇪🇪EE_20|350KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4377ms|🇳🇱NL_155|5.0MB/s|A004-260618
+  - 芬兰|FI|🇫🇮|4300ms|🇫🇮FI_81|533KB/s|A004-260618
+  - 美国|US|🇺🇸|2257ms|🇺🇸US_442|984KB/s|A004-260618
+  - 荷兰|NL|🇳🇱|4192ms|🇳🇱NL_101|1.8MB/s|A004-260618
+  - 美国|US|🇺🇸|2878ms|🇺🇸US_43|918KB/s|M003-260806
+  - 新加坡|SG|🇸🇬|4651ms|sg|0ed4|puddincat07@Telegram
+  - 澳大利亚|AU|🇦🇺|4041ms|🇺🇸US_117|726KB/s|C002-260622
+  - 香港|HK|🇭🇰|3092ms|未知 VLESS-223 | free-nodes
   strategy: consistent-hashing
   timeout: 5000
   type: load-balance
@@ -428,10 +439,12 @@ proxy-groups:
   lazy: true
   name: 美国AI节点
   proxies:
-  - 美国|US|🇺🇸|4563ms|❓Other_2|433KB/s|A004-260618
-  - 美国|US|🇺🇸|4594ms|未知 VLESS-183 | free-nodes
-  - 美国|US|🇺🇸|2740ms|🇺🇸US_378|71KB/s|A004-260618
-  - 美国|US|🇺🇸|4961ms|🇺🇸
+  - 美国|US|🇺🇸|2278ms|🇺🇸US_123|931KB/s|C002-260622
+  - 美国|US|🇺🇸|2226ms|🇺🇸US_194|915KB/s|A004-260618
+  - 美国|US|🇺🇸|3766ms|🇺🇸US_12|950KB/s|A004-260618
+  - 美国|US|🇺🇸|2257ms|🇺🇸US_442|984KB/s|A004-260618
+  - 美国|US|🇺🇸|2878ms|🇺🇸US_43|918KB/s|M003-260806
+  - 澳大利亚|AU|🇦🇺|4041ms|🇺🇸US_117|726KB/s|C002-260622
   - 代理模式
   - DIRECT
   timeout: 5000
