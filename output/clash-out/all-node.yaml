@@ -101,62 +101,21 @@ dns:
 hosts: {}
 ipv6: false
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|3584ms|🇳🇱NL_97|6.7MB/s|A004-260618
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.235
-  type: ss
-- name: 未知|RO|🏳️|3583ms|🇷🇴RO_103|211KB/s|A004-260618
-  network: raw
-  port: 2052
-  server: edge10.cyrionflare.com
-  tls: false
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|3915ms|🇳🇱NL_46|3.7MB/s
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.11
-  type: ss
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 荷兰|NL|🇳🇱|4336ms|🇳🇱NL_40|3.7MB/s|C002-260622
-  network: raw
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.12
-  servername: fuck.rkn
-  sni: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 荷兰|NL|🇳🇱|4445ms|🇳🇱NL_5|3.5MB/s|B007-260618
+  name: 未知|PL|🏳️|2918ms|🇵🇱 Poland | [*CIDR]
   network: tcp
-  port: 23576
+  port: 443
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.8
-  servername: fuck.rkn
-  sni: fuck.rkn
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  server: api.mediapolyana.cc
+  servername: api.mediapolyana.cc
+  sni: api.mediapolyana.cc
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 荷兰|NL|🇳🇱|4783ms|🇳🇱NL_59|4.1MB/s|B007-260618
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
 proxy-groups:
 - name: 代理模式
   proxies:
@@ -169,12 +128,7 @@ proxy-groups:
   lazy: true
   name: 手工选择
   proxies:
-  - 荷兰|NL|🇳🇱|3584ms|🇳🇱NL_97|6.7MB/s|A004-260618
-  - 未知|RO|🏳️|3583ms|🇷🇴RO_103|211KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3915ms|🇳🇱NL_46|3.7MB/s
-  - 荷兰|NL|🇳🇱|4336ms|🇳🇱NL_40|3.7MB/s|C002-260622
-  - 荷兰|NL|🇳🇱|4445ms|🇳🇱NL_5|3.5MB/s|B007-260618
-  - 荷兰|NL|🇳🇱|4783ms|🇳🇱NL_59|4.1MB/s|B007-260618
+  - 未知|PL|🏳️|2918ms|🇵🇱 Poland | [*CIDR]
   timeout: 5000
   type: select
   url: https://www.google.com/generate_204
@@ -183,12 +137,7 @@ proxy-groups:
   lazy: true
   name: 超时自动换
   proxies:
-  - 荷兰|NL|🇳🇱|3584ms|🇳🇱NL_97|6.7MB/s|A004-260618
-  - 未知|RO|🏳️|3583ms|🇷🇴RO_103|211KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3915ms|🇳🇱NL_46|3.7MB/s
-  - 荷兰|NL|🇳🇱|4336ms|🇳🇱NL_40|3.7MB/s|C002-260622
-  - 荷兰|NL|🇳🇱|4445ms|🇳🇱NL_5|3.5MB/s|B007-260618
-  - 荷兰|NL|🇳🇱|4783ms|🇳🇱NL_59|4.1MB/s|B007-260618
+  - 未知|PL|🏳️|2918ms|🇵🇱 Poland | [*CIDR]
   timeout: 5000
   type: fallback
   url: https://www.google.com/generate_204
@@ -197,12 +146,7 @@ proxy-groups:
   lazy: true
   name: 速度最快
   proxies:
-  - 荷兰|NL|🇳🇱|3584ms|🇳🇱NL_97|6.7MB/s|A004-260618
-  - 未知|RO|🏳️|3583ms|🇷🇴RO_103|211KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3915ms|🇳🇱NL_46|3.7MB/s
-  - 荷兰|NL|🇳🇱|4336ms|🇳🇱NL_40|3.7MB/s|C002-260622
-  - 荷兰|NL|🇳🇱|4445ms|🇳🇱NL_5|3.5MB/s|B007-260618
-  - 荷兰|NL|🇳🇱|4783ms|🇳🇱NL_59|4.1MB/s|B007-260618
+  - 未知|PL|🏳️|2918ms|🇵🇱 Poland | [*CIDR]
   timeout: 5000
   tolerance: 200
   type: url-test
@@ -212,12 +156,7 @@ proxy-groups:
   lazy: true
   name: 负载均衡
   proxies:
-  - 荷兰|NL|🇳🇱|3584ms|🇳🇱NL_97|6.7MB/s|A004-260618
-  - 未知|RO|🏳️|3583ms|🇷🇴RO_103|211KB/s|A004-260618
-  - 荷兰|NL|🇳🇱|3915ms|🇳🇱NL_46|3.7MB/s
-  - 荷兰|NL|🇳🇱|4336ms|🇳🇱NL_40|3.7MB/s|C002-260622
-  - 荷兰|NL|🇳🇱|4445ms|🇳🇱NL_5|3.5MB/s|B007-260618
-  - 荷兰|NL|🇳🇱|4783ms|🇳🇱NL_59|4.1MB/s|B007-260618
+  - 未知|PL|🏳️|2918ms|🇵🇱 Poland | [*CIDR]
   strategy: consistent-hashing
   timeout: 5000
   type: load-balance
