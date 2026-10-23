@@ -139,6 +139,142 @@ function main(cfgStr) {
         self.assertTrue(clash_file.exists(), f"未生成 {clash_file}")
         self.assertTrue(v2rayn_file.exists(), f"未生成 {v2rayn_file}")
 
+    def test_06_py_run_script_iteration_cli_argument(self):
+        """测试通过 --iterations 参数控制多次迭代"""
+        script_path = BASE_DIR / "py-run-script.py"
+        cmd = [
+            sys.executable,
+            str(script_path),
+            "--url",
+            API_URL,
+            "--key",
+            API_KEY,
+            "--iterations",
+            "2",
+            "--timeout",
+            "30",
+        ]
+        result = subprocess.run(cmd, cwd=str(BASE_DIR), capture_output=True, text=True)
+        print("\n--- py-run-script.py (--iterations 2) STDOUT ---")
+        print(result.stdout)
+        if result.stderr:
+            print("--- py-run-script.py STDERR ---")
+            print(result.stderr)
+
+        self.assertEqual(result.returncode, 0, f"py-run-script.py 执行失败，退出码: {result.returncode}")
+        self.assertIn("计划进行 2 轮节点有效性测试与转换筛选", result.stdout)
+        self.assertIn("开始第 1/2 轮测试", result.stdout)
+        self.assertIn("全部迭代完成", result.stdout)
+
+    def test_07_py_run_script_iteration_env_variable(self):
+        """测试通过 TEST_ITERATIONS 环境变量控制迭代次数"""
+        script_path = BASE_DIR / "py-run-script.py"
+        cmd = [
+            sys.executable,
+            str(script_path),
+            "--url",
+            API_URL,
+            "--key",
+            API_KEY,
+            "--timeout",
+            "30",
+        ]
+        env = os.environ.copy()
+        env["TEST_ITERATIONS"] = "2"
+        result = subprocess.run(cmd, cwd=str(BASE_DIR), env=env, capture_output=True, text=True)
+        print("\n--- py-run-script.py (TEST_ITERATIONS=2) STDOUT ---")
+        print(result.stdout)
+        if result.stderr:
+            print("--- py-run-script.py STDERR ---")
+            print(result.stderr)
+
+        self.assertEqual(result.returncode, 0, f"py-run-script.py 执行失败，退出码: {result.returncode}")
+        self.assertIn("计划进行 2 轮节点有效性测试与转换筛选", result.stdout)
+        self.assertIn("开始第 1/2 轮测试", result.stdout)
+        self.assertIn("全部迭代完成", result.stdout)
+
+
+    def test_08_multi_iteration_chaining_logic(self):
+        """测试多轮迭代时上一轮的 YAML 输出正确作为下一轮的输入"""
+        import importlib
+        from unittest.mock import patch, MagicMock
+
+        py_run_script = importlib.import_module("py-run-script")
+
+        mock_responses = [
+            # 第 1 轮返回
+            MagicMock(
+                status_code=200,
+                json=lambda: {
+                    "code": 200,
+                    "result": {
+                        "proxies_count": 2,
+                        "clash": "proxies:\n  - name: round1-node1\n  - name: round1-node2",
+                        "v2rayn": "round1-base64",
+                    }
+                }
+            ),
+            # 第 2 轮返回
+            MagicMock(
+                status_code=200,
+                json=lambda: {
+                    "code": 200,
+                    "result": {
+                        "proxies_count": 1,
+                        "clash": "proxies:\n  - name: round2-node1",
+                        "v2rayn": "round2-base64",
+                    }
+                }
+            ),
+            # 第 3 轮（最终结果）
+            MagicMock(
+                status_code=200,
+                json=lambda: {
+                    "code": 200,
+                    "result": {
+                        "proxies_count": 1,
+                        "clash": "proxies:\n  - name: round3-node-final",
+                        "v2rayn": "round3-base64-final",
+                    }
+                }
+            ),
+        ]
+
+        with patch.object(py_run_script.requests, "post", side_effect=mock_responses) as mock_post:
+            with patch.object(py_run_script, "load_sources", return_value=[{"name": "initial", "sub_node_type": "URL", "url": "http://init"}]):
+                with patch.object(py_run_script, "load_scripts", return_value=[]):
+                    with patch.object(py_run_script, "load_services", return_value=[]):
+                        py_run_script.run_convert(
+                            api_base="http://test-server",
+                            api_key="test-key",
+                            target="all",
+                            iterations=3,
+                        )
+
+            self.assertEqual(mock_post.call_count, 3)
+
+            # 校验第 1 轮输入是 initial sources
+            payload1 = mock_post.call_args_list[0].kwargs["json"]
+            self.assertEqual(payload1["sources"][0]["name"], "initial")
+
+            # 校验第 2 轮输入是第 1 轮输出的 clash YAML
+            payload2 = mock_post.call_args_list[1].kwargs["json"]
+            self.assertEqual(payload2["sources"][0]["name"], "iteration-1-output")
+            self.assertEqual(payload2["sources"][0]["sub_node_type"], "YAML")
+            self.assertEqual(payload2["sources"][0]["content"], "proxies:\n  - name: round1-node1\n  - name: round1-node2")
+
+            # 校验第 3 轮输入是第 2 轮输出的 clash YAML
+            payload3 = mock_post.call_args_list[2].kwargs["json"]
+            self.assertEqual(payload3["sources"][0]["name"], "iteration-2-output")
+            self.assertEqual(payload3["sources"][0]["sub_node_type"], "YAML")
+            self.assertEqual(payload3["sources"][0]["content"], "proxies:\n  - name: round2-node1")
+
+            # 校验最终写入的文件内容是第 3 轮输出
+            clash_file = BASE_DIR / "output" / "clash-out" / "all-node.yaml"
+            v2rayn_file = BASE_DIR / "output" / "v2rayn-out" / "all-node.txt"
+            self.assertEqual(clash_file.read_text(encoding="utf-8"), "proxies:\n  - name: round3-node-final")
+            self.assertEqual(v2rayn_file.read_text(encoding="utf-8"), "round3-base64-final")
+
 
 if __name__ == "__main__":
     unittest.main()

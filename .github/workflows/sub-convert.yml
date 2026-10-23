@@ -17,6 +17,11 @@ on:
           - all
           - clash
           - v2rayn
+      iterations:
+        description: '有效性测试迭代次数'
+        required: false
+        default: '3'
+        type: string
       force_commit:
         description: '即使无变动也强制提交'
         required: false
@@ -96,14 +101,16 @@ jobs:
       - name: 执行订阅转换并生成文件
         run: |
           TARGET="${{ inputs.target || 'all' }}"
+          ITERATIONS="${{ inputs.iterations || secrets.TEST_ITERATIONS || '3' }}"
           API_URL="${{ steps.prepare-backend.outputs.api_url }}"
           API_KEY="${{ steps.prepare-backend.outputs.api_key }}"
 
-          echo "运行转换任务: URL=${API_URL}, 格式=${TARGET}"
+          echo "运行转换任务: URL=${API_URL}, 格式=${TARGET}, 迭代次数=${ITERATIONS}"
           python py-run-script.py \
             --url "${API_URL}" \
             --key "${API_KEY}" \
             --target "${TARGET}" \
+            --iterations "${ITERATIONS}" \
             --timeout 1200
 
       - name: 停止本地容器服务 (如果已启动)

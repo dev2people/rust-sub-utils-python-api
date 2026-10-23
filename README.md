@@ -38,8 +38,12 @@ pip install -r requirements.txt
 # 默认连接本地服务 (http://127.0.0.1:18189/sub-api/custom/convert)
 python py-run-script.py
 
-# 或指定远程服务端与密钥
-python py-run-script.py --url https://your-server.com/sub-api/custom/convert --key your-api-key --target all
+# 设置节点有效性测试迭代次数（默认为 1，可通过环境变量或命令行参数配置）
+export TEST_ITERATIONS=3
+python py-run-script.py
+
+# 或指定远程服务端、密钥、迭代次数与目标格式
+python py-run-script.py --url https://your-server.com/sub-api/custom/convert --key your-api-key --target all --iterations 3
 ```
 
 ---

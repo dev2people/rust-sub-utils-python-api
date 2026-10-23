@@ -40,6 +40,17 @@ DEFAULT_API_BASE = os.environ.get("API_BASE_URL", "http://localhost:18189")
 DEFAULT_API_KEY = os.environ.get("API_AUTH_KEY", "epYeobK02c6ee9ELuCkPAplZYyqAjOJN")
 
 
+def _get_default_iterations() -> int:
+    val = os.environ.get("TEST_ITERATIONS") or os.environ.get("NODE_TEST_ITERATIONS") or "1"
+    try:
+        return max(1, int(val))
+    except ValueError:
+        return 1
+
+
+DEFAULT_TEST_ITERATIONS = _get_default_iterations()
+
+
 def parse_relaxed_json(text: str) -> dict:
     """解析宽松的 JSON / JS 对象字符串（支持无引号键名和末尾逗号）"""
     text = text.strip()
@@ -153,74 +164,112 @@ def load_services() -> list:
     return services
 
 
-def run_convert(api_base: str, api_key: str, target: str = "all", timeout: int = 500):
-    """组装请求调用后台转换 API 并保存结果"""
+def run_convert(
+    api_base: str,
+    api_key: str,
+    target: str = "all",
+    timeout: int = 500,
+    iterations: int = 1,
+):
+    """组装请求调用后台转换 API 并保存结果，支持多轮迭代测试反复筛选"""
+    if iterations < 1:
+        iterations = 1
+
     # 构造 API URL（支持传入基础地址或完整路径）
     if api_base.endswith("/sub-api/custom/convert") or api_base.endswith("/api/custom/convert"):
         api_url = api_base
     else:
         api_url = api_base.rstrip("/") + "/sub-api/custom/convert"
 
-    sources = load_sources()
-    scripts = load_scripts()
-    services = load_services()
-
-    payload = {
-        "sources": sources,
-        "scripts": scripts,
-        "services": services,
-        "target": target,
-    }
-
     headers = {
         "Content-Type": "application/json",
         "X-API-Key": api_key,
     }
 
-    print(f"\n[请求] 发送自定义转换请求至: {api_url}")
-    print(f"       节点源数量: {len(sources)}, 脚本数量: {len(scripts)}, 服务数量: {len(services)}")
+    current_sources = load_sources()
+    scripts = load_scripts()
+    services = load_services()
 
-    try:
-        response = requests.post(api_url, json=payload, headers=headers, timeout=timeout)
-    except requests.RequestException as e:
-        print(f"[错误] 请求发送失败: {e}")
-        sys.exit(1)
+    last_clash_content = None
+    last_v2rayn_content = None
+    last_proxies_count = 0
 
-    if response.status_code != 200:
-        print(f"[错误] 服务端返回 HTTP {response.status_code}: {response.text}")
-        sys.exit(1)
+    print(f"\n[配置] 计划进行 {iterations} 轮节点有效性测试与转换筛选")
 
-    try:
-        res_json = response.json()
-    except Exception as e:
-        print(f"[错误] 解析响应 JSON 失败: {e}, 原始内容:\n{response.text[:300]}")
-        sys.exit(1)
+    for round_idx in range(1, iterations + 1):
+        is_final = (round_idx == iterations)
+        # 中间迭代轮次必须获取 clash YAML 格式作为下一轮输入
+        current_target = target if is_final else ("all" if target == "v2rayn" else target)
 
-    code = res_json.get("code")
-    if code != "200" and code != 200:
-        err_msg = res_json.get("message") or res_json.get("msg") or "未知错误"
-        print(f"[错误] 业务处理失败: {err_msg}")
-        sys.exit(1)
+        print(f"\n{'='*20} [开始第 {round_idx}/{iterations} 轮测试] {'='*20}")
+        print(f"[请求] 发送自定义转换请求至: {api_url}")
+        print(f"       节点源数量: {len(current_sources)}, 脚本数量: {len(scripts)}, 服务数量: {len(services)}, 目标格式: {current_target}")
 
-    data = res_json.get("result") or res_json.get("data") or {}
-    proxies_count = data.get("proxies_count", 0)
-    clash_content = data.get("clash")
-    v2rayn_content = data.get("v2rayn")
+        payload = {
+            "sources": current_sources,
+            "scripts": scripts,
+            "services": services,
+            "target": current_target,
+        }
 
-    print(f"\n[响应] 转换完成！解析到代理节点总数: {proxies_count}")
+        try:
+            response = requests.post(api_url, json=payload, headers=headers, timeout=timeout)
+        except requests.RequestException as e:
+            print(f"[错误] 第 {round_idx} 轮请求发送失败: {e}")
+            sys.exit(1)
+
+        if response.status_code != 200:
+            print(f"[错误] 第 {round_idx} 轮服务端返回 HTTP {response.status_code}: {response.text}")
+            sys.exit(1)
+
+        try:
+            res_json = response.json()
+        except Exception as e:
+            print(f"[错误] 第 {round_idx} 轮解析响应 JSON 失败: {e}, 原始内容:\n{response.text[:300]}")
+            sys.exit(1)
+
+        code = res_json.get("code")
+        if code != "200" and code != 200:
+            err_msg = res_json.get("message") or res_json.get("msg") or "未知错误"
+            print(f"[错误] 第 {round_idx} 轮业务处理失败: {err_msg}")
+            sys.exit(1)
+
+        data = res_json.get("result") or res_json.get("data") or {}
+        last_proxies_count = data.get("proxies_count", 0)
+        last_clash_content = data.get("clash")
+        last_v2rayn_content = data.get("v2rayn")
+
+        print(f"[响应] 第 {round_idx}/{iterations} 轮完成！解析/过滤后代理节点数: {last_proxies_count}")
+
+        # 如果不是最后一轮，将本次输出的 Clash YAML 节点作为下一轮迭代的输入
+        if not is_final:
+            if not last_clash_content or last_proxies_count == 0:
+                print(f"[提示] 第 {round_idx} 轮测试后已无可用节点或未返回 Clash 配置，提前终止后续迭代。")
+                break
+
+            current_sources = [
+                {
+                    "name": f"iteration-{round_idx}-output",
+                    "sub_node_type": "YAML",
+                    "content": last_clash_content,
+                }
+            ]
+
+    print(f"\n{'='*20} [全部迭代完成] {'='*20}")
+    print(f"[汇总] 最终有效代理节点总数: {last_proxies_count}")
 
     # 写入 Clash 输出
-    if clash_content is not None:
+    if last_clash_content is not None and target in ("all", "clash"):
         CLASH_OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-        CLASH_OUT_FILE.write_text(clash_content, encoding="utf-8")
-        print(f"[成功] Clash 配置已写入: {CLASH_OUT_FILE} (大小: {len(clash_content)} 字节)")
+        CLASH_OUT_FILE.write_text(last_clash_content, encoding="utf-8")
+        print(f"[成功] 最终 Clash 配置已写入: {CLASH_OUT_FILE} (大小: {len(last_clash_content)} 字节)")
 
     # 写入 V2RayN 输出
-    if v2rayn_content is not None:
+    if last_v2rayn_content is not None and target in ("all", "v2rayn"):
         V2RAYN_OUT_TXT.parent.mkdir(parents=True, exist_ok=True)
-        V2RAYN_OUT_TXT.write_text(v2rayn_content, encoding="utf-8")
-        V2RAYN_OUT_V2RAYN.write_text(v2rayn_content, encoding="utf-8")
-        print(f"[成功] V2RayN 配置已写入: {V2RAYN_OUT_TXT} 和 {V2RAYN_OUT_V2RAYN} (大小: {len(v2rayn_content)} 字节)")
+        V2RAYN_OUT_TXT.write_text(last_v2rayn_content, encoding="utf-8")
+        V2RAYN_OUT_V2RAYN.write_text(last_v2rayn_content, encoding="utf-8")
+        print(f"[成功] 最终 V2RayN 配置已写入: {V2RAYN_OUT_TXT} 和 {V2RAYN_OUT_V2RAYN} (大小: {len(last_v2rayn_content)} 字节)")
 
 
 def main():
@@ -242,6 +291,13 @@ def main():
         help="转换目标格式: all | clash | v2rayn (默认: all)",
     )
     parser.add_argument(
+        "--iterations",
+        "-i",
+        type=int,
+        default=DEFAULT_TEST_ITERATIONS,
+        help=f"节点有效性测试迭代次数 (默认: {DEFAULT_TEST_ITERATIONS}, 可通过 TEST_ITERATIONS 环境变量设置)",
+    )
+    parser.add_argument(
         "--timeout",
         type=int,
         default=500,
@@ -249,7 +305,13 @@ def main():
     )
     args = parser.parse_args()
 
-    run_convert(api_base=args.url, api_key=args.key, target=args.target, timeout=args.timeout)
+    run_convert(
+        api_base=args.url,
+        api_key=args.key,
+        target=args.target,
+        timeout=args.timeout,
+        iterations=args.iterations,
+    )
 
 
 if __name__ == "__main__":
