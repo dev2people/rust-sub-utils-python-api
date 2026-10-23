@@ -101,7 +101,7 @@ jobs:
       - name: 执行订阅转换并生成文件
         run: |
           TARGET="${{ inputs.target || 'all' }}"
-          ITERATIONS="${{ inputs.iterations || secrets.TEST_ITERATIONS || '10' }}"
+          ITERATIONS="${{ inputs.iterations || secrets.TEST_ITERATIONS || '5' }}"
           API_URL="${{ steps.prepare-backend.outputs.api_url }}"
           API_KEY="${{ steps.prepare-backend.outputs.api_key }}"
           USE_REMOTE="${{ steps.prepare-backend.outputs.use_remote }}"
