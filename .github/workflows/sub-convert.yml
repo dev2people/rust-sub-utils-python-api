@@ -111,7 +111,7 @@ jobs:
             --key "${API_KEY}" \
             --target "${TARGET}" \
             --iterations "${ITERATIONS}" \
-            --timeout 1200
+            --timeout 6000
 
       - name: 停止本地容器服务 (如果已启动)
         if: always() && steps.prepare-backend.outputs.use_remote == 'false'

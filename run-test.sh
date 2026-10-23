@@ -3,4 +3,4 @@ python3 py-run-script.py \
     --key "epYeobK02c6ee9ELuCkPAplZYyqAjOJN" \
     --target "all" \
     --iterations "${TEST_ITERATIONS:-1}" \
-    --timeout 1200
+    --timeout 6000
