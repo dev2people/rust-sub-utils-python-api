@@ -104,6 +104,14 @@ jobs:
           ITERATIONS="${{ inputs.iterations || secrets.TEST_ITERATIONS || '3' }}"
           API_URL="${{ steps.prepare-backend.outputs.api_url }}"
           API_KEY="${{ steps.prepare-backend.outputs.api_key }}"
+          USE_REMOTE="${{ steps.prepare-backend.outputs.use_remote }}"
+
+          # 如果使用本地 Docker，后台启动日志跟踪并添加 [DOCKER] 前缀，退出时自动终止
+          if [ "$USE_REMOTE" = "false" ]; then
+            (docker compose logs -f 2>&1 | sed 's/^/[DOCKER] /') &
+            LOGS_PID=$!
+            trap "kill $LOGS_PID 2>/dev/null || true" EXIT
+          fi
 
           echo "运行转换任务: URL=${API_URL}, 格式=${TARGET}, 迭代次数=${ITERATIONS}"
           python py-run-script.py \
