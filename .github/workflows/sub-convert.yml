@@ -132,8 +132,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 确保 output 目录变更加入暂存
+          # 确保 output 目录与黑名单变更加入暂存
           git add output/
+          if [ -f "黑名单.yaml" ]; then
+            git add 黑名单.yaml
+          fi
 
           FORCE_COMMIT="${{ inputs.force_commit || false }}"
           
