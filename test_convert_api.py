@@ -244,12 +244,13 @@ function main(cfgStr) {
             with patch.object(py_run_script, "load_sources", return_value=[{"name": "initial", "sub_node_type": "URL", "url": "http://init"}]):
                 with patch.object(py_run_script, "load_scripts", return_value=[]):
                     with patch.object(py_run_script, "load_services", return_value=[]):
-                        py_run_script.run_convert(
-                            api_base="http://test-server",
-                            api_key="test-key",
-                            target="all",
-                            iterations=3,
-                        )
+                        with patch.object(py_run_script, "save_blacklist"):
+                            py_run_script.run_convert(
+                                api_base="http://test-server",
+                                api_key="test-key",
+                                target="all",
+                                iterations=3,
+                            )
 
             self.assertEqual(mock_post.call_count, 3)
 
@@ -393,6 +394,45 @@ function main(cfgStr) {
             loaded = py_run_script.load_blacklist()
             self.assertEqual(len(loaded), 1)
             self.assertEqual(loaded[0], "vmess:example.com:443:550e8400-e29b-41d4-a716-446655440000")
+        finally:
+            if temp_blacklist_file.exists():
+                temp_blacklist_file.unlink()
+            py_run_script.BLACKLIST_FILE = original_file
+
+    def test_12_blacklist_resilient_load_and_quote_sanitization(self):
+        """测试黑名单对异常双引号、控制字符的清洗以及在 YAML 格式异常时的容错恢复"""
+        import importlib
+        py_run_script = importlib.import_module("py-run-script")
+
+        # 1. 验证 normalize_blacklist_key 能够剔除干扰引号与控制字符
+        bad_key = 'ss:103.186.155.145:38388:"82.198.246.97","aid":"0"\r\n'
+        cleaned_key = py_run_script.normalize_blacklist_key(bad_key)
+        self.assertEqual(cleaned_key, "ss:103.186.155.145:38388:82.198.246.97,aid:0")
+
+        # 2. 模拟存在历史破损引号导致 PyYAML 解析失败的异常文件
+        temp_blacklist_file = BASE_DIR / "test_temp_broken_黑名单.yaml"
+        original_file = py_run_script.BLACKLIST_FILE
+        py_run_script.BLACKLIST_FILE = temp_blacklist_file
+
+        broken_yaml_content = """blacklist:
+  - "ss:103.186.154.184:38388://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8"
+  - "ss:103.186.155.145:38388:"82.198.246.97","aid":"0","host":""}
+  - "vless:188.132.183.140:443:213325c6-ef4b-4cdb-850b-24a06f2865c8"
+"""
+        try:
+            temp_blacklist_file.write_text(broken_yaml_content, encoding="utf-8")
+
+            # 验证能够自动触发容错恢复提取出全部 3 条记录，且不崩溃
+            loaded = py_run_script.load_blacklist()
+            self.assertEqual(len(loaded), 3)
+            self.assertIn("ss:103.186.154.184:38388://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8", loaded)
+            self.assertIn("ss:103.186.155.145:38388:82.198.246.97,aid:0,host:}".lower(), [k.lower() for k in loaded])
+            self.assertIn("vless:188.132.183.140:443:213325c6-ef4b-4cdb-850b-24a06f2865c8", loaded)
+
+            # 重新 save 之后应恢复为标准合法的 YAML，二次读取无异常
+            py_run_script.save_blacklist(loaded)
+            reloaded = py_run_script.load_blacklist()
+            self.assertEqual(len(reloaded), 3)
         finally:
             if temp_blacklist_file.exists():
                 temp_blacklist_file.unlink()

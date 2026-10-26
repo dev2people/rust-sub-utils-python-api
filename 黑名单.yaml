@@ -1,28 +1,28 @@
 blacklist:
-  - "ss:103.186.154.184:38388://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW"
-  - "ss:103.186.154.51:38388://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW"
-  - "ss:103.186.155.145:38388:"82.198.246.97","aid":"0","host":"","id":"d13fc2f5-3e05-4795-81eb-44143a09e552","net":"tcp","path":"/","port":"180","ps":"@awlix_ir","scy":"auto","sni":"","tls":"","type":"none","v":"2"}"
-  - "ss:104.21.13.183:443:www.v2nodes.com"
-  - "ss:172.67.132.246:443:www.v2nodes.com"
-  - "ss:193.29.139.240:8080:"panel3.ipyar.org","aid":"0","alpn":"","fp":"","host":"","id":"c0ccdeb9-784c-4d67-b904-20dcaac9902a","net":"tcp","path":"","port":"32017","ps":"@Vpn_Tehran"
-  - "ss:31.76.11.83:11650:iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c="
-  - "ss:31.77.148.89:56752:rHmUhnjv7b+V8o3YWAMaIDBSBlgSNjv3zHYMu6ALFU8="
-  - "ss:34.245.185.129:443://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU"
-  - "ss:4.158.0.51:443:W74XFALLLuw6m5IA"
-  - "ss:54.36.174.140:443:pvgz9pq"
-  - "ss:62.60.233.220:18685:"serkat.org","aid":"0","alpn":"","fp":"","host":"","id":"03fcc618-b93d-6796-6aed-8a38c975d581","net":"ws","path":"linkvws","port":"443","ps":"(@VmessProtocol)برای"
-  - "ss:65.109.217.125:1080:"65.109.217.125","aid":"0","alpn":"","fp":"","host":"","id":"5a38afce-c5eb-4cb8-8e5e-bb4f03462b44","net":"ws","path":"/","port":"8443","ps":"@V2rayNGVPN"
-  - "ss:78.38.246.150:8446:6e3e43f4-12b7-42f1-8b93-41a152d5612d"
-  - "ss:91.234.147.37:6666://78793680-044c-46d7-8062-8ad3497476f6"
-  - "ss:hk01.x.quickcht3.club:52611://t.me/mftizi","
-  - "ss:t3.janebi913.ir:9093:b5451bf70937419aa5415fdf6bcd4f6f"
-  - "ss:xxx.90908585.ir:8080:XV+umcZHRuSpfrigrIbOloRZZ7rMFZTASosT7FrbqCY=:A7xAzHKaAILMfIeQvXAbI6qQzT5zQGSP5WvxlZlwZQM="
-  - "vless:188.132.183.140:443:213325c6-ef4b-4cdb-850b-24a06f2865c8"
-  - "vless:54.154.16.89:443:f4dcc4a5-e41b-4275-b9a8-fcdb697842bf"
-  - "vless:95.214.181.51:443:213325c6-ef4b-4cdb-850b-24a06f2865c8"
-  - "vmess:0000:0000:0000:0000:0000:ffff:681f:103e:80:6b1451e0-f3ff-11ed-b633-205c6d5f5d78"
-  - "vmess:0000:0000:0000:0000:0000:ffff:681f:1068:443:4b3e66e0-f3ff-11ed-b631-205c6d5f5d78"
-  - "vmess:0000:0000:0000:0000:0000:ffff:681f:1068:80:6b1451e0-f3ff-11ed-b633-205c6d5f5d78"
-  - "vmess:0:0:0:0:0:ffff:b2d0:5790:10473:cbf8bb76-803d-4e5c-9fdb-f1c405be4cc6"
-  - "vmess:0:0:0:0:0:ffff:b2d0:5790:45015:21f54c15-c624-460a-d6f3-95bb2041ea4a"
-  - "vmess:::ffff:3981:3258:16513:5f77f446-6b97-4f39-b9b1-af353e3c4d50"
+- ss:103.186.154.184:38388://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW
+- ss:103.186.154.51:38388://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW
+- ss:103.186.155.145:38388:82.198.246.97,aid:0,host:,id:d13fc2f5-3e05-4795-81eb-44143a09e552,net:tcp,path:/,port:180,ps:@awlix_ir,scy:auto,sni:,tls:,type:none,v:2}
+- ss:104.21.13.183:443:www.v2nodes.com
+- ss:172.67.132.246:443:www.v2nodes.com
+- ss:193.29.139.240:8080:panel3.ipyar.org,aid:0,alpn:,fp:,host:,id:c0ccdeb9-784c-4d67-b904-20dcaac9902a,net:tcp,path:,port:32017,ps:@Vpn_Tehran
+- ss:31.76.11.83:11650:iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
+- ss:31.77.148.89:56752:rHmUhnjv7b+V8o3YWAMaIDBSBlgSNjv3zHYMu6ALFU8=
+- ss:34.245.185.129:443://YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU
+- ss:4.158.0.51:443:W74XFALLLuw6m5IA
+- ss:54.36.174.140:443:pvgz9pq
+- ss:62.60.233.220:18685:serkat.org,aid:0,alpn:,fp:,host:,id:03fcc618-b93d-6796-6aed-8a38c975d581,net:ws,path:linkvws,port:443,ps:(@VmessProtocol)برای
+- ss:65.109.217.125:1080:65.109.217.125,aid:0,alpn:,fp:,host:,id:5a38afce-c5eb-4cb8-8e5e-bb4f03462b44,net:ws,path:/,port:8443,ps:@V2rayNGVPN
+- ss:78.38.246.150:8446:6e3e43f4-12b7-42f1-8b93-41a152d5612d
+- ss:91.234.147.37:6666://78793680-044c-46d7-8062-8ad3497476f6
+- ss:hk01.x.quickcht3.club:52611://t.me/mftizi,
+- ss:t3.janebi913.ir:9093:b5451bf70937419aa5415fdf6bcd4f6f
+- ss:xxx.90908585.ir:8080:XV+umcZHRuSpfrigrIbOloRZZ7rMFZTASosT7FrbqCY=:A7xAzHKaAILMfIeQvXAbI6qQzT5zQGSP5WvxlZlwZQM=
+- vless:188.132.183.140:443:213325c6-ef4b-4cdb-850b-24a06f2865c8
+- vless:54.154.16.89:443:f4dcc4a5-e41b-4275-b9a8-fcdb697842bf
+- vless:95.214.181.51:443:213325c6-ef4b-4cdb-850b-24a06f2865c8
+- vmess:0000:0000:0000:0000:0000:ffff:681f:103e:80:6b1451e0-f3ff-11ed-b633-205c6d5f5d78
+- vmess:0000:0000:0000:0000:0000:ffff:681f:1068:443:4b3e66e0-f3ff-11ed-b631-205c6d5f5d78
+- vmess:0000:0000:0000:0000:0000:ffff:681f:1068:80:6b1451e0-f3ff-11ed-b633-205c6d5f5d78
+- vmess:0:0:0:0:0:ffff:b2d0:5790:10473:cbf8bb76-803d-4e5c-9fdb-f1c405be4cc6
+- vmess:0:0:0:0:0:ffff:b2d0:5790:45015:21f54c15-c624-460a-d6f3-95bb2041ea4a
+- vmess:::ffff:3981:3258:16513:5f77f446-6b97-4f39-b9b1-af353e3c4d50

@@ -171,8 +171,10 @@ def load_services() -> list:
 
 
 def normalize_blacklist_key(key: str) -> str:
-    """规范化黑名单指纹 Key（域名与 UUID 统一忽略大小写）"""
-    key = str(key).strip()
+    """规范化黑名单指纹 Key（域名与 UUID 统一忽略大小写，并清除多余引号与换行）"""
+    key = str(key).strip().strip('"').strip("'")
+    # 清洗内部破坏 YAML 格式的未转义引号和控制字符
+    key = key.replace('"', '').replace("'", '').replace('\r', '').replace('\n', '')
     parts = key.split(":", 3)
     if len(parts) == 4:
         p_type = parts[0].strip().lower()
@@ -197,24 +199,33 @@ def load_blacklist() -> list:
         if not content:
             return []
         items = []
+        parsed_via_yaml = False
         if yaml is not None:
-            data = yaml.safe_load(content)
-            if isinstance(data, list):
-                items = [str(x).strip() for x in data if str(x).strip()]
-            elif isinstance(data, dict):
-                raw_items = data.get("blacklist") or data.get("failed_nodes") or []
-                if isinstance(raw_items, list):
-                    items = [str(x).strip() for x in raw_items if str(x).strip()]
-        else:
-            # 兼容未安装 yaml 时的按行简单提取
+            try:
+                data = yaml.safe_load(content)
+                if isinstance(data, list):
+                    items = [str(x).strip() for x in data if str(x).strip()]
+                    parsed_via_yaml = True
+                elif isinstance(data, dict):
+                    raw_items = data.get("blacklist") or data.get("failed_nodes") or []
+                    if isinstance(raw_items, list):
+                        items = [str(x).strip() for x in raw_items if str(x).strip()]
+                        parsed_via_yaml = True
+            except Exception as ye:
+                print(f"[提示] PyYAML 解析黑名单文件遇到格式警告 ({ye})，启用逐行安全提取恢复模式")
+
+        if not parsed_via_yaml:
+            # 兼容未安装 yaml 或 yaml 存在解析异常时的按行稳健提取
             for line in content.splitlines():
                 line = line.strip()
                 if line.startswith("-"):
-                    val = line.lstrip("-").strip().strip('"').strip("'")
+                    val = line.lstrip("-").strip()
                     if val:
                         items.append(val)
-        # 统一规范化
-        return sorted(list(set(normalize_blacklist_key(k) for k in items if k)))
+
+        # 统一规范化与去重清洗
+        cleaned = sorted(list(set(normalize_blacklist_key(k) for k in items if k)))
+        return [k for k in cleaned if k and k != ":::"]
     except Exception as e:
         print(f"[警告] 读取黑名单文件失败: {e}")
     return []
@@ -225,12 +236,13 @@ def save_blacklist(blacklist: list):
     if not blacklist:
         return
     try:
-        # 规范化、去重并排序
+        # 规范化、去重并清洗
         unique_list = sorted(list(set(normalize_blacklist_key(k) for k in blacklist if str(k).strip())))
+        unique_list = [k for k in unique_list if k and k != ":::"]
         if yaml is not None:
             content = yaml.dump({"blacklist": unique_list}, allow_unicode=True, sort_keys=False)
         else:
-            lines = ["blacklist:"] + [f'  - "{item}"' for item in unique_list]
+            lines = ["blacklist:"] + [f"  - {json.dumps(item, ensure_ascii=False)}" for item in unique_list]
             content = "\n".join(lines) + "\n"
 
         BLACKLIST_FILE.write_text(content, encoding="utf-8")
