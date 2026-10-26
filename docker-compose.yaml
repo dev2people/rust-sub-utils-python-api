@@ -13,6 +13,7 @@ services:
       - HTTP_PROXY=http://host.docker.internal:20003
       - HTTPS_PROXY=http://host.docker.internal:20003
       - NO_PROXY=clash-speedtest
+      - SERVICE_BATCH=200
       - TZ=Asia/Shanghai
       - DATABASE_URL=sqlite:///app/data/sub.db?mode=rwc
       - RUST_LOG=info
