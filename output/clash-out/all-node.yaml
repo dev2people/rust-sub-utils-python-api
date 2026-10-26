@@ -101,190 +101,9 @@ dns:
 hosts: {}
 ipv6: false
 proxies:
-- name: 香港|HK|🇭🇰|230ms|[HTTPS] 🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  port: 3128
-  server: 119.28.24.235
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 香港|HK|🇭🇰|232ms|🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  port: 3128
-  server: 119.28.24.235
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 香港|HK|🇭🇰|235ms|🇭🇰HK_38|473KB/s|P002-260618
-  port: 3128
-  server: 119.28.24.235
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 印度尼西亚|ID|🇮🇩|452ms|[HTTPS] 🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  port: 443
-  server: 103.86.116.118
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 印度尼西亚|ID|🇮🇩|470ms|🇮🇩ID_2|705KB/s|R002-260618
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|1.1MB/s
-  password: null
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 印度尼西亚|ID|🇮🇩|472ms|🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  port: 443
-  server: 103.86.116.118
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 印度尼西亚|ID|🇮🇩|513ms|🇮🇩ID_3|571KB/s|R002-260618
-  port: 443
-  server: 103.86.116.118
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 印度尼西亚|ID|🇮🇩|515ms|[HTTPS] 🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  port: 443
-  server: 103.86.117.202
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 美国|US|🇺🇸|698ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
-  port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sni: fan.365747.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|698ms|🇺🇸US_241|80KB/s|R002-260618
-  password: 'null'
-  port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sni: fan.365747.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 美国|US|🇺🇸|698ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  password: 'null'
-  port: 443
-  server: fan.596189.xyz
-  sni: fan.596189.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 美国|US|🇺🇸|698ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
-  port: 443
-  server: 137.175.22.88
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|702ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  port: 443
-  server: fan.596189.xyz
-  skip-cert-verify: true
-  sni: fan.596189.xyz
-  sub_tag: Z001-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|704ms|❓Other_5|149KB/s|R002-260618
-  port: 443
-  server: 137.175.22.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|712ms|🇺🇸US_238|225KB/s|R002-260618
-  password: 'null'
-  port: 443
-  server: fan.596189.xyz
-  sni: fan.596189.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 美国|US|🇺🇸|714ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
-  password: None
+- name: 美国|US|🇺🇸|26ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
   port: 443
   server: 172.64.68.89
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 美国|US|🇺🇸|716ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|722ms|🇫🇷FR_25|7.4MB/s|R002-260618
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|722ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  port: 443
-  server: 137.175.22.116
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|727ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 美国|US|🇺🇸|728ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  port: 443
-  server: 137.175.22.116
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -296,7 +115,7 @@ proxies:
     method: GET
     path:
     - /
-  name: 美国|US|🇺🇸|732ms|🇺🇸US_474|1.8MB/s|P002-260618
+  name: 美国|US|🇺🇸|25ms|🇺🇸US_474|1.8MB/s|P002-260618
   network: http
   port: 443
   server: 44.201.37.147
@@ -305,38 +124,38 @@ proxies:
   type: vless
   udp: true
   uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-- name: 美国|US|🇺🇸|737ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|744ms|🇺🇸US_4|348KB/s|R002-260618
-  port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sni: fan.365747.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|745ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+- name: 美国|US|🇺🇸|28ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
   port: 443
   server: 172.64.69.89
   skip-cert-verify: true
   tfo: false
   tls: true
   type: http
-- name: 美国|US|🇺🇸|765ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+- name: 美国|US|🇺🇸|29ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
+  password: None
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   tfo: false
   tls: true
   type: http
-- name: 美国|US|🇺🇸|784ms|🇫🇷FR_120|7.0MB/s|P002-260618
+- name: 美国|US|🇺🇸|33ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|39ms|🇫🇷FR_25|7.4MB/s|R002-260618
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|40ms|🇫🇷FR_120|7.0MB/s|P002-260618
   password: None
   port: 443
   server: 172.64.68.89
@@ -345,123 +164,44 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 美国|US|🇺🇸|789ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+- name: 美国|US|🇺🇸|41ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
   port: 443
-  server: fan.596189.xyz
+  server: 172.64.69.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|43ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+  port: 443
+  server: 172.64.68.89
   skip-cert-verify: true
   tfo: false
   tls: true
   type: http
-- name: 美国|US|🇺🇸|792ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
+- name: 美国|US|🇺🇸|43ms|🇫🇷FR_80|4.6MB/s|R002-260618
   port: 443
-  server: 137.175.22.84
+  server: 172.64.68.89
   skip-cert-verify: true
-  tfo: false
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: 美国|US|🇺🇸|796ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
+  udp: true
+- name: 美国|US|🇺🇸|56ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
   port: 443
   server: 172.64.69.89
   skip-cert-verify: true
   tfo: false
   tls: true
   type: http
-- name: 美国|US|🇺🇸|816ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+- name: 美国|US|🇺🇸|336ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
   port: 443
   server: 137.175.22.84
   skip-cert-verify: true
   tfo: false
   tls: true
   type: http
-- name: 美国|US|🇺🇸|820ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  port: 443
-  server: 137.175.22.56
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|829ms|🇺🇸US_248|212KB/s|R002-260618
-  port: 443
-  server: fan.596189.xyz
-  skip-cert-verify: true
-  sni: fan.596189.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|832ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  port: 443
-  server: 137.175.22.52
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  port: 443
-  server: 137.175.22.56
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  port: 443
-  server: 137.175.22.52
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 美国|US|🇺🇸|833ms|🇺🇸US_192|180KB/s|R002-260618
-  port: 443
-  server: 137.175.22.52
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|839ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  port: 443
-  server: 137.175.22.89
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-- name: 美国|US|🇺🇸|842ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  port: 443
-  server: 137.175.22.84
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|844ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  password: 'null'
-  port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-  username: 'null'
-- name: 美国|US|🇺🇸|848ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  port: 443
-  server: 137.175.22.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 美国|US|🇺🇸|854ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  password: 'null'
-  port: 443
-  server: fan.596189.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: http
-  username: 'null'
-- name: 美国|US|🇺🇸|865ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+- name: 美国|US|🇺🇸|341ms|🇺🇸US_241|80KB/s|R002-260618
   password: 'null'
   port: 443
   server: fan.365747.xyz
@@ -472,13 +212,227 @@ proxies:
   type: http
   udp: true
   username: 'null'
-- name: 美国|US|🇺🇸|875ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+- name: 美国|US|🇺🇸|353ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  port: 443
+  server: 137.175.22.116
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|356ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  port: 443
+  server: 137.175.22.89
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|356ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  port: 443
+  server: 137.175.22.84
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|359ms|🇺🇸US_4|348KB/s|R002-260618
+  port: 443
+  server: fan.365747.xyz
+  skip-cert-verify: true
+  sni: fan.365747.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|359ms|🇺🇸US_338|349KB/s|R002-260618
+  port: 443
+  server: 137.175.22.116
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|361ms|🇺🇸US_403|329KB/s|R002-260618
+  port: 443
+  server: 137.175.22.88
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|362ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
   port: 443
   server: fan.365747.xyz
   skip-cert-verify: true
   tfo: false
   tls: true
   type: http
+- name: 美国|US|🇺🇸|364ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  port: 443
+  server: fan.365747.xyz
+  skip-cert-verify: true
+  sni: fan.365747.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|368ms|🇺🇸US_192|180KB/s|R002-260618
+  port: 443
+  server: 137.175.22.52
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|368ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  port: 443
+  server: 137.175.22.88
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|372ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  port: 443
+  server: 137.175.22.116
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|378ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  port: 443
+  server: 137.175.22.56
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|381ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  password: 'null'
+  port: 443
+  server: fan.365747.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+  username: 'null'
+- name: 美国|US|🇺🇸|381ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  port: 443
+  server: 137.175.22.52
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|382ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  password: 'null'
+  port: 443
+  server: fan.365747.xyz
+  skip-cert-verify: true
+  sni: fan.365747.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: 美国|US|🇺🇸|382ms|[HTTPS] 🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  port: 443
+  server: 137.175.22.88
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|384ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  port: 443
+  server: 137.175.22.56
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|384ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  port: 443
+  server: 137.175.22.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 未知|UNKNOWN|🏳️|385ms|❓Other_5|149KB/s|R002-260618
+  port: 443
+  server: 137.175.22.89
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|387ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  port: 443
+  server: 137.175.22.84
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|388ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  port: 443
+  server: 137.175.22.52
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|698ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  port: 443
+  server: fan.596189.xyz
+  skip-cert-verify: true
+  sni: fan.596189.xyz
+  sub_tag: Z001-260618
+  tls: true
+  type: http
+  udp: true
+- name: 美国|US|🇺🇸|699ms|🇺🇸US_238|225KB/s|R002-260618
+  password: 'null'
+  port: 443
+  server: fan.596189.xyz
+  sni: fan.596189.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: 美国|US|🇺🇸|703ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  password: 'null'
+  port: 443
+  server: fan.596189.xyz
+  sni: fan.596189.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: 美国|US|🇺🇸|719ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  port: 443
+  server: fan.596189.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+- name: 美国|US|🇺🇸|722ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  password: 'null'
+  port: 443
+  server: fan.596189.xyz
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: http
+  username: 'null'
+- name: 美国|US|🇺🇸|742ms|🇺🇸US_248|212KB/s|R002-260618
+  port: 443
+  server: fan.596189.xyz
+  skip-cert-verify: true
+  sni: fan.596189.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
 proxy-groups:
 - name: 代理模式
   proxies:
@@ -491,52 +445,46 @@ proxy-groups:
   lazy: true
   name: 手工选择
   proxies:
-  - 香港|HK|🇭🇰|230ms|[HTTPS] 🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|232ms|🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|235ms|🇭🇰HK_38|473KB/s|P002-260618
-  - 印度尼西亚|ID|🇮🇩|452ms|[HTTPS] 🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|470ms|🇮🇩ID_2|705KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|1.1MB/s
-  - 印度尼西亚|ID|🇮🇩|472ms|🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|513ms|🇮🇩ID_3|571KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|515ms|[HTTPS] 🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_241|80KB/s|R002-260618
-  - 美国|US|🇺🇸|698ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
-  - 美国|US|🇺🇸|702ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|704ms|❓Other_5|149KB/s|R002-260618
-  - 美国|US|🇺🇸|712ms|🇺🇸US_238|225KB/s|R002-260618
-  - 美国|US|🇺🇸|714ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
-  - 美国|US|🇺🇸|716ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|722ms|🇫🇷FR_25|7.4MB/s|R002-260618
-  - 美国|US|🇺🇸|722ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|727ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|728ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|732ms|🇺🇸US_474|1.8MB/s|P002-260618
-  - 美国|US|🇺🇸|737ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|744ms|🇺🇸US_4|348KB/s|R002-260618
-  - 美国|US|🇺🇸|745ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|765ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
-  - 美国|US|🇺🇸|784ms|🇫🇷FR_120|7.0MB/s|P002-260618
-  - 美国|US|🇺🇸|789ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|792ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
-  - 美国|US|🇺🇸|796ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
-  - 美国|US|🇺🇸|816ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|820ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|829ms|🇺🇸US_248|212KB/s|R002-260618
-  - 美国|US|🇺🇸|832ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|🇺🇸US_192|180KB/s|R002-260618
-  - 美国|US|🇺🇸|839ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|842ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|844ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|848ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|854ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|865ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|875ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|26ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|25ms|🇺🇸US_474|1.8MB/s|P002-260618
+  - 美国|US|🇺🇸|28ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
+  - 美国|US|🇺🇸|29ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
+  - 美国|US|🇺🇸|33ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|39ms|🇫🇷FR_25|7.4MB/s|R002-260618
+  - 美国|US|🇺🇸|40ms|🇫🇷FR_120|7.0MB/s|P002-260618
+  - 美国|US|🇺🇸|41ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|43ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+  - 美国|US|🇺🇸|43ms|🇫🇷FR_80|4.6MB/s|R002-260618
+  - 美国|US|🇺🇸|56ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|336ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
+  - 美国|US|🇺🇸|341ms|🇺🇸US_241|80KB/s|R002-260618
+  - 美国|US|🇺🇸|353ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|356ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 美国|US|🇺🇸|356ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|359ms|🇺🇸US_4|348KB/s|R002-260618
+  - 美国|US|🇺🇸|359ms|🇺🇸US_338|349KB/s|R002-260618
+  - 美国|US|🇺🇸|361ms|🇺🇸US_403|329KB/s|R002-260618
+  - 美国|US|🇺🇸|362ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|364ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|368ms|🇺🇸US_192|180KB/s|R002-260618
+  - 美国|US|🇺🇸|368ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|372ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|378ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|381ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|381ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|382ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|382ms|[HTTPS] 🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 未知|UNKNOWN|🏳️|385ms|❓Other_5|149KB/s|R002-260618
+  - 美国|US|🇺🇸|387ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|388ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|698ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|699ms|🇺🇸US_238|225KB/s|R002-260618
+  - 美国|US|🇺🇸|703ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|719ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|722ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|742ms|🇺🇸US_248|212KB/s|R002-260618
   timeout: 5000
   type: select
   url: https://www.google.com/generate_204
@@ -545,52 +493,46 @@ proxy-groups:
   lazy: true
   name: 超时自动换
   proxies:
-  - 香港|HK|🇭🇰|230ms|[HTTPS] 🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|232ms|🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|235ms|🇭🇰HK_38|473KB/s|P002-260618
-  - 印度尼西亚|ID|🇮🇩|452ms|[HTTPS] 🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|470ms|🇮🇩ID_2|705KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|1.1MB/s
-  - 印度尼西亚|ID|🇮🇩|472ms|🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|513ms|🇮🇩ID_3|571KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|515ms|[HTTPS] 🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_241|80KB/s|R002-260618
-  - 美国|US|🇺🇸|698ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
-  - 美国|US|🇺🇸|702ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|704ms|❓Other_5|149KB/s|R002-260618
-  - 美国|US|🇺🇸|712ms|🇺🇸US_238|225KB/s|R002-260618
-  - 美国|US|🇺🇸|714ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
-  - 美国|US|🇺🇸|716ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|722ms|🇫🇷FR_25|7.4MB/s|R002-260618
-  - 美国|US|🇺🇸|722ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|727ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|728ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|732ms|🇺🇸US_474|1.8MB/s|P002-260618
-  - 美国|US|🇺🇸|737ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|744ms|🇺🇸US_4|348KB/s|R002-260618
-  - 美国|US|🇺🇸|745ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|765ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
-  - 美国|US|🇺🇸|784ms|🇫🇷FR_120|7.0MB/s|P002-260618
-  - 美国|US|🇺🇸|789ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|792ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
-  - 美国|US|🇺🇸|796ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
-  - 美国|US|🇺🇸|816ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|820ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|829ms|🇺🇸US_248|212KB/s|R002-260618
-  - 美国|US|🇺🇸|832ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|🇺🇸US_192|180KB/s|R002-260618
-  - 美国|US|🇺🇸|839ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|842ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|844ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|848ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|854ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|865ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|875ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|26ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|25ms|🇺🇸US_474|1.8MB/s|P002-260618
+  - 美国|US|🇺🇸|28ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
+  - 美国|US|🇺🇸|29ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
+  - 美国|US|🇺🇸|33ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|39ms|🇫🇷FR_25|7.4MB/s|R002-260618
+  - 美国|US|🇺🇸|40ms|🇫🇷FR_120|7.0MB/s|P002-260618
+  - 美国|US|🇺🇸|41ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|43ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+  - 美国|US|🇺🇸|43ms|🇫🇷FR_80|4.6MB/s|R002-260618
+  - 美国|US|🇺🇸|56ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|336ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
+  - 美国|US|🇺🇸|341ms|🇺🇸US_241|80KB/s|R002-260618
+  - 美国|US|🇺🇸|353ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|356ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 美国|US|🇺🇸|356ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|359ms|🇺🇸US_4|348KB/s|R002-260618
+  - 美国|US|🇺🇸|359ms|🇺🇸US_338|349KB/s|R002-260618
+  - 美国|US|🇺🇸|361ms|🇺🇸US_403|329KB/s|R002-260618
+  - 美国|US|🇺🇸|362ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|364ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|368ms|🇺🇸US_192|180KB/s|R002-260618
+  - 美国|US|🇺🇸|368ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|372ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|378ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|381ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|381ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|382ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|382ms|[HTTPS] 🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 未知|UNKNOWN|🏳️|385ms|❓Other_5|149KB/s|R002-260618
+  - 美国|US|🇺🇸|387ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|388ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|698ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|699ms|🇺🇸US_238|225KB/s|R002-260618
+  - 美国|US|🇺🇸|703ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|719ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|722ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|742ms|🇺🇸US_248|212KB/s|R002-260618
   timeout: 5000
   type: fallback
   url: https://www.google.com/generate_204
@@ -599,52 +541,46 @@ proxy-groups:
   lazy: true
   name: 速度最快
   proxies:
-  - 香港|HK|🇭🇰|230ms|[HTTPS] 🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|232ms|🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|235ms|🇭🇰HK_38|473KB/s|P002-260618
-  - 印度尼西亚|ID|🇮🇩|452ms|[HTTPS] 🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|470ms|🇮🇩ID_2|705KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|1.1MB/s
-  - 印度尼西亚|ID|🇮🇩|472ms|🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|513ms|🇮🇩ID_3|571KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|515ms|[HTTPS] 🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_241|80KB/s|R002-260618
-  - 美国|US|🇺🇸|698ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
-  - 美国|US|🇺🇸|702ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|704ms|❓Other_5|149KB/s|R002-260618
-  - 美国|US|🇺🇸|712ms|🇺🇸US_238|225KB/s|R002-260618
-  - 美国|US|🇺🇸|714ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
-  - 美国|US|🇺🇸|716ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|722ms|🇫🇷FR_25|7.4MB/s|R002-260618
-  - 美国|US|🇺🇸|722ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|727ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|728ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|732ms|🇺🇸US_474|1.8MB/s|P002-260618
-  - 美国|US|🇺🇸|737ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|744ms|🇺🇸US_4|348KB/s|R002-260618
-  - 美国|US|🇺🇸|745ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|765ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
-  - 美国|US|🇺🇸|784ms|🇫🇷FR_120|7.0MB/s|P002-260618
-  - 美国|US|🇺🇸|789ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|792ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
-  - 美国|US|🇺🇸|796ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
-  - 美国|US|🇺🇸|816ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|820ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|829ms|🇺🇸US_248|212KB/s|R002-260618
-  - 美国|US|🇺🇸|832ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|🇺🇸US_192|180KB/s|R002-260618
-  - 美国|US|🇺🇸|839ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|842ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|844ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|848ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|854ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|865ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|875ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|26ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|25ms|🇺🇸US_474|1.8MB/s|P002-260618
+  - 美国|US|🇺🇸|28ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
+  - 美国|US|🇺🇸|29ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
+  - 美国|US|🇺🇸|33ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|39ms|🇫🇷FR_25|7.4MB/s|R002-260618
+  - 美国|US|🇺🇸|40ms|🇫🇷FR_120|7.0MB/s|P002-260618
+  - 美国|US|🇺🇸|41ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|43ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+  - 美国|US|🇺🇸|43ms|🇫🇷FR_80|4.6MB/s|R002-260618
+  - 美国|US|🇺🇸|56ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|336ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
+  - 美国|US|🇺🇸|341ms|🇺🇸US_241|80KB/s|R002-260618
+  - 美国|US|🇺🇸|353ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|356ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 美国|US|🇺🇸|356ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|359ms|🇺🇸US_4|348KB/s|R002-260618
+  - 美国|US|🇺🇸|359ms|🇺🇸US_338|349KB/s|R002-260618
+  - 美国|US|🇺🇸|361ms|🇺🇸US_403|329KB/s|R002-260618
+  - 美国|US|🇺🇸|362ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|364ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|368ms|🇺🇸US_192|180KB/s|R002-260618
+  - 美国|US|🇺🇸|368ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|372ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|378ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|381ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|381ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|382ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|382ms|[HTTPS] 🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 未知|UNKNOWN|🏳️|385ms|❓Other_5|149KB/s|R002-260618
+  - 美国|US|🇺🇸|387ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|388ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|698ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|699ms|🇺🇸US_238|225KB/s|R002-260618
+  - 美国|US|🇺🇸|703ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|719ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|722ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|742ms|🇺🇸US_248|212KB/s|R002-260618
   timeout: 5000
   tolerance: 200
   type: url-test
@@ -654,52 +590,46 @@ proxy-groups:
   lazy: true
   name: 负载均衡
   proxies:
-  - 香港|HK|🇭🇰|230ms|[HTTPS] 🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|232ms|🇭🇰HK_49|561KB/s|P002-260618 [a3de63191023]
-  - 香港|HK|🇭🇰|235ms|🇭🇰HK_38|473KB/s|P002-260618
-  - 印度尼西亚|ID|🇮🇩|452ms|[HTTPS] 🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|470ms|🇮🇩ID_2|705KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 印度尼西亚|ID|🇮🇩|471ms|🇮🇩ID_1|1.1MB/s
-  - 印度尼西亚|ID|🇮🇩|472ms|🇮🇩ID_2|718KB/s|R002-260618 [ec91e15d058c]
-  - 印度尼西亚|ID|🇮🇩|513ms|🇮🇩ID_3|571KB/s|R002-260618
-  - 印度尼西亚|ID|🇮🇩|515ms|[HTTPS] 🇮🇩ID_1|702KB/s|R002-260618 [964f620b2028]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_241|80KB/s|R002-260618
-  - 美国|US|🇺🇸|698ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
-  - 美国|US|🇺🇸|702ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|704ms|❓Other_5|149KB/s|R002-260618
-  - 美国|US|🇺🇸|712ms|🇺🇸US_238|225KB/s|R002-260618
-  - 美国|US|🇺🇸|714ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
-  - 美国|US|🇺🇸|716ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|722ms|🇫🇷FR_25|7.4MB/s|R002-260618
-  - 美国|US|🇺🇸|722ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|727ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|728ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|732ms|🇺🇸US_474|1.8MB/s|P002-260618
-  - 美国|US|🇺🇸|737ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|744ms|🇺🇸US_4|348KB/s|R002-260618
-  - 美国|US|🇺🇸|745ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|765ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
-  - 美国|US|🇺🇸|784ms|🇫🇷FR_120|7.0MB/s|P002-260618
-  - 美国|US|🇺🇸|789ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|792ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
-  - 美国|US|🇺🇸|796ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
-  - 美国|US|🇺🇸|816ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|820ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|829ms|🇺🇸US_248|212KB/s|R002-260618
-  - 美国|US|🇺🇸|832ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|🇺🇸US_192|180KB/s|R002-260618
-  - 美国|US|🇺🇸|839ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|842ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|844ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|848ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|854ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|865ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|875ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|26ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|25ms|🇺🇸US_474|1.8MB/s|P002-260618
+  - 美国|US|🇺🇸|28ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
+  - 美国|US|🇺🇸|29ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
+  - 美国|US|🇺🇸|33ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|39ms|🇫🇷FR_25|7.4MB/s|R002-260618
+  - 美国|US|🇺🇸|40ms|🇫🇷FR_120|7.0MB/s|P002-260618
+  - 美国|US|🇺🇸|41ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|43ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+  - 美国|US|🇺🇸|43ms|🇫🇷FR_80|4.6MB/s|R002-260618
+  - 美国|US|🇺🇸|56ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|336ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
+  - 美国|US|🇺🇸|341ms|🇺🇸US_241|80KB/s|R002-260618
+  - 美国|US|🇺🇸|353ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|356ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 美国|US|🇺🇸|356ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|359ms|🇺🇸US_4|348KB/s|R002-260618
+  - 美国|US|🇺🇸|359ms|🇺🇸US_338|349KB/s|R002-260618
+  - 美国|US|🇺🇸|361ms|🇺🇸US_403|329KB/s|R002-260618
+  - 美国|US|🇺🇸|362ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|364ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|368ms|🇺🇸US_192|180KB/s|R002-260618
+  - 美国|US|🇺🇸|368ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|372ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|378ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|381ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|381ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|382ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|382ms|[HTTPS] 🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 未知|UNKNOWN|🏳️|385ms|❓Other_5|149KB/s|R002-260618
+  - 美国|US|🇺🇸|387ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|388ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|698ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|699ms|🇺🇸US_238|225KB/s|R002-260618
+  - 美国|US|🇺🇸|703ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|719ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|722ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|742ms|🇺🇸US_248|212KB/s|R002-260618
   strategy: consistent-hashing
   timeout: 5000
   type: load-balance
@@ -727,42 +657,45 @@ proxy-groups:
   lazy: true
   name: 美国AI节点
   proxies:
-  - 美国|US|🇺🇸|698ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_241|80KB/s|R002-260618
-  - 美国|US|🇺🇸|698ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|698ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
-  - 美国|US|🇺🇸|702ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|704ms|❓Other_5|149KB/s|R002-260618
-  - 美国|US|🇺🇸|712ms|🇺🇸US_238|225KB/s|R002-260618
-  - 美国|US|🇺🇸|714ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
-  - 美国|US|🇺🇸|716ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|722ms|🇫🇷FR_25|7.4MB/s|R002-260618
-  - 美国|US|🇺🇸|722ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|727ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|728ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
-  - 美国|US|🇺🇸|732ms|🇺🇸US_474|1.8MB/s|P002-260618
-  - 美国|US|🇺🇸|737ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
-  - 美国|US|🇺🇸|744ms|🇺🇸US_4|348KB/s|R002-260618
-  - 美国|US|🇺🇸|745ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
-  - 美国|US|🇺🇸|765ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
-  - 美国|US|🇺🇸|784ms|🇫🇷FR_120|7.0MB/s|P002-260618
-  - 美国|US|🇺🇸|789ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
-  - 美国|US|🇺🇸|792ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
-  - 美国|US|🇺🇸|796ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
-  - 美国|US|🇺🇸|816ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|820ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|829ms|🇺🇸US_248|212KB/s|R002-260618
-  - 美国|US|🇺🇸|832ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
-  - 美国|US|🇺🇸|833ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
-  - 美国|US|🇺🇸|833ms|🇺🇸US_192|180KB/s|R002-260618
-  - 美国|US|🇺🇸|839ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|842ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
-  - 美国|US|🇺🇸|844ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|848ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
-  - 美国|US|🇺🇸|854ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
-  - 美国|US|🇺🇸|865ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
-  - 美国|US|🇺🇸|875ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|26ms|[HTTPS] 🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|25ms|🇺🇸US_474|1.8MB/s|P002-260618
+  - 美国|US|🇺🇸|28ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_aba567e8
+  - 美国|US|🇺🇸|29ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_0618cdac
+  - 美国|US|🇺🇸|33ms|🇫🇷FR_47|7.5MB/s|R002-260618 [39873ef4d996]
+  - 美国|US|🇺🇸|39ms|🇫🇷FR_25|7.4MB/s|R002-260618
+  - 美国|US|🇺🇸|40ms|🇫🇷FR_120|7.0MB/s|P002-260618
+  - 美国|US|🇺🇸|41ms|🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|43ms|[HTTPS] D🔴🇰🇷hos[🎬🤖📺🎭]_dokng.com_67e56d53
+  - 美国|US|🇺🇸|43ms|🇫🇷FR_80|4.6MB/s|R002-260618
+  - 美国|US|🇺🇸|56ms|[HTTPS] 🇫🇷FR_49|2.9MB/s|R002-260618 [a676be7daa09]
+  - 美国|US|🇺🇸|336ms|[HTTPS] D🔴🇺🇸hos[🎬🤖📺🎭]_dokng.com_2320978c
+  - 美国|US|🇺🇸|341ms|🇺🇸US_241|80KB/s|R002-260618
+  - 美国|US|🇺🇸|353ms|[HTTPS] 🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|356ms|[HTTPS] 🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 美国|US|🇺🇸|356ms|🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|359ms|🇺🇸US_4|348KB/s|R002-260618
+  - 美国|US|🇺🇸|359ms|🇺🇸US_338|349KB/s|R002-260618
+  - 美国|US|🇺🇸|361ms|🇺🇸US_403|329KB/s|R002-260618
+  - 美国|US|🇺🇸|362ms|[HTTPS] 🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|364ms|🇺🇸US_16|263KB/s|R002-260618 [4b9bb8749abb]
+  - 美国|US|🇺🇸|368ms|🇺🇸US_192|180KB/s|R002-260618
+  - 美国|US|🇺🇸|368ms|🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|372ms|🇺🇸US_257|200KB/s|R002-260618 [1fc116c439cd]
+  - 美国|US|🇺🇸|378ms|[HTTPS] 🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|381ms|[HTTPS] 🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|381ms|🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|382ms|🇺🇸US_200|352KB/s|R002-260618 [423dd28e4065]
+  - 美国|US|🇺🇸|382ms|[HTTPS] 🇺🇸US_473|105KB/s|R002-260618 [713d9982d1a3]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_372|156KB/s|R002-260618 [5f9e954fe312]
+  - 美国|US|🇺🇸|384ms|🇺🇸US_258|175KB/s|R002-260618 [b92c1a4a1fb1]
+  - 美国|US|🇺🇸|387ms|[HTTPS] 🇺🇸US_225|350KB/s|R002-260618 [ea1befc94c60]
+  - 美国|US|🇺🇸|388ms|[HTTPS] 🇺🇸US_271|185KB/s|R002-260618 [d8d0f16380f5]
+  - 美国|US|🇺🇸|698ms|🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|699ms|🇺🇸US_238|225KB/s|R002-260618
+  - 美国|US|🇺🇸|703ms|🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|719ms|[HTTPS] 🇺🇸US_50|327KB/s|Z001-260618 [1b5af584fbfa]
+  - 美国|US|🇺🇸|722ms|[HTTPS] 🇺🇸US_234|249KB/s|R002-260618 [5f8596a8538f]
+  - 美国|US|🇺🇸|742ms|🇺🇸US_248|212KB/s|R002-260618
   - 代理模式
   - DIRECT
   timeout: 5000
