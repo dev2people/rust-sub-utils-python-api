@@ -360,6 +360,44 @@ function main(cfgStr) {
                 temp_blacklist_file.unlink()
             py_run_script.BLACKLIST_FILE = original_file
 
+    def test_11_blacklist_case_normalization(self):
+        """测试黑名单对域名和UUID的大小写规范化与去重"""
+        import importlib
+        py_run_script = importlib.import_module("py-run-script")
+
+        # 域名和 UUID 统一转为小写
+        self.assertEqual(
+            py_run_script.normalize_blacklist_key("vmess:EXAMPLE.COM:443:550E8400-E29B-41D4-A716-446655440000"),
+            "vmess:example.com:443:550e8400-e29b-41d4-a716-446655440000"
+        )
+        self.assertEqual(
+            py_run_script.normalize_blacklist_key("VMESS:Example.Com:443:550E8400E29B41D4A716446655440000"),
+            "vmess:example.com:443:550e8400e29b41d4a716446655440000"
+        )
+        # 非 UUID 的密码大小写保留
+        self.assertEqual(
+            py_run_script.normalize_blacklist_key("ss:MY-SERVER.COM:8388:SecretPassWord123"),
+            "ss:my-server.com:8388:SecretPassWord123"
+        )
+
+        temp_blacklist_file = BASE_DIR / "test_temp_case_黑名单.yaml"
+        original_file = py_run_script.BLACKLIST_FILE
+        py_run_script.BLACKLIST_FILE = temp_blacklist_file
+
+        try:
+            items = [
+                "vmess:EXAMPLE.COM:443:550E8400-E29B-41D4-A716-446655440000",
+                "vmess:example.com:443:550e8400-e29b-41d4-a716-446655440000",
+            ]
+            py_run_script.save_blacklist(items)
+            loaded = py_run_script.load_blacklist()
+            self.assertEqual(len(loaded), 1)
+            self.assertEqual(loaded[0], "vmess:example.com:443:550e8400-e29b-41d4-a716-446655440000")
+        finally:
+            if temp_blacklist_file.exists():
+                temp_blacklist_file.unlink()
+            py_run_script.BLACKLIST_FILE = original_file
+
 
 if __name__ == "__main__":
     unittest.main()
