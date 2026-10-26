@@ -7,6 +7,8 @@ services:
     volumes:
       - ./data:/app/data
       - /etc/localtime:/etc/localtime:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
       - TZ=Asia/Shanghai
       - DATABASE_URL=sqlite:///app/data/sub.db?mode=rwc
@@ -31,8 +33,8 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - AUTH_KEY=epYeobK02c6ee9ELuCkPAplZYyqAjOJN
-      - SPEEDTEST_TIMEOUT=600ms
-      - MAX_LATENCY=600ms
+      - SPEEDTEST_TIMEOUT=1000ms
+      - MAX_LATENCY=900ms
 #      - RELAY_POOL_URL="https://raw.githubusercontent.com/dev2people/cn-proxy-node-pool/refs/heads/main/filter-data/allnode-url.txt"
 #      - RELAY_SUCCESS_COUNT=3
 #      - RELAY_SAMPLE_COUNT=20
