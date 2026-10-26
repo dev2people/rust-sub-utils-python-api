@@ -22,6 +22,11 @@ except ImportError:
     print("[错误] 未找到 requests 模块，请运行 pip install requests")
     sys.exit(1)
 
+try:
+    import yaml
+except ImportError:
+    yaml = None
+
 # 基础目录配置（以脚本所在目录为准）
 BASE_DIR = Path(__file__).resolve().parent
 INPUT_DIR = BASE_DIR / "input"
@@ -34,6 +39,7 @@ SUB_SERVICE_DIR = INPUT_DIR / "sub-service"
 CLASH_OUT_FILE = OUTPUT_DIR / "clash-out" / "all-node.yaml"
 V2RAYN_OUT_TXT = OUTPUT_DIR / "v2rayn-out" / "all-node.txt"
 V2RAYN_OUT_V2RAYN = OUTPUT_DIR / "v2rayn-out" / "all-node.v2rayn"
+BLACKLIST_FILE = BASE_DIR / "黑名单.yaml"
 
 # 默认配置
 DEFAULT_API_BASE = os.environ.get("API_BASE_URL", "http://localhost:18189")
@@ -164,6 +170,56 @@ def load_services() -> list:
     return services
 
 
+def load_blacklist() -> list:
+    """加载根目录下的 黑名单.yaml，返回黑名单节点指纹列表"""
+    if not BLACKLIST_FILE.exists():
+        return []
+    try:
+        content = BLACKLIST_FILE.read_text(encoding="utf-8").strip()
+        if not content:
+            return []
+        if yaml is not None:
+            data = yaml.safe_load(content)
+            if isinstance(data, list):
+                return [str(x).strip() for x in data if str(x).strip()]
+            elif isinstance(data, dict):
+                items = data.get("blacklist") or data.get("failed_nodes") or []
+                if isinstance(items, list):
+                    return [str(x).strip() for x in items if str(x).strip()]
+        else:
+            # 兼容未安装 yaml 时的按行简单提取
+            lines = []
+            for line in content.splitlines():
+                line = line.strip()
+                if line.startswith("-"):
+                    val = line.lstrip("-").strip().strip('"').strip("'")
+                    if val:
+                        lines.append(val)
+            return lines
+    except Exception as e:
+        print(f"[警告] 读取黑名单文件失败: {e}")
+    return []
+
+
+def save_blacklist(blacklist: list):
+    """将最新黑名单列表保存至 黑名单.yaml"""
+    if not blacklist:
+        return
+    try:
+        # 去重并排序
+        unique_list = sorted(list(set(str(k).strip() for k in blacklist if str(k).strip())))
+        if yaml is not None:
+            content = yaml.dump({"blacklist": unique_list}, allow_unicode=True, sort_keys=False)
+        else:
+            lines = ["blacklist:"] + [f'  - "{item}"' for item in unique_list]
+            content = "\n".join(lines) + "\n"
+
+        BLACKLIST_FILE.write_text(content, encoding="utf-8")
+        print(f"[成功] 最新黑名单已保存至: {BLACKLIST_FILE} (共 {len(unique_list)} 个节点指纹)")
+    except Exception as e:
+        print(f"[错误] 保存黑名单文件失败: {e}")
+
+
 def run_convert(
     api_base: str,
     api_key: str,
@@ -189,6 +245,9 @@ def run_convert(
     current_sources = load_sources()
     scripts = load_scripts()
     services = load_services()
+    current_blacklist = load_blacklist()
+    if current_blacklist:
+        print(f"[信息] 成功加载 {len(current_blacklist)} 个历史黑名单节点指纹")
 
     last_clash_content = None
     last_v2rayn_content = None
@@ -203,13 +262,14 @@ def run_convert(
 
         print(f"\n{'='*20} [开始第 {round_idx}/{iterations} 轮测试] {'='*20}")
         print(f"[请求] 发送自定义转换请求至: {api_url}")
-        print(f"       节点源数量: {len(current_sources)}, 脚本数量: {len(scripts)}, 服务数量: {len(services)}, 目标格式: {current_target}")
+        print(f"       节点源数量: {len(current_sources)}, 脚本数量: {len(scripts)}, 服务数量: {len(services)}, 黑名单数量: {len(current_blacklist)}, 目标格式: {current_target}")
 
         payload = {
             "sources": current_sources,
             "scripts": scripts,
             "services": services,
             "target": current_target,
+            "blacklist": current_blacklist,
         }
 
         try:
@@ -239,6 +299,14 @@ def run_convert(
         last_clash_content = data.get("clash")
         last_v2rayn_content = data.get("v2rayn")
 
+        # 接收并更新黑名单
+        ret_blacklist = data.get("blacklist")
+        if ret_blacklist and isinstance(ret_blacklist, list):
+            new_added = len(ret_blacklist) - len(current_blacklist)
+            if new_added > 0:
+                print(f"[黑名单] 第 {round_idx} 轮新增 {new_added} 个测试失败节点 (当前黑名单累计: {len(ret_blacklist)})")
+            current_blacklist = ret_blacklist
+
         print(f"[响应] 第 {round_idx}/{iterations} 轮完成！解析/过滤后代理节点数: {last_proxies_count}")
 
         # 如果不是最后一轮，将本次输出的 Clash YAML 节点作为下一轮迭代的输入
@@ -257,6 +325,9 @@ def run_convert(
 
     print(f"\n{'='*20} [全部迭代完成] {'='*20}")
     print(f"[汇总] 最终有效代理节点总数: {last_proxies_count}")
+
+    # 保存最新黑名单到本地文件
+    save_blacklist(current_blacklist)
 
     # 写入 Clash 输出
     if last_clash_content is not None and target in ("all", "clash"):

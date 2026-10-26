@@ -275,6 +275,91 @@ function main(cfgStr) {
             self.assertEqual(clash_file.read_text(encoding="utf-8"), "proxies:\n  - name: round3-node-final")
             self.assertEqual(v2rayn_file.read_text(encoding="utf-8"), "round3-base64-final")
 
+    def test_09_blacklist_load_and_save(self):
+        """测试黑名单文件读写与去重"""
+        import importlib
+        py_run_script = importlib.import_module("py-run-script")
+
+        temp_blacklist_file = BASE_DIR / "test_temp_黑名单.yaml"
+        original_file = py_run_script.BLACKLIST_FILE
+        py_run_script.BLACKLIST_FILE = temp_blacklist_file
+
+        try:
+            # 1. 初始不存在时为空
+            if temp_blacklist_file.exists():
+                temp_blacklist_file.unlink()
+            self.assertEqual(py_run_script.load_blacklist(), [])
+
+            # 2. 保存黑名单 (包含重复项)
+            test_items = [
+                "vmess:1.2.3.4:443:u1",
+                "ss:5.6.7.8:8388:pwd1",
+                "vmess:1.2.3.4:443:u1",  # 重复项
+            ]
+            py_run_script.save_blacklist(test_items)
+            self.assertTrue(temp_blacklist_file.exists())
+
+            # 3. 重新加载应去重
+            loaded = py_run_script.load_blacklist()
+            self.assertEqual(len(loaded), 2)
+            self.assertIn("vmess:1.2.3.4:443:u1", loaded)
+            self.assertIn("ss:5.6.7.8:8388:pwd1", loaded)
+        finally:
+            if temp_blacklist_file.exists():
+                temp_blacklist_file.unlink()
+            py_run_script.BLACKLIST_FILE = original_file
+
+    def test_10_run_convert_blacklist_flow(self):
+        """测试转换流程中黑名单的传递与更新"""
+        import importlib
+        from unittest.mock import MagicMock, patch
+
+        py_run_script = importlib.import_module("py-run-script")
+
+        temp_blacklist_file = BASE_DIR / "test_temp_flow_黑名单.yaml"
+        original_file = py_run_script.BLACKLIST_FILE
+        py_run_script.BLACKLIST_FILE = temp_blacklist_file
+
+        mock_resp = MagicMock(
+            status_code=200,
+            json=lambda: {
+                "code": 200,
+                "result": {
+                    "proxies_count": 5,
+                    "clash": "proxies:\n  - name: clean1",
+                    "v2rayn": "clean1-b64",
+                    "blacklist": ["vmess:1.1.1.1:443:u1", "ss:2.2.2.2:8388:p2"],
+                }
+            }
+        )
+
+        try:
+            with patch.object(py_run_script.requests, "post", return_value=mock_resp) as mock_post:
+                with patch.object(py_run_script, "load_sources", return_value=[]):
+                    with patch.object(py_run_script, "load_scripts", return_value=[]):
+                        with patch.object(py_run_script, "load_services", return_value=[]):
+                            with patch.object(py_run_script, "load_blacklist", return_value=["vmess:1.1.1.1:443:u1"]):
+                                py_run_script.run_convert(
+                                    api_base="http://test-server",
+                                    api_key="test-key",
+                                    target="clash",
+                                    iterations=1,
+                                )
+
+                # 校验 payload 包含传入的黑名单
+                payload = mock_post.call_args.kwargs["json"]
+                self.assertIn("blacklist", payload)
+                self.assertEqual(payload["blacklist"], ["vmess:1.1.1.1:443:u1"])
+
+                # 校验最终落盘的黑名单包含更新后的 2 个节点
+                loaded = py_run_script.load_blacklist()
+                self.assertEqual(len(loaded), 2)
+                self.assertIn("ss:2.2.2.2:8388:p2", loaded)
+        finally:
+            if temp_blacklist_file.exists():
+                temp_blacklist_file.unlink()
+            py_run_script.BLACKLIST_FILE = original_file
+
 
 if __name__ == "__main__":
     unittest.main()
