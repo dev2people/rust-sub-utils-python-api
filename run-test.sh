@@ -6,11 +6,11 @@ sleep 3
 LOGS_PID=$!
 trap "kill $LOGS_PID 2>/dev/null || true" EXIT
 ####################################
-python3 py-run-script.py \
+python3 -u py-run-script.py \
     --url "http://127.0.0.1:18189/sub-api/custom/convert" \
     --key "epYeobK02c6ee9ELuCkPAplZYyqAjOJN" \
     --target "all" \
     --iterations 2 \
-    --timeout 6000
+    --timeout 60000
 
 docker compose down

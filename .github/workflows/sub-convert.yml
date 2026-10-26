@@ -114,7 +114,7 @@ jobs:
           fi
 
           echo "运行转换任务: URL=${API_URL}, 格式=${TARGET}, 迭代次数=${ITERATIONS}"
-          python py-run-script.py \
+          python -u py-run-script.py \
             --url "${API_URL}" \
             --key "${API_KEY}" \
             --target "${TARGET}" \
