@@ -212,7 +212,7 @@ function renameDuplicateProxyNodes(proxies) {
             nameCountMap[originalName] = 0;
         } else {
             nameCountMap[originalName]++;
-            proxyNode.name = `${originalName}-(重名${nameCountMap[originalName]})`;
+            proxyNode.name = `${originalName}-[${nameCountMap[originalName]}]`;
         }
         processedProxies.push(proxyNode);
     });

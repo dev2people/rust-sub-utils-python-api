@@ -37,6 +37,7 @@ services:
       - AUTH_KEY=epYeobK02c6ee9ELuCkPAplZYyqAjOJN
       - SPEEDTEST_TIMEOUT=1000ms
       - MAX_LATENCY=900ms
+      - IS_NAME_APPEND_ORI=N
 #      - RELAY_POOL_URL="https://raw.githubusercontent.com/dev2people/cn-proxy-node-pool/refs/heads/main/filter-data/allnode-url.txt"
 #      - RELAY_SUCCESS_COUNT=3
 #      - RELAY_SAMPLE_COUNT=20
